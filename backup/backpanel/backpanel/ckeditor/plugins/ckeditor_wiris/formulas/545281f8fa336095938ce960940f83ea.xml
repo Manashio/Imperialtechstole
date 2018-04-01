@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mrow><mo>(</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mi mathvariant="normal">sin</mi><mi>x</mi></mrow><mrow><mi>x</mi><mo>+</mo><msup><mi mathvariant="normal">cos</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac><mo>)</mo></mrow></msqrt></math>
+
+
+true
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><msqrt><mi>x</mi></msqrt></mrow></mfrac><mo>,</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></mfrac><mo>,</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>-</mo><msqrt><mi>x</mi></msqrt></mrow></mfrac></math>
+
+
+true
+
+
+
+
+
+
+

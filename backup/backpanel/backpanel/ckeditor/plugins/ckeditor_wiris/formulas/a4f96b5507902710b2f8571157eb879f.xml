@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced close="|" open="|"><mtable><mtr><mtd><mn>0</mn></mtd><mtd><mi>p</mi><mo>-</mo><mi>q</mi></mtd><mtd><mi>p</mi><mo>-</mo><mi>r</mi></mtd></mtr><mtr><mtd><mi>q</mi><mo>-</mo><mi>p</mi></mtd><mtd><mn>0</mn></mtd><mtd><mi>q</mi><mo>-</mo><mi>r</mi></mtd></mtr><mtr><mtd><mi>r</mi><mo>-</mo><mi>p</mi></mtd><mtd><mi>r</mi><mo>-</mo><mi>q</mi></mtd><mtd><mn>0</mn></mtd></mtr></mtable></mfenced></math>
+
+
+true
+
+
+
+
+
+
+

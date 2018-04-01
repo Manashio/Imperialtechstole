@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced close="|" open="|"><mtable><mtr><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mtd><mtd><mn>7</mn><mi>x</mi><mo>+</mo><mn>2</mn></mtd><mtd><mi>x</mi><mo>+</mo><mn>4</mn></mtd></mtr><mtr><mtd><mn>2</mn><mi>x</mi><mo>+</mo><mn>7</mn></mtd><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi><mo>+</mo><mn>2</mn></mtd><mtd><mn>3</mn><mi>x</mi></mtd></mtr><mtr><mtd><mn>3</mn></mtd><mtd><mn>2</mn><mi>x</mi><mo>-</mo><mn>1</mn></mtd><mtd><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>7</mn></mtd></mtr></mtable></mfenced></math>
+
+
+true
+
+
+
+
+
+
+

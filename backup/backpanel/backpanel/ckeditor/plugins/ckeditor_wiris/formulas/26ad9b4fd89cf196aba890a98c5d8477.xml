@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">log</mi><mn>2</mn></msub><mo>(</mo><mn>5</mn><mo>.</mo><msup><mn>2</mn><mi>x</mi></msup><mo>-</mo><mn>1</mn><mo>)</mo><mo>,</mo><mo>&nbsp;</mo><msub><mi mathvariant="normal">log</mi><mn>4</mn></msub><mo>(</mo><msup><mn>2</mn><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow></msup><mo>-</mo><mn>1</mn><mo>)</mo><mo>&nbsp;</mo></math>
+
+
+true
+
+
+
+
+
+
+

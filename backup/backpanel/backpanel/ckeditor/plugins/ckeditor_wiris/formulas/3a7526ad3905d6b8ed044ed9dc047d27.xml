@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>n</mi><mo>&#8594;</mo><mo>&#8734;</mo></mrow></munder><mo>&nbsp;</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></munderover><mo>&nbsp;</mo><mfrac><mn>1</mn><msqrt><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>&nbsp;</mo><mi>i</mi><mi>s</mi><mo>&nbsp;</mo></math>
+
+
+true
+
+
+
+
+
+
+

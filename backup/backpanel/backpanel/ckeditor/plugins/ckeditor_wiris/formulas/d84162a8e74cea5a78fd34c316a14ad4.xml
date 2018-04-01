@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">If</mi><mo>&nbsp;</mo><mo>[</mo><mi mathvariant="normal">x</mi><mo>]</mo><mo>&nbsp;</mo><mi mathvariant="normal">denotes</mi><mo>&nbsp;</mo><mi mathvariant="normal">the</mi><mo>&nbsp;</mo><mi mathvariant="normal">integral</mi><mo>&nbsp;</mo><mi mathvariant="normal">part</mi><mo>&nbsp;</mo><mi mathvariant="normal">of</mi><mo>&nbsp;</mo><mi mathvariant="normal">x</mi><mo>,</mo><mo>&nbsp;</mo><mi mathvariant="normal">then</mi><mo>&nbsp;</mo><mi mathvariant="normal">the</mi><mo>&nbsp;</mo><mi mathvariant="normal">domain</mi><mo>&nbsp;</mo><mi mathvariant="normal">of</mi><mo>&nbsp;</mo><mi mathvariant="normal">f</mi><mo>(</mo><mi mathvariant="normal">x</mi><mo>)</mo><mo>=</mo><msup><mi mathvariant="normal">cos</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi mathvariant="normal">x</mi><mo>+</mo><mo>[</mo><mi mathvariant="normal">x</mi><mo>]</mo><mo>)</mo><mo>&nbsp;</mo><mi mathvariant="normal">is</mi></math>
+
+
+true
+
+
+
+
+
+
+

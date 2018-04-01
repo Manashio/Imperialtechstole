@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>I</mi><mi>f</mi><mo>&nbsp;</mo><mi>y</mi><mo>=</mo><mi mathvariant="normal">sin</mi><mfenced close="}" open="{"><mrow><mi>m</mi><msup><mi mathvariant="normal">sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mi>x</mi></mrow></mfenced><mo>,</mo><mo>&nbsp;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mi>n</mi><mo>&nbsp;</mo><mfenced><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><msub><mi>y</mi><mn>2</mn></msub><mo>-</mo><mi>x</mi><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup><mi>y</mi><mo>=</mo></math>
+
+
+true
+
+
+
+
+
+
+

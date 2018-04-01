@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mfenced><mfrac><mn>9</mn><mn>2</mn></mfrac></mfenced><mo>=</mo><mfrac><mn>2</mn><mn>9</mn></mfrac><mo>&nbsp;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mi>n</mi><mo>&nbsp;</mo><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>&#8594;</mo><mn>0</mn></mrow></munder><mo>&nbsp;</mo><mi>f</mi><mfenced><mfrac><mrow><mn>1</mn><mo>-</mo><mi mathvariant="normal">cos</mi><mo>&nbsp;</mo><mn>3</mn><mi>x</mi></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mfenced></math>
+
+
+true
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced close="|" open="|"><mtable><mtr><mtd><mi>n</mi></mtd><mtd><mn>15</mn></mtd><mtd><mn>8</mn></mtd></mtr><mtr><mtd><msup><mi>n</mi><mn>2</mn></msup></mtd><mtd><mn>35</mn></mtd><mtd><mn>9</mn></mtd></mtr><mtr><mtd><msup><mi>n</mi><mn>3</mn></msup></mtd><mtd><mn>25</mn></mtd><mtd><mn>10</mn></mtd></mtr></mtable></mfenced><mo>,</mo><mo>&nbsp;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mi>n</mi><mo>&nbsp;</mo><munderover><mo>&#8721;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mn>5</mn></munderover><msub><mi>U</mi><mi>n</mi></msub><mo>=</mo></math>
+
+
+true
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi mathvariant="normal">tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo>)</mo><msup><mi mathvariant="normal">tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mn>1</mn><mo>-</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mi>&#960;</mi><mn>2</mn></mfrac></math>
+
+
+true
+
+
+
+
+
+
+

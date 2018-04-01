@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mfenced><mi>x</mi></mfenced><mo>=</mo><msup><mi mathvariant="normal">sin</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>x</mi></mrow></mfrac></mfenced><mo>+</mo><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>&nbsp;</mo><mi>i</mi><mi>s</mi></math>
+
+
+true
+
+
+
+
+
+
+

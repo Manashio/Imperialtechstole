@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi mathvariant="normal">sin</mi><mfrac><mrow><mi>&#960;</mi><mi>x</mi></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>-</mo><mi mathvariant="normal">cos</mi><mfrac><mrow><mi>&#960;</mi><mi>x</mi></mrow><mrow><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>&nbsp;</mo><mi>i</mi><mi>s</mi></math>
+
+
+true
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>f</mi><mfenced><mi>x</mi></mfenced><mo>=</mo><mfenced close="|" open="|"><mrow><mi>x</mi><mo>-</mo><mn>2</mn></mrow></mfenced><mo>+</mo><mfenced close="|" open="|"><mrow><mi>x</mi><mo>-</mo><mn>3</mn></mrow></mfenced><mo>+</mo><mfenced close="|" open="|"><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfenced><mo>&nbsp;</mo><mi>a</mi><mi>n</mi><mi>d</mi><mo>&nbsp;</mo><mi>g</mi><mfenced><mi>x</mi></mfenced><mo>=</mo><mi>f</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>.</mo><mo>&nbsp;</mo><mi>T</mi><mi>h</mi><mi>e</mi><mi>n</mi></math>
+
+
+true
+
+
+
+
+
+
+

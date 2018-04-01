@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mrow><msqrt><msub><mi mathvariant="normal">a</mi><mn>1</mn></msub></msqrt><mo>+</mo><msqrt><msub><mi mathvariant="normal">a</mi><mn>2</mn></msub></msqrt></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><msqrt><msub><mi mathvariant="normal">a</mi><mn>2</mn></msub></msqrt><mo>+</mo><msqrt><msub><mi mathvariant="normal">a</mi><mn>3</mn></msub></msqrt></mrow></mfrac><mo>+</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>+</mo><mfrac><mn>1</mn><mrow><msqrt><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>-</mo><mn>1</mn></mrow></msub></msqrt><mo>+</mo><msqrt><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub></msqrt></mrow></mfrac></math>
+
+
+true
+
+
+
+
+
+
+

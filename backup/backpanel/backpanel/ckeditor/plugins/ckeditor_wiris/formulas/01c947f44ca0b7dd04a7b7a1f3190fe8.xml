@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced close="|" open="|"><mtable><mtr><mtd><mo>-</mo><mn>1</mn></mtd><mtd><mn>2</mn><mo>+</mo><mn>3</mn><mi>i</mi></mtd><mtd><mn>5</mn><mo>-</mo><mn>4</mn><mo>!</mo></mtd></mtr><mtr><mtd><mn>2</mn><mo>-</mo><mn>3</mn><mi>i</mi></mtd><mtd><mn>8</mn></mtd><mtd><mn>1</mn><mo>-</mo><mi>i</mi></mtd></mtr><mtr><mtd><mn>5</mn><mo>+</mo><mn>4</mn><mi>i</mi></mtd><mtd><mn>1</mn><mo>+</mo><mi>i</mi></mtd><mtd><mn>3</mn></mtd></mtr></mtable></mfenced></math>
+
+
+true
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><msup><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><msup><mi mathvariant="normal">b</mi><mrow><mi mathvariant="normal">n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow><mrow><msup><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msup><mo>-</mo><msup><mi mathvariant="normal">b</mi><mi mathvariant="normal">n</mi></msup></mrow></mfrac></math>
+
+
+true
+
+
+
+
+
+
+

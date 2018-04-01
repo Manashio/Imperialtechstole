@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">If</mi><mo>&nbsp;</mo><mi mathvariant="normal">arg</mi><mo>(</mo><msup><mi mathvariant="normal">z</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi mathvariant="normal">arg</mi><mo>(</mo><msup><mi mathvariant="normal">z</mi><mn>2</mn></msup><mo>+</mo><mover><mi mathvariant="normal">z</mi><mo>&#175;</mo></mover><msup><mi mathvariant="normal">z</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>)</mo><mo>&nbsp;</mo><mi mathvariant="normal">then</mi><mo>&nbsp;</mo><mfenced close="|" open="|"><mi mathvariant="normal">z</mi></mfenced><mo>=</mo></math>
+
+
+true
+
+
+
+
+
+
+

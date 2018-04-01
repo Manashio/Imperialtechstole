@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced close="|" open="|"><mtable><mtr><mtd><mn>1</mn></mtd><mtd><msub><mi mathvariant="normal">log</mi><mi>x</mi></msub><mi>y</mi></mtd><mtd><msub><mi mathvariant="normal">log</mi><mi>x</mi></msub><mi>z</mi></mtd></mtr><mtr><mtd><msub><mi mathvariant="normal">log</mi><mi>y</mi></msub><mi>x</mi></mtd><mtd><mn>1</mn></mtd><mtd><msub><mi mathvariant="normal">log</mi><mi>y</mi></msub><mi>z</mi></mtd></mtr><mtr><mtd><msub><mi mathvariant="normal">log</mi><mi>z</mi></msub><mi>x</mi></mtd><mtd><msub><mi mathvariant="normal">log</mi><mi>z</mi></msub><mi>y</mi></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mfenced></math>
+
+
+true
+
+
+
+
+
+
+

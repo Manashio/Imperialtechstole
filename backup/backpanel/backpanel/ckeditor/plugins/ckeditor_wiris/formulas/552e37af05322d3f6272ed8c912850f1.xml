@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced close="|" open="|"><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mi>a</mi></mtd><mtd><msup><mi>a</mi><mn>2</mn></msup></mtd><mtd><msup><mi>a</mi><mn>3</mn></msup></mtd><mtd><mo>+</mo><mi>b</mi><mi>c</mi><mi>d</mi></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mi>b</mi></mtd><mtd><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd><msup><mi>b</mi><mn>3</mn></msup></mtd><mtd><mo>+</mo><mi>c</mi><mi>d</mi><mi>a</mi></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mi>c</mi></mtd><mtd><msup><mi>c</mi><mn>2</mn></msup></mtd><mtd><msup><mi>c</mi><mn>3</mn></msup></mtd><mtd><mo>+</mo><mi>a</mi><mi>b</mi><mi>d</mi></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mi>d</mi></mtd><mtd><msup><mi>d</mi><mn>2</mn></msup></mtd><mtd><msup><mi>d</mi><mn>3</mn></msup></mtd><mtd><mo>+</mo><mi>a</mi><mi>b</mi><mi>c</mi></mtd></mtr></mtable></mfenced><mo>=</mo></math>
+
+
+true
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><munder><mi mathvariant="normal">lim</mi><mrow><mi>x</mi><mo>&#8594;</mo><mfrac><mi>&#960;</mi><mn>4</mn></mfrac></mrow></munder><mfrac><mrow><msqrt><mn>2</mn></msqrt><mo>-</mo><mi mathvariant="normal">cos</mi><mi>&#952;</mi><mo>-</mo><mi mathvariant="normal">sin</mi><mi>&#952;</mi></mrow><mrow><mo>(</mo><mn>4</mn><mi>&#952;</mi><mo>-</mo><mi>&#960;</mi><msup><mo>)</mo><mn>2</mn></msup></mrow></mfrac><mo>=</mo></math>
+
+
+true
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced close="|" open="|"><mtable><mtr><mtd><msub><mi>t</mi><mn>1</mn></msub></mtd><mtd><msub><mi>t</mi><mn>2</mn></msub></mtd><mtd><msub><mi>t</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd><msub><mi>t</mi><mn>2</mn></msub></mtd><mtd><msub><mi>t</mi><mn>3</mn></msub></mtd><mtd><msub><mi>t</mi><mn>4</mn></msub></mtd></mtr><mtr><mtd><msub><mi>t</mi><mn>3</mn></msub></mtd><mtd><msub><mi>t</mi><mn>4</mn></msub></mtd><mtd><msub><mi>t</mi><mn>5</mn></msub></mtd></mtr></mtable></mfenced><mo>+</mo><mfenced close="|" open="|"><mtable><mtr><mtd><msub><mi>T</mi><mn>1</mn></msub></mtd><mtd><msub><mi>T</mi><mn>2</mn></msub></mtd><mtd><msub><mi>T</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd><msub><mi>T</mi><mn>2</mn></msub></mtd><mtd><msub><mi>T</mi><mn>3</mn></msub></mtd><mtd><msub><mi>T</mi><mn>4</mn></msub></mtd></mtr><mtr><mtd><msub><mi>T</mi><mn>3</mn></msub></mtd><mtd><msub><mi>T</mi><mn>4</mn></msub></mtd><mtd><msub><mi>T</mi><mn>5</mn></msub></mtd></mtr></mtable></mfenced></math>
+
+
+true
+
+
+
+
+
+
+

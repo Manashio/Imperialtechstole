@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mfenced><mmultiscripts><mrow><msqrt><mfrac><mi>a</mi><msqrt><mi>b</mi></msqrt></mfrac></msqrt><mo>+</mo><msqrt><mfrac><mi>b</mi><mmultiscripts><msqrt><mi>a</mi></msqrt><none/><none/><mprescripts/><none/><mn>3</mn></mmultiscripts></mfrac></msqrt></mrow><none/><none/><mprescripts/><none/><mn>3</mn></mmultiscripts></mfenced><mn>21</mn></msup></math>
+
+
+true
+
+
+
+
+
+
+

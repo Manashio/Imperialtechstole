@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">If</mi><mo>&nbsp;</mo><mi mathvariant="normal">f</mi><mo>(</mo><mi mathvariant="normal">&#952;</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi mathvariant="normal">cos</mi><mi mathvariant="normal">i&#952;</mi><mo>=</mo><mi mathvariant="normal">i</mi><mi mathvariant="normal">sin</mi><mi mathvariant="normal">i&#952;</mi><mo>)</mo><mo>,</mo><mo>&nbsp;</mo><mi mathvariant="normal">i</mi><mo>=</mo><msqrt><mrow><mo>-</mo><mn>1</mn></mrow></msqrt><mo>&nbsp;</mo><mi mathvariant="normal">then</mi><mo>&nbsp;</mo><mi mathvariant="normal">the</mi><mo>&nbsp;</mo><mi mathvariant="normal">value</mi><mo>&nbsp;</mo><mi mathvariant="normal">of</mi><mo>&nbsp;</mo><msubsup><mo>&#8747;</mo><mrow><mo>-</mo><mn>3</mn></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo>[</mo><mi mathvariant="normal">f</mi><mo>(</mo><mi mathvariant="normal">&#952;</mi><mo>)</mo><mo>+</mo><mi mathvariant="normal">f</mi><mo>(</mo><mn>2</mn><mi mathvariant="normal">&#952;</mi><mo>)</mo><mo>)</mo><mo>+</mo><mi mathvariant="normal">f</mi><mo>(</mo><mn>3</mn><mi mathvariant="normal">&#952;</mi><mo>)</mo><mo>+</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>&#8734;</mo><mo>]</mo><mi mathvariant="normal">d&#952;</mi></math>
+
+
+true
+
+
+
+
+
+
+

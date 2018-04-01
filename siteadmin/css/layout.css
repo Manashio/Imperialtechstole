@@ -1,0 +1,119 @@
+/* ------ Table of Content ------
+1. Reset
+2. Clearing Floats
+3. HTML 5 element
+4. Typography
+5. Basic Layout
+6. Pages
+7. All Hack
+8. Font Icons
+*/
+
+/* 4. Typography
+***************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+/* 1. Reset
+***************************************************************/
+* {
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+/* 2. Clearing Floats
+***************************************************************/
+/* 3. HTML 5 element
+***************************************************************/
+/* 5. Basic Layout
+***************************************************************/
+.middle-panel {
+	position: relative;
+	background: #f6f6f6;
+	margin: 50px 0 0;
+}
+.left-panel {
+	width: 204px;
+/*	position: fixed;*/
+	left: 0px;
+}
+.right-panel {
+	background: #FFFFFF;
+	border-left: none !important;
+	margin: 0 0 0 0px !important;
+}
+.side-nav {
+ top:-9px;
+}
+.side-nav li {
+	display: block;
+}
+.side-nav li a {
+	border-bottom: 1px solid #d9dddd;
+	display: block;
+	color: #555;
+	padding: 10px 18px;
+}
+.side-nav li a .fa {
+	color: #818a90;
+}
+.side-nav .fa-angle-down {
+	float: right !important;
+	margin: 3px 0 0;
+	color: #71a9cf !important;
+}
+.side-nav li a.active .fa-angle-down {
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.side-nav li a:hover, .side-nav li a.active {
+	background: #e1e0e0;
+	color: #222;
+	text-decoration: none;
+}
+.side-nav li a .notification {
+	background: #5fb761;
+	color: #fff;
+	border-radius: 9999px;
+	font-size: 12px;
+	padding: 1px 6px;
+	margin: 0 0 0 10px;
+}
+.side-sub-nav {
+	display: none;
+}
+.side-sub-nav li a {
+	padding: 10px 8px 10px 35px;
+	background: #f1f0f0;
+}
+.side-sub-nav li a:hover, .side-sub-nav li a.active {
+	background: #9D9D9D;
+	color: #fff;
+}
+.menu {
+	background:none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 21px;
+	display: none;
+	height: 32px;
+	left: 10px;
+	padding: 8px;
+	position: absolute;
+	text-align: center;
+	top: -45px;
+	width: 37px;
+	border: 1px solid transparent;
+}
+.menu span {
+	background: #FFFFFF;
+	display: block;
+	height: 2px;
+	margin-bottom: 4px;
+}
+.menu:hover {
+	background:none;
+	border: none;
+}

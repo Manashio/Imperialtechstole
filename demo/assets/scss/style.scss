@@ -1,0 +1,166 @@
+@import "fonts"; // fonts file import
+@import "responsive"; // for mobile responsiveness
+
+body{
+  transition: 0.5s;
+}
+.nopad{
+  padding: 0px;
+}
+.nomarg{
+  margin: 0px;
+}
+.navbar{
+  margin-bottom:0px;
+}
+.navbar-default .navbar-nav>li>a{
+  font-size: 14px;;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 25px;
+}
+.navbar-default .navbar-brand{
+  padding: 25px;
+}
+.navbar-default{
+  .navbar-nav{
+    li{
+      &:hover ul{
+        display: block;
+      }
+      ul{
+        display: none;
+        width: 197px;
+        list-style-type: none;
+        background: #f1f1f1;
+        // padding: 0px 10px;
+        position: absolute;
+        padding: 0px;
+        /* top: 0px; */
+        z-index: 1;
+        li{
+          a{
+            display: block;
+            transition: 0.5s;
+            padding: 13px 20px;
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            &:hover{
+              color: #56a2c0;
+              padding-left: 33px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#carouselSection{
+  .sld{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    // border: 1px solid #000;
+    h1{
+      font-size: 70px;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    h3{
+      text-transform: uppercase;
+    }
+  }
+  .caption1{
+    top: 150px;
+    left: 200px;
+  }
+  .caption2{
+    top: 230px;
+    right: 100px;
+      h1{
+        color: #000;
+      }
+  }
+  .caption3{
+    top: 100px;
+    right: 0px;
+    h3{
+      color:#fff;
+    }
+  }
+  .caption4{
+    top: 250px;
+    left: 200px;
+    h1{
+      color:#000;
+    }
+  }
+}
+
+
+#footerSection{
+  background: #f8f8f8;
+  padding: 50px 100px;
+  h6{
+    font-size: 23px;
+  }
+  p{
+    font-size: 18px;
+  }
+ul{
+  list-style-type: none;
+  padding-left: 0px;
+  li{
+    &::before{
+    display: inline-block;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    vertical-align: 1px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #fff;
+    }
+    a{
+      font-size: 18px;
+    }
+
+  }
+}
+.footerform{
+  input[type="submit"]{
+    width: 150px;
+    border-radius: 20px;
+    background:blue;
+    color: #fff;
+    font-size: 18px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+    a{
+      font-size: 19px;
+    }
+}
+#leftSection{
+  .color{
+    background: #000;
+    color: #fff;
+    text-align: justify;
+    h1{
+      text-align:center;
+      padding: 94px;
+
+    }
+  }
+  .nocolor{
+    padding: 48px 100px;
+    background: #fffacd;
+    text-align: justify;
+  }
+}

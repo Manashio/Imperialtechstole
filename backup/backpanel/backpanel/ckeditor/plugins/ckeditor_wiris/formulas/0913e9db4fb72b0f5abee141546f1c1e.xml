@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mmultiscripts><mi mathvariant="normal">X</mi><none/><none/><mprescripts/><mi mathvariant="normal">Z</mi><mi mathvariant="normal">A</mi></mmultiscripts><mo>&nbsp;</mo><mo>&nbsp;</mo><mo>&nbsp;</mo><mo>&#8594;</mo><mo>&nbsp;</mo><mo>&nbsp;</mo><mo>&nbsp;</mo><mmultiscripts><mi mathvariant="normal">Y</mi><none/><none/><mprescripts/><mrow><mi mathvariant="normal">Z</mi><mo>+</mo><mn>1</mn></mrow><mi mathvariant="normal">A</mi></mmultiscripts><mo>&nbsp;</mo><mo>&nbsp;</mo><mo>&nbsp;</mo><mo>&#8594;</mo><mo>&nbsp;</mo><mo>&nbsp;</mo><mo>&nbsp;</mo><mmultiscripts><mrow><msup><mi mathvariant="normal">B</mi><mo>*</mo></msup><mo>&nbsp;</mo></mrow><none/><none/><mprescripts/><mrow><mi mathvariant="normal">Z</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi mathvariant="normal">A</mi><mo>-</mo><mn>4</mn></mrow></mmultiscripts><mo>&nbsp;</mo><mo>&nbsp;</mo><mo>&#8594;</mo><mo>&nbsp;</mo><mo>&nbsp;</mo><mo>&nbsp;</mo><mmultiscripts><mi mathvariant="normal">B</mi><none/><none/><mprescripts/><mrow><mi mathvariant="normal">Z</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi mathvariant="normal">A</mi><mo>-</mo><mn>4</mn></mrow></mmultiscripts></math>
+
+
+true
+
+
+
+
+
+
+

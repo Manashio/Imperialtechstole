@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced close="|" open="|"><mtable><mtr><mtd><mi>x</mi></mtd><mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd><mtd><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mtd></mtr><mtr><mtd><mn>2</mn><mi>x</mi></mtd><mtd><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi></mtd><mtd><mn>4</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>+</mo><mn>2</mn><mi>z</mi></mtd></mtr><mtr><mtd><mn>3</mn><mi>x</mi></mtd><mtd><mn>6</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi></mtd><mtd><mn>10</mn><mi>x</mi><mo>+</mo><mn>6</mn><mi>y</mi><mo>+</mo><mn>3</mn><mi>z</mi></mtd></mtr></mtable></mfenced><mo>=</mo><mn>64</mn><mo>&nbsp;</mo><mo>,</mo><mo>&nbsp;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mi>n</mi><mo>&nbsp;</mo><mi>x</mi><mo>=</mo></math>
+
+
+true
+
+
+
+
+
+
+

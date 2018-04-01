@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><munder><mi mathvariant="normal">lim</mi><mrow><mi>x</mi><mo>&#8594;</mo><mfrac><mi>&#960;</mi><mn>4</mn></mfrac></mrow></munder><mfrac><mrow><mi mathvariant="normal">sin</mi><mi>x</mi><mo>-</mo><mi mathvariant="normal">cos</mi><mi>x</mi></mrow><mrow><mi>x</mi><mo>-</mo><mfrac><mi>&#960;</mi><mn>4</mn></mfrac></mrow></mfrac><mo>=</mo></math>
+
+
+true
+
+
+
+
+
+
+

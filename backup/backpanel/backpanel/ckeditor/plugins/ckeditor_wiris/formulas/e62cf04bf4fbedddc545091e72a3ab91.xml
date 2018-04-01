@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><munder><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow><mrow><mi>x</mi><mo>&#8594;</mo><mn>1</mn></mrow></munder><mfrac><mrow><mi>x</mi><mi mathvariant="normal">sin</mi><mo>{</mo><mi>x</mi><mo>-</mo><mo>[</mo><mi>x</mi><mo>]</mo><mo>}</mo></mrow><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>,</mo></math>
+
+
+true
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>I</mi><mi>f</mi><mo>&nbsp;</mo><msup><mi mathvariant="normal">tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfrac><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>2</mn></mrow></mfrac><mo>+</mo><msup><mi mathvariant="normal">tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mi>&#960;</mi><mn>4</mn></mfrac><mo>,</mo><mo>&nbsp;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mi>n</mi><mo>&nbsp;</mo><mi>x</mi><mo>=</mo></math>
+
+
+true
+
+
+
+
+
+
+

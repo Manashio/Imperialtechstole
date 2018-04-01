@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mfenced><mrow><mfrac><mrow><mi>y</mi><mo>+</mo><mn>1</mn></mrow><mrow><msup><mi>y</mi><mfrac><mn>2</mn><mn>3</mn></mfrac></msup><mo>-</mo><msup><mi>y</mi><mfrac><mn>1</mn><mn>3</mn></mfrac></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mo>-</mo><mfrac><mrow><mi>y</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi>y</mi><mo>-</mo><msup><mi>y</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup></mrow></mfrac></mrow></mfenced><mn>10</mn></msup></math>
+
+
+true
+
+
+
+
+
+
+

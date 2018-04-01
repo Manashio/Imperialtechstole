@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi mathvariant="normal">log</mi><msqrt><mn>5</mn></msqrt></msub><mi mathvariant="normal">x</mi><mo>+</mo><msub><mi mathvariant="normal">log</mi><msup><mn>5</mn><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></msub><mi mathvariant="normal">x</mi><mo>+</mo><msub><mi mathvariant="normal">log</mi><msup><mn>5</mn><mrow><mn>1</mn><mo>/</mo><mn>4</mn></mrow></msup></msub><mi mathvariant="normal">x</mi><mo>+</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mi mathvariant="normal">upto</mi></math>
+
+
+true
+
+
+
+
+
+
+

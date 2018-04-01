@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">If</mi><mo>&nbsp;</mo><msub><mi mathvariant="normal">z</mi><mn>1</mn></msub><mo>,</mo><mo>&nbsp;</mo><msub><mi mathvariant="normal">z</mi><mn>2</mn></msub><mo>&nbsp;</mo><mi mathvariant="normal">are</mi><mo>&nbsp;</mo><mi mathvariant="normal">two</mi><mo>&nbsp;</mo><mi mathvariant="normal">complex</mi><mo>&nbsp;</mo><mi mathvariant="normal">numbers</mi><mo>&nbsp;</mo><mi mathvariant="normal">such</mi><mo>&nbsp;</mo><mi mathvariant="normal">that</mi><mo>&nbsp;</mo><mi mathvariant="normal">Im</mi><mo>(</mo><msub><mi mathvariant="normal">z</mi><mn>1</mn></msub><mo>+</mo><msub><mi mathvariant="normal">z</mi><mn>2</mn></msub><mo>)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mo>&nbsp;</mo><mi mathvariant="normal">Im</mi><mo>(</mo><msub><mi mathvariant="normal">z</mi><mn>1</mn></msub><msub><mi mathvariant="normal">z</mi><mn>2</mn></msub><mo>)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mo>&nbsp;</mo><mi mathvariant="normal">then</mi></math>
+
+
+true
+
+
+
+
+
+
+

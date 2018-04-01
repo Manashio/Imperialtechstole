@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mtable columnalign="left" rowspacing="0"><mtr><mtd><mi>L</mi><mi>e</mi><mi>t</mi><mo>&nbsp;</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfenced close="|" open="|"><mtable><mtr><mtd><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mo>(</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup><mo>)</mo><mi mathvariant="normal">cos</mi><mi>x</mi></mtd><mtd><mi>a</mi><mi>b</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi mathvariant="normal">cos</mi><mi>x</mi><mo>)</mo></mtd><mtd><mi>a</mi><mi>c</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi mathvariant="normal">cos</mi><mi>x</mi><mo>)</mo></mtd></mtr><mtr><mtd><mi>b</mi><mi>a</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi mathvariant="normal">cos</mi><mi>x</mi><mo>)</mo></mtd><mtd><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><mo>(</mo><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><mo>)</mo><mi mathvariant="normal">cos</mi><mi>x</mi></mtd><mtd><mi>b</mi><mi>c</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi mathvariant="normal">cos</mi><mi>x</mi><mo>)</mo></mtd></mtr><mtr><mtd><mi>c</mi><mi>a</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi mathvariant="normal">cos</mi><mi>x</mi><mo>)</mo></mtd><mtd><mi>c</mi><mi>b</mi><mo>(</mo><mn>1</mn><mo>-</mo><mi mathvariant="normal">cos</mi><mi>x</mi><mo>)</mo></mtd><mtd><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mo>(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>)</mo><mi mathvariant="normal">cos</mi><mi>x</mi></mtd></mtr></mtable></mfenced><mo>&nbsp;</mo><mi>w</mi><mi>h</mi><mi>e</mi><mi>r</mi><mi>e</mi><mo>&nbsp;</mo><mi>x</mi><mo>&#8712;</mo><mo>[</mo><mfrac><mi>&#960;</mi><mn>2</mn></mfrac><mo>,</mo><mfrac><mi>&#960;</mi><mn>2</mn></mfrac><mo>]</mo></mtd></mtr><mtr><mtd><mi>a</mi><mi>n</mi><mi>d</mi><mo>&nbsp;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>.</mo><mi>c</mi><mo>&nbsp;</mo><mi>a</mi><mi>r</mi><mi>e</mi><mo>&nbsp;</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>s</mi><mi mathvariant="normal">tan</mi><mi>t</mi><mi>s</mi><mo>.</mo></mtd></mtr></mtable></math>
+
+
+true
+
+
+
+
+
+
+

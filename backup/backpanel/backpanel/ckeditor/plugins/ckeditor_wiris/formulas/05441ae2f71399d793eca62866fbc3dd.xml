@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced close="]" open="["><mtable><mtr><mtd><msup><mi>a</mi><mn>2</mn></msup></mtd><mtd><mi>a</mi><mi>b</mi></mtd><mtd><mi>a</mi><mi>c</mi></mtd></mtr><mtr><mtd><mi>a</mi><mi>b</mi></mtd><mtd><msup><mi>b</mi><mn>2</mn></msup></mtd><mtd><mi>b</mi><mi>c</mi></mtd></mtr><mtr><mtd><mi>a</mi><mi>c</mi></mtd><mtd><mi>b</mi><mi>c</mi></mtd><mtd><msup><mi>c</mi><mn>2</mn></msup></mtd></mtr></mtable></mfenced></math>
+
+
+true
+
+
+
+
+
+
+

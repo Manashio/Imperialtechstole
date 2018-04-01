@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">&#916;r</mi><mo>=</mo><mfenced close="|" open="|"><mtable><mtr><mtd><mn>2</mn><mi mathvariant="normal">r</mi><mo>-</mo><mn>1</mn></mtd><mtd><msub><mmultiscripts><mi mathvariant="normal">C</mi><none/><none/><mprescripts/><none/><mi mathvariant="normal">m</mi></mmultiscripts><mi mathvariant="normal">r</mi></msub></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mtd><mtd><msup><mn>2</mn><mi mathvariant="normal">m</mi></msup></mtd><mtd><mi mathvariant="normal">m</mi><mo>+</mo><mn>1</mn></mtd></mtr><mtr><mtd><msup><mi mathvariant="normal">sin</mi><mn>2</mn></msup><mo>(</mo><msup><mi mathvariant="normal">m</mi><mn>2</mn></msup><mo>)</mo></mtd><mtd><msup><mi mathvariant="normal">sin</mi><mn>2</mn></msup><mo>(</mo><mi mathvariant="normal">m</mi><mo>)</mo></mtd><mtd><msup><mi mathvariant="normal">sin</mi><mn>2</mn></msup><mo>(</mo><mi mathvariant="normal">m</mi><mo>+</mo><mn>1</mn><mo>)</mo></mtd></mtr></mtable></mfenced></math>
+
+
+true
+
+
+
+
+
+
+

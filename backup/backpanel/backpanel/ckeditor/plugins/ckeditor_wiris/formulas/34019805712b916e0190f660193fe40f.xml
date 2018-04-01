@@ -1,0 +1,11 @@
+<math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">If</mi><mo>&nbsp;</mo><mo>(</mo><msub><mi mathvariant="normal">a</mi><mn>1</mn></msub><mo>+</mo><msub><mi mathvariant="normal">ib</mi><mn>1</mn></msub><mo>)</mo><mo>(</mo><msub><mi mathvariant="normal">a</mi><mn>2</mn></msub><mo>+</mo><msub><mi mathvariant="normal">ib</mi><mn>2</mn></msub><mo>)</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>+</mo><msub><mi mathvariant="normal">ib</mi><mi mathvariant="normal">n</mi></msub><mo>)</mo><mo>=</mo><mi mathvariant="normal">A</mi><mo>+</mo><mi mathvariant="normal">iB</mi><mo>,</mo><mo>&nbsp;</mo><mi mathvariant="normal">then</mi><mo>&nbsp;</mo><munderover><mrow><mo>&#8721;</mo><mo>&nbsp;</mo><msup><mi mathvariant="normal">tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><msub><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi></msub><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">i</mi></msub></mfrac></mfenced><mo>&nbsp;</mo><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mo>&nbsp;</mo><mi mathvariant="normal">e</mi><mi mathvariant="normal">q</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mo>&nbsp;</mo><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi></mrow><mrow><mi mathvariant="normal">i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">n</mi></munderover></math>
+
+
+true
+
+
+
+
+
+
+

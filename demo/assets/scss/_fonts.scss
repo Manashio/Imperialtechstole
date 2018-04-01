@@ -1,0 +1,46 @@
+// add fonts------------
+
+@font-face {
+  font-family: scadaBold;
+  src: url(../fonts/Scada-bold.ttf);
+}
+@font-face {
+  font-family: scadaBoldItalic;
+  src: url(../fonts/Scada-BoldItalic.ttf);
+}
+@font-face {
+  font-family: scadaItalic;
+  src: url(../fonts/Scada-Italic.ttf);
+}
+@font-face {
+  font-family: scadaRegular;
+  src: url(../fonts/Scada-Regular.ttf);
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: 'scadaBold', sans-serif;
+}
+body p,a{
+  font-family: 'scadaRegular', sans-serif;
+  font-size: 20px;
+}
+h1{
+  font-size: 50px;
+}
+h2{
+  font-size: 45px;
+}
+h3{
+  font-size: 35px;
+}
+h4{
+  font-size: 30px;
+}
+h5{
+  font-size: 28px;
+}
+h6{
+  font-size: 25px;
+}
+section{
+  padding: 30px 100px;
+}
