@@ -4,66 +4,12 @@
 	<meta charset="utf-8">
 
 	<title>Imperialtechstole : Home </title>
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-     <link rel="stylesheet" type="text/css" href="dev/assets/css/app.css">
-     <link rel="stylesheet" type="text/css" href="dev/assets/css/custom.css">
-     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-
+	<?php require('header/component.php'); ?>
+	
 </head>
 <body>
-	<div class="menu-top">
-          <div class="row">
-               <div class="col-md-3">
-                    <div class="ml-5">
-                         <a href="" class="brand-icon text-center" >Brand</a>
-                    </div>
-                        
-               </div>
-               <div class="col-md-5">
-               <div class="search1">
-                         <form action="">
-                         <i class="fas fa-search searchicon"></i> 
-                          <input class="search1 ml-2" type="text" placeholder="Search here"> 
-                         </form>
 
-                    </div>
-               </div>
-
-               <div class="col-md-1">
-                    <a href="#" class="btn org" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Get started</a>
-               </div>
-
-               <div class="col-md-3">
-                    <div id="target" class="hum-btn pt-3 pr-5">   
-                         <span></span>
-                         <span></span>
-                         <span></span>
-                    </div>
-               </div>
-
-          </div>
-          
-     </div>
-     
-	<nav id="menu">
-			<ul class="sidenav">
-				<li><a href="#"><i class="fas fa-home mr-2"></i>  Home</a></li>
-				<li><a href="#"><i class="fas fa-wrench mr-2"></i>  Service</a></li>
-				<li><a href="#"><i class="fas fa-home mr-2"></i>  About Us</a></li>
-				<li><a href="#"><i class="fas fa-home mr-2"></i>  Contact Us</a></li>
-			</ul>
-	</nav>
-
-
-	
-		</div>
-
-
-
-     <div class="div"></div>
+<?php require('header/navbar.php'); ?>
 	<div class="title-box">
 		
 		<div class="container pt-5">
@@ -74,6 +20,7 @@
 	</div>
 
 
+	
 
 	<div class="cover-img">
 		
@@ -111,59 +58,6 @@
 	</div>
 
 
-	<section>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6  pt-5 pb-5">
-				<h4 class="title-heading text-center pt-5 pb-4">Happy Customers</h4>
-					<div class="happy_client mb-5">
-						<i class="far fa-smile"></i> John Doe
-					</div>
-
-					<div class="happy_client mb-5">
-						<i class="far fa-smile"></i> Sara Doe
-					</div>
-
-					<div class="happy_client mb-5">
-						<i class="far fa-smile"></i> John Doe
-					</div>
-
-
-			</div>
-
-			<div class="col-md-6 pt-5 pb-5 ">
-				<h4 class="title-heading text-center pt-5">
-					 Get in touch
-				</h4>
-				<div class="form pb-5">
-					<form action="store/mail.php" method="POST">
-					<div class="form-group pt-4">
-					<!-- <label for="name" class="col-form-label">Your name:</label> -->
-						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe">
-					</div>
-
-					<div class="form-group pt-4">
-					<!-- <label for="email" class="col-form-label">Your Email:</label> -->
-						<input type="text" class="form-control input_bar" id="email" name="email" placeholder="Email : Johndoe@gmail.com">
-					</div>
-
-					<div class="form-group pt-4">
-					<!-- <label for="phone" class="col-form-label">Your Phone no:</label> -->
-						<input type="text" class="form-control input_bar" id="phone" name="phone" placeholder="Phone no : 9706300000">
-					</div>
-
-					<div class="form-group pt-4">
-					<!-- <label for="message-text" class="col-form-label">Message:</label> -->
-					<textarea class="form-control input_bar" id="message-text" name="message" placeholder="message : Ask me anything"></textarea>
-					</div>
-						<button type="submit" class="btn mt-3 custom_btn">Send message</button>
-					</form>
-	     		</div>
-			</div>	
-
-		</div>
-	</div>
-	</section>
 
 	<div class="cover-img small_cover">	
 	</div>
@@ -214,10 +108,7 @@
 			</div>
 		</section>
 
-	<footer>
-
-	</footer>
-
+<?php require('footer/footer.php'); ?>
 
 <!--Model-->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -261,17 +152,7 @@
   </div>
 </div>
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     <script>
-     	$(document).ready(function(){
-		$("#target").click( function(){
-			$("#menu").toggleClass('active');
-			$(".div").toggleClass('off');
-			$("#target").toggleClass('on');
-		});	
-	});
-     </script>
+   <?php require("footer/component.php");?>
 
 </body>
 </html>

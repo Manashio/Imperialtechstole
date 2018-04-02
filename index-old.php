@@ -28,39 +28,6 @@ $data = getstaticPagesContant($dbquery, 9);
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
 
-<script type="application/x-javascript">
-            addEventListener("load", function() {
-            setTimeout(hideURLbar, 0);
-            }, false);
-            function hideURLbar() {
-            window.scrollTo(0, 1);
-            }
-var sPageURL = window.location.search.substring(1);
-if(sPageURL != ""){
-sPageURLww = sPageURL.split("=");
-if(sPageURLww[1]=="Y"){
-alert("Mail send successfully");
-
-}else{
-alert("Mail Not sent");
-}
-}
-        </script>
-        <meta name="google-site-verification" content="xKuZ6HFHj4VzyydW0UmD89hd2zuIEk3fO-WXu906_vo" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115469934-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-115469934-1');
-</script>
-<!--CUTOM-->
-
-
-
-
 <!---CUTOM-->
         
 </head>
@@ -72,7 +39,7 @@ alert("Mail Not sent");
   <div class="preloader"></div>
   
   <!-- Main Header -->
-  <?php //include('common/mainheader.php'); ?>
+  <?php include('common/mainheader.php'); ?>
   <!--End Main Header --> 
   
   <!--Main Slider--> 
