@@ -87,7 +87,9 @@ nav{
 	float: left;
 	width: 100%;
 	height: 100vh;
-	background: #eee;
+	background: #eee url('');
+	background-size: cover;
+	
 }
 .menu-top{
      width: 100%;
@@ -101,8 +103,9 @@ nav{
 
 nav{
      width: 250px;
-     height: 100vh;
-     background: #24292e;
+	height: 100vh;
+	background: #fff;
+     /* background: #24292e; */
      position: fixed;
      float: left;
      right: -250px;
@@ -126,12 +129,18 @@ nav{
      padding: 15px 0px;
      text-decoration: none;
      text-transform: uppercase;
-     color: #fff;
+     color: #333;
      text-align: left;
-     padding-left: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+	border-left: 4px solid #fff;
+	transition: 0.2s;
 }
 .sidenav li a:hover{
-     background: #3b3e42;
+	/* background: #3b3e42;
+	background: #eee; */
+	color: #6031b9;
+	border-left: 4px solid #6031b9;
 }
 .active{
      right: 0px;
@@ -174,17 +183,17 @@ nav{
 }
 
 .brand-icon{
-	background: #fff;
-	position: relative;	
-	float:left;
-	padding:24px 0px; 
+	padding:22px 30px; 
 	display: inline-block;
 	margin-top: 0px;
-	color: #333!important;
-	text-transform: uppercase; 
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom: 2px solid transparent;
 }
 .brand-icon:hover{
 	color: #eee!important;
+	background: #8253dc;
+	border-bottom: 2px solid #fff;
 }
 
 .search1{
@@ -210,4 +219,72 @@ nav{
 	border: 2px solid var(--white);
 	color: #fff;
 	margin:13px;
+}
+.org:hover{
+	background: #fff;
+	color: #8253dc!important;
+}
+.input_bar{
+	border: 0px !important;
+	border-radius:0px;
+	border-bottom: 1px solid #CCC!important;
+	transition: 0.4s;
+}
+.input_bar:hover{
+	border-bottom: 1px solid #999!important;
+}
+.input_bar:focus{
+	border-bottom: 1px solid #8253dc!important;
+}
+:focus{
+	outline: 0px !important;
+	box-shadow: 0px 0px 0px !important;
+}
+/*icon*/
+.lg{
+	color: slateblue;
+	font-size: 30px;
+}
+
+/*cover img*/
+.small_cover{
+	height: 400px;
+}
+
+/*happy_client*/
+.happy_client{
+	width:200px;
+	padding: 8px 20px;
+	background: #fff;
+	border: 2px solid #6031b9;
+	border-radius: 50px;	
+	font-size:18px;
+	text-align: left;
+	display: block;
+	color: #6031b9;
+	margin: 0 auto;
+	transition: 0.3s;
+}
+.happy_client:hover{
+	background: #6031b9;
+	color: #fff;
+}
+.custom_btn{
+	background:#6031b9;
+	border: 2px solid #6031b9;
+	color: #fff;	border-radius: 50px;
+	padding: 10px 30px;
+}
+.custom_btn:hover{
+	background: #EEE;
+	border: 2px solid #6031b9;
+	color: #6031b9;
+
+}
+footer{	
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 400px;
+	background: #10011f;
 }
