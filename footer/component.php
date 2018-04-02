@@ -3,10 +3,18 @@
 	 <script src="../dev/assets/js/fontawesome.js"></script>
 	 <script>
      	$(document).ready(function(){
-		$("#target").click( function(){
-			$("#menu").toggleClass('active');
-			$(".div").toggleClass('off');
-			$("#target").toggleClass('on');
-		});	
-	});
+					$("#target").click( function(){
+					$("#menu").toggleClass('active');
+					$(".div").toggleClass('off');
+					$("#target").toggleClass('on');
+				});	
+
+				$("#block").click( function(){
+					$("#menu").toggleClass('active');
+					$(".div").toggleClass('off');
+					$("#target").toggleClass('on');
+				});
+
+		});
+
      </script>
