@@ -20,9 +20,6 @@
 		<a href="" class="title-link">View some of our products</a>
 	</div>
 
-
-	
-
 	<div class="cover-img">
 		
 	</div>
