@@ -1,6 +1,6 @@
-<div class="col-md-3">
+
         <div class="product-main-div">
-          <div class="product-heading">Products</div>
+          <!-- <div class="product-heading">Products</div> -->
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="headingOne">
@@ -106,4 +106,4 @@
           </div>
           <!-- panel-group --> 
         </div>
-      </div>
+     
