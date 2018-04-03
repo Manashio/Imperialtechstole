@@ -23,7 +23,6 @@ if($_SERVER['HTTP_HOST']=="localhost")
 {
 	define("DB_USERNAME",'root');
 	define("DB_PASSWORD",''); 
-	define("DB_PASSWORD2",'password'); 
 	define("DB_DNAME",'imperial_admin');
 	define("DB_HOST",'localhost');
 	
@@ -65,10 +64,8 @@ else
 }
    ## GET DB CONNECTION	
 $dbquery = new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_DNAME);
-if($dbquery->connect_errno < 0)
-{	
-$dbquery = new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD2,DB_DNAME);
-}else{
+if($dbquery->connect_errno > 0)
+{
 	die('Unable to connect to database ['.$dbquery->connect_error.']');
 }
 
