@@ -22,8 +22,8 @@ if($mnIncludePath=="") { $mnIncludePath .= "/"; }
 if($_SERVER['HTTP_HOST']=="localhost")
 {
 	define("DB_USERNAME",'root');
-	define("DB_PASSWORD",'password'); // @ -> for - > Manash ###############
-	//define("DB_PASSWORD",''); // ######  @ -> for - > nubul ############
+	define("DB_PASSWORD2",'password');
+	define("DB_PASSWORD",''); 
 	define("DB_DNAME",'imperial_admin');
 	define("DB_HOST",'localhost');
 	
@@ -66,8 +66,13 @@ else
    ## GET DB CONNECTION	
 $dbquery = new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_DNAME);
 if($dbquery->connect_errno > 0)
-{
-	die('Unable to connect to database ['.$dbquery->connect_error.']');
+{	
+	$dbquery = new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD2,DB_DNAME);
+	if($dbquery->connect_errno > 0)
+		{
+			die('Unable to connect to second database ['.$dbquery->connect_error.']');
+		}
+	
 }
 
  
