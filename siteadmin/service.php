@@ -17,6 +17,7 @@ $imagethumbpath = "../images/product/thumb/";
  
 $mtitle	= $dbquery->real_escape_string($_REQUEST['mtitle']);
 $mkeywords	= $dbquery->real_escape_string($_REQUEST['mkeywords']);
+$mcatagory = $dbquery->real_escape_string($_REQUEST['mcatagory']);
 $mdesc	= $dbquery->real_escape_string($_REQUEST['mdesc']);
 
 $catid = $_REQUEST['category'];
@@ -40,7 +41,7 @@ if($_FILES['fld_image']['name']!='')
 			$namefile = $_POST['fld_image1'];
 		 }
        move_uploaded_file($_FILES['fld_image']['tmp_name'],"../images/packages/".$namefile);
-//-------------------Serices Icon--------------------
+//-------------------Services Icon--------------------
    if($_FILES['fld_icon']['name']!='')
 		{	
 			
@@ -78,6 +79,7 @@ if($product_name!="")
 				    fld_catid = '".$catid."',
 				   fld_subcatid = '".$subcatid."',
 				   fld_product_name ='".$product_name."',
+				   fld_catagory ='".$mcatagory."',
 				   fld_price ='".$price."',
 				   fld_duration ='".$duration."',
 				   fld_destination ='".$destination."',
@@ -104,6 +106,7 @@ if($product_name!="")
 				   fld_company_id = '".$companyid."',
 				   fld_catid = '".$catid."',
 				   fld_subcatid = '".$subcatid."',
+				   fld_catagory ='".$catagory."',
 				   fld_product_code ='".$product_code."',
 			       fld_product_name ='".$product_name."',
 				     fld_icon ='".$nameicon."',
@@ -209,6 +212,22 @@ function subCategory()
 						<li>
 						<label>Meta Keywords:</label>
 						<input type="text" name="mkeywords" id="mkeywords" value="<?php echo $rowDisp->fld_mkeywords;?>" size="60" placeholder="Meta Keywords"  />
+						</li>
+						<li>
+						<label>Catagory selected:</label>
+						<?php echo $rowDisp->fld_catagory;?>
+						</li>
+						
+						<li>
+						<label>Catagory Change</label>
+						<select name="mcatagory" id="mcatagory" required>
+							<option value="">--Select one--</option>
+							<option value="audio/video">Audio/Video</option>
+							<option value="itnetworking">IT Networking</option>
+							<option value="securityservilance">Security Servilance</option>
+							<option value="solution">solution</option>
+							<option value="other">other</option>
+						</select>
 						</li>
 					 <!-- 	 <li>
 						<label>Category Name:</label>

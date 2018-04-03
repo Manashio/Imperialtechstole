@@ -8,12 +8,54 @@
 	<?php require('header/component.php'); ?>
 	
 	<style>
-	
+	#catagory{
+		margin-top:70px;
+	}
+		#catagory ul{
+			text-align:center;
+			margin:0px;
+			transition: 0.5s;
+		}
+		#catagory ul li{
+			display: inline-block;
+		}
+		#catagory ul li a{
+			display: block;
+			padding: 10px 40px;
+			color:#8253dc;
+		}
+
+		#catagory ul li ul{
+			position: absolute;			
+			display: none;
+			background: #fff;
+			z-index:1;
+		}
+		
+		#catagory ul li:hover ul {
+			display: block;
+		}
+		
+		#catagory ul li:hover a{
+		}
+		#catagory ul li ul li{
+			display: block;			
+		}
+		
+		#catagory ul li ul li a{
+			padding: 8px 40px;
+			text-align: center;
+
+		}
+		
+		
 	</style>
 </head>
 <body>
 
 <?php require('header/navbar.php'); ?>
+<?php require('header/catagory.php'); ?>
+
 	<div class="title-box">
 		
 		<div class="container pt-5">
@@ -151,7 +193,7 @@
 		</section>
 
 <?php require('footer/footer.php'); ?>
-   <?php require("footer/component.php");?>
+<?php require("footer/component.php");?>
 
 </body>
 </html>
