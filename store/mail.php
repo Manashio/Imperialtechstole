@@ -18,28 +18,30 @@ if(empty($_POST)===false){
                     <div class='input-group-prepend'>
                       <span class='input-group-text' id='basic-addon1'>Name</span>
                     </div>
-                    <input type='text' class='form-control' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$name.">
+                    <input type='text' class='form-control' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$name.">
                   </div>
 
                   <div class='input-group mb-3 mt-2'>
                     <div class='input-group-prepend'>
                       <span class='input-group-text' id='basic-addon1'>Email</span>
                     </div>
-                    <input type='text' class='form-control' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$email.">
+                    <input type='text' class='form-control' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$email.">
                   </div>
 
                   <div class='input-group mb-3 mt-2'>
                     <div class='input-group-prepend'>
                       <span class='input-group-text' id='basic-addon1'>Phone no</span>
                     </div>
-                    <input type='text' class='form-control' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$phone.">
+                    <input type='text' class='form-control' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$phone.">
                   </div>
 
                   <div class='input-group mb-3 mt-2'>
                     <div class='input-group-prepend'>
                       <span class='input-group-text' id='basic-addon1'>Message</span>
                     </div>
-                    <input type='text' class='form-control' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$message.">
+                    
+
+                    <textarea class='form-control' aria-describedby='basic-addon1' disabled >".$message."</textarea>
                   </div>
                   
                   

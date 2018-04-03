@@ -145,8 +145,8 @@
 		</div>
 
 		<section>
-			<div class="container ">
-				<h1>Find us</h1>
+			<div class="container pt-5 pb-5">
+				<h1 class="pt-5 pb-5">Find us</h1>
 			</div>
 		</section>
 

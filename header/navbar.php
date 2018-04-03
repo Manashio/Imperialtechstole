@@ -1,18 +1,18 @@
 <div class="menu-top">
           <div class="row">
-               <div class="col-md-3">
-                    <div class="ml-5">
-                         <a href="index.php" class="brand-icon text-center" >Brand</a>
-                    </div>
-                        
-               </div>
-               <div class="col-md-5">
-               <div class="search1">
-                         <form action="">
-                         <i class="fas fa-search searchicon"></i> 
-                          <input class="search1 ml-2" type="text" placeholder="Search here"> 
-                         </form>
 
+               <!-- <div class="col-md-3">
+                    <div class="">
+                         <a href="index.php" class="brand-icon text-center" >Brand</a>
+                    </div>    
+			   </div>
+			   
+               <div class="col-md-5">
+               		<div class="search1">
+                         <form action="">
+                    	     <i class="fas fa-search searchicon"></i> 
+                        	  <input class="search1 ml-2" type="text" placeholder="Search here"> 
+                         </form>
                     </div>
                </div>
 
@@ -26,7 +26,29 @@
                          <span></span>
                          <span></span>
                     </div>
-               </div>
+			   </div> -->
+			   
+			   <div class="col-3">
+			   		<a href="index.php" class="brand-icon text-center" >Brand</a>
+				</div>
+				<div class="col-5">
+					<div class="search1">
+                         <form action="">
+                    	     <i class="fas fa-search searchicon"></i> 
+							  <input class="search1 ml-2" type="text" placeholder="Search here"> 
+							 
+                         </form>
+					</div>
+				</div>
+
+				<div class="col">
+				<a href="#" class="btn org" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Get started</a>
+					<div id="target" class="hum-btn pt-3 pr-5">   
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                    </div>
+				</div>
 
           </div>
           
