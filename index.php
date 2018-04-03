@@ -29,14 +29,16 @@
 		<div class="row">
 
 			<div class="col-sm-4">
-
+				<a href="video-wall.php">
 					<div class="product-box">
 					<div class="img">
 					<img src="http://www.rawstockmedia.com/photos/high-tech-laptops-for-passionate-gamers-pictures/High-Tech-Laptops-for-Passionate-Gamers2.jpg" alt="" >
 					</div>
-				<h2 class="text-center">Some Product</h2>
+				<h2 class="text-center">Video Walls</h2>
 				</div>
+				</a>
 			</div>
+
 
 				<div class="col-sm-4">
 				<div class="product-box">
@@ -181,14 +183,15 @@
             <label for="message-text" class="col-form-label">Message:</label>
             <textarea class="form-control" id="message-text" name="message"></textarea>
           </div>
-
+					<div class="modal-footer">
+						<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+						<button type="submit" class="btn btn-primary">Send message</button>
+					</div>
         </form>
+
+
       </div>
-      <div class="modal-footer">
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-        <button type="submit" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
+     </div>
   </div>
 </div>
 

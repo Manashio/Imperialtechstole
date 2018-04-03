@@ -34,10 +34,10 @@
      
 	<nav id="menu">
 			<ul class="sidenav">
-				<li><a href="#"><i class="fas fa-home mr-2"></i>  Home</a></li>
+				<li><a href="index.php"><i class="fas fa-home mr-2"></i>  Home</a></li>
 				<li><a href="#"><i class="fas fa-wrench mr-2"></i>  Service</a></li>
 				<li><a href="#"><i class="fas fa-home mr-2"></i>  About Us</a></li>
-				<li><a href="#"><i class="fas fa-home mr-2"></i>  Contact Us</a></li>
+				<li><a href="contact-us.php"><i class="fas fa-home mr-2"></i>  Contact Us</a></li>
 			</ul>
 	</nav>
      <div class="div" id="block"></div>
