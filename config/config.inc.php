@@ -2,6 +2,8 @@
 error_reporting(0);	
 session_start();
 
+//haga lagise ooo
+
 date_default_timezone_set("Asia/Kolkata");
 
 $arrGPath = explode("/", $_SERVER['SCRIPT_NAME']);
