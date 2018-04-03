@@ -1,7 +1,8 @@
 <?php include("config/config.inc.php");
+$id = $_GET['id'];
 
 $data = getstaticPagesContant($dbquery, 9);
-$query = mysqli_query($dbquery, "SELECT * FROM tbl_service");
+$query = mysqli_query($dbquery, "SELECT * FROM tbl_service where fld_id='$id'");
 ?>
 <!DOCTYPE html>
 <html lang="en">
