@@ -3,6 +3,8 @@ $id = $_GET['id'];
 
 $data = getstaticPagesContant($dbquery, 9);
 $query = mysqli_query($dbquery, "SELECT * FROM tbl_service where fld_id='$id'");
+$query2 = mysqli_query($dbquery, "SELECT * FROM tbl_service where fld_id='$id'");
+$array = mysqli_fetch_array($query2);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,7 +76,7 @@ $query = mysqli_query($dbquery, "SELECT * FROM tbl_service where fld_id='$id'");
   <!-- Start change content here -->
         <section id="all-product">
         <div class="banner">            
-            <h1 class="text-center">Our Products</h1>
+            <h1 class="text-center"><?php echo $array['fld_product_name'] ?></h1>
 
         </div>
         
