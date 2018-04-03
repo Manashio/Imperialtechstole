@@ -22,7 +22,8 @@ if($mnIncludePath=="") { $mnIncludePath .= "/"; }
 if($_SERVER['HTTP_HOST']=="localhost")
 {
 	define("DB_USERNAME",'root');
-	define("DB_PASSWORD",''); 
+	define("DB_PASSWORD",'password'); // @ -> for - > Manash ###############
+	//define("DB_PASSWORD",''); // ######  @ -> for - > nubul ############
 	define("DB_DNAME",'imperial_admin');
 	define("DB_HOST",'localhost');
 	
