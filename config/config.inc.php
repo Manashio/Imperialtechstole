@@ -35,6 +35,20 @@ if($_SERVER['HTTP_HOST']=="localhost")
 	define('PAGE_NAME', $arrGPath[2]);
 	
 }
+elseif($_SERVER['HTTP_HOST']=="localhost"){
+	define("DB_USERNAME",'root');
+	define("DB_PASSWORD",'password'); 
+	define("DB_DNAME",'imperial_admin');
+	define("DB_HOST",'localhost');
+	
+	#set path
+	define("BASE_PATH", $mnIncludePath);
+	define("DB_ENABLE_URL_REWRITING",0); //0 to disable or 1 to enable
+	define("WEBSITE_URL", "http://localhost/zhang_eng/");
+	define('FILES_PATH_4_INCLUDE', $_SERVER['DOCUMENT_ROOT'] . BASE_PATH);
+	define('ROOT_PATH_URL', $_SERVER['DOCUMENT_ROOT']."/zhang_eng/");
+	define('PAGE_NAME', $arrGPath[2]);
+}
 else
 {
 	/*
