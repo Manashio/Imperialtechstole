@@ -7,6 +7,9 @@
 	<title>Imperialtechstole : Home </title>
 	<?php require('header/component.php'); ?>
 	
+	<style>
+	
+	</style>
 </head>
 <body>
 
@@ -19,6 +22,45 @@
 
 		<a href="" class="title-link">View some of our products</a>
 	</div>
+
+
+<section id="productSection">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-4">
+
+					<div class="product-box">
+					<div class="img">
+					<img src="http://www.rawstockmedia.com/photos/high-tech-laptops-for-passionate-gamers-pictures/High-Tech-Laptops-for-Passionate-Gamers2.jpg" alt="" >
+					</div>
+				<h2 class="text-center">Some Product</h2>
+				</div>
+			</div>
+
+				<div class="col-sm-4">
+				<div class="product-box">
+					<div class="img">
+					<img src="http://www.rawstockmedia.com/photos/high-tech-laptops-for-passionate-gamers-pictures/High-Tech-Laptops-for-Passionate-Gamers2.jpg" alt="" >
+					</div>
+				<h2 class="text-center">Some Product</h2>
+				</div>
+			</div>
+
+				
+				<div class="col-sm-4">
+				<div class="product-box">
+					<div class="img">
+					<img src="http://www.rawstockmedia.com/photos/high-tech-laptops-for-passionate-gamers-pictures/High-Tech-Laptops-for-Passionate-Gamers2.jpg" alt="" >
+					</div>
+				<h2 class="text-center">Some Product</h2>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</section>
 
 	<div class="cover-img">
 		
@@ -52,13 +94,13 @@
 	</section>
 
 
-	<div class="cover-img small_cover">	
-	</div>
-
 
 
 	<div class="cover-img small_cover">	
 	</div>
+
+
+
 
 
 	<section>

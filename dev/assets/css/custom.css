@@ -156,8 +156,9 @@
 	float: left;
 	width: 100%;
 	height: 100vh;
-	background: #eee url('');
+	background: #eee url('https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
 	background-size: cover;
+	background-position: center center;
 	
 }
 .menu-top{
@@ -371,4 +372,32 @@ footer ul{
 footer ul li a{
 	color:#fff;
 	text-decoration: none;
+}
+#productSection{
+	padding:50px;
+}
+#productSection .product-box{
+
+	border: 2px solid #eee;
+	height: auto;
+	width: 100%;
+	padding: 15px;
+}
+
+#productSection .product-box .img{
+	width: 100%;
+	height: 250px;
+	background: #ccc;
+}
+
+#productSection .product-box h2{
+	margin:0px;
+	padding:10px;
+	font-size: 20px;
+	color: #555;
+	margin-top: 15px;
+}
+#productSection .product-box .img img{
+	width: inherit;
+	height:inherit;
 }
