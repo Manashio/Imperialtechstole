@@ -20,7 +20,7 @@
 			<h1 class="title-heading pt-5">Connecting technologies <br> with their audience.</h1>
 		</div>
 
-		<a href="" class="title-link">View some of our products</a>
+		<a href="all-products.php" class="title-link">View All of our products</a>
 	</div>
 
 
