@@ -23,6 +23,7 @@ if($_SERVER['HTTP_HOST']=="localhost")
 {
 	define("DB_USERNAME",'root');
 	define("DB_PASSWORD",''); 
+	define("DB_PASSWORD2",'password'); 
 	define("DB_DNAME",'imperial_admin');
 	define("DB_HOST",'localhost');
 	
@@ -34,20 +35,6 @@ if($_SERVER['HTTP_HOST']=="localhost")
 	define('ROOT_PATH_URL', $_SERVER['DOCUMENT_ROOT']."/zhang_eng/");
 	define('PAGE_NAME', $arrGPath[2]);
 	
-}
-elseif($_SERVER['HTTP_HOST']=="localhost"){
-	define("DB_USERNAME",'root');
-	define("DB_PASSWORD",'password'); 
-	define("DB_DNAME",'imperial_admin');
-	define("DB_HOST",'localhost');
-	
-	#set path
-	define("BASE_PATH", $mnIncludePath);
-	define("DB_ENABLE_URL_REWRITING",0); //0 to disable or 1 to enable
-	define("WEBSITE_URL", "http://localhost/zhang_eng/");
-	define('FILES_PATH_4_INCLUDE', $_SERVER['DOCUMENT_ROOT'] . BASE_PATH);
-	define('ROOT_PATH_URL', $_SERVER['DOCUMENT_ROOT']."/zhang_eng/");
-	define('PAGE_NAME', $arrGPath[2]);
 }
 else
 {
@@ -78,8 +65,10 @@ else
 }
    ## GET DB CONNECTION	
 $dbquery = new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_DNAME);
-if($dbquery->connect_errno > 0)
-{
+if($dbquery->connect_errno < 0)
+{	
+$dbquery = new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD2,DB_DNAME);
+}else{
 	die('Unable to connect to database ['.$dbquery->connect_error.']');
 }
 
