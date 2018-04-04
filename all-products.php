@@ -36,19 +36,35 @@ $query = mysqli_query($dbquery, "SELECT * FROM tbl_service");
             width: 250px;
             height: 250px;
             text-align: center;
+
         }
         #all-product .product-list{
+            background:#fff;
+            height:220px;
+            overflow: hidden;
+            border:2px solid #fff;
+            transition: 0.5s;
+
+        }
+        #all-product .product-list:hover{
+            border:2px solid #eee;
+            background:#eee;
+        }
+        #all-product .product-list:hover.product-list h3{
+            color:#8253dc;
         }
         
         #all-product .product-list h3{
-            font-size: 16px;
-            color: #555;
+            font-size: 14px;
+            color: #000;
             padding: 15px;
+            font-weight:bold;
         }
         
         #all-product .product-list img{
-            height: auto;
+            height: 160px;
             width: 250px;
+            border:0px;
         }
         .banner{
             display:table-cell;
@@ -76,21 +92,23 @@ $query = mysqli_query($dbquery, "SELECT * FROM tbl_service");
             <h1 class="text-center">Our Products</h1>
 
         </div>
-        
-        <ul>
-            <?php while($a=mysqli_fetch_array($query)){
-                echo "<a href='product.php?id=".$a['fld_id']."'><li>";
-                echo "<div class='product-list'>
-                    <div class='img'>
-                        <img src='images/packages/".$a['fld_image']."' />
-                    </div>
-                    <h3>".$a['fld_product_name']."</h3>
-                ";
-                echo "</div>";
-                echo "</li></a>";
-            }
-            ?>
-        </ul>
+        <div class="container pt-5 pb-5">
+            
+            <ul>
+                <?php while($a=mysqli_fetch_array($query)){
+                    echo "<a href='product.php?id=".$a['fld_id']."'><li>";
+                    echo "<div class='product-list'>
+                        <div class='img'>
+                            <img src='images/packages/".$a['fld_image']."' />
+                        </div>
+                        <h3>".$a['fld_product_name']."</h3>
+                    ";
+                    echo "</div>";
+                    echo "</li></a>";
+                }
+                ?>
+            </ul>
+        </div>
            
 
         </div>

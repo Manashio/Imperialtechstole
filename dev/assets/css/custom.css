@@ -305,19 +305,27 @@ nav{
 		display: none;
 	}
 }
-
+@media(max-width: 995px){
+	.title-link{
+		padding:20px 30px;
+	}
+    
+}
 
 .input_bar{
 	border: 0px !important;
 	border-radius:0px;
-	border-bottom: 1px solid #CCC!important;
+	border-bottom: 2px solid #CCC!important;
 	transition: 0.4s;
+	background: transparent;
 }
 .input_bar:hover{
-	border-bottom: 1px solid #999!important;
+	border-bottom: 2px solid #999!important;
+	background: transparent;
 }
 .input_bar:focus{
-	border-bottom: 1px solid #8253dc!important;
+	border-bottom: 2px solid #8253dc!important;
+	background: transparent;
 }
 :focus{
 	outline: 0px !important;
@@ -413,4 +421,5 @@ footer ul li a{
 #productSection .product-box .img img{
 	width: inherit;
 	height:inherit;
+
 }
