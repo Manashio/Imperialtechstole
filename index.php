@@ -10,6 +10,8 @@
 	<style>
 	#catagory{
 		margin-top:70px;
+		background:#7040cc;
+		background:#fff;
 	}
 		#catagory ul{
 			text-align:center;
@@ -47,6 +49,14 @@
 			text-align: center;
 
 		}
+	
+	#catagory ul li ul li a{
+		color: #6031b9;
+	}
+	#catagory ul li ul li a:hover{
+		background: #6031b9;
+		color:#fff;
+	}
 		
 		
 	</style>
@@ -58,11 +68,13 @@
 
 	<div class="title-box">
 		
-		<div class="container pt-5">
-			<h1 class="title-heading pt-5">Connecting technologies <br> with their audience.</h1>
+		<div class="container pt-5 text-center">
+			<h1 class="title-heading">Connecting technologies <br> with their audience.</h1>
+
+				<a href="all-products.php" class="title-link">View All of our products</a>
 		</div>
 
-		<a href="all-products.php" class="title-link">View All of our products</a>
+	
 	</div>
 
 

@@ -1,50 +1,51 @@
 <footer>
 <div class="container">
     <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-3 pb-5">
     <h1 class="text-left">Links</h1>
-        <ul class="text-left ">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Our Products</a></li>
-            <li><a href="#">Contact Us</a></li>
+    <hr class="">
+        <ul class="text-left">
+            <li><a href="#"> <i class="fas fa-angle-right mr-1"></i> Home</a></li>
+            <li><a href="#"> <i class="fas fa-angle-right mr-1"></i> About us</a></li>
+            <li><a href="#"> <i class="fas fa-angle-right mr-1"></i> Our Products</a></li>
+            <li><a href="#"> <i class="fas fa-angle-right mr-1"></i> Contact Us</a></li>
         </ul>
     </div>
-    <div class="col-md-3">
-    <h1 class="">Products</h1>
-        <ul>
-        <li><a href="#">Product 1</a></li>
-        <li><a href="#">Product 1</a></li>
-        <li><a href="#">Product 1</a></li>
-        <li><a href="#">Product 1</a></li>
-        <li><a href="#">Product 1</a></li>
+    <div class="col-md-3  pb-5">
+    <h1 class="text-left">Products</h1>
+        <hr>
+        <ul class="text-left">
+        <li><a href="#"> <i class="fas fa-angle-right mr-1"></i>  Audio/Video </a></li>
+        <li><a href="#"> <i class="fas fa-angle-right mr-1"></i>  IT networking </a></li>
+        <li><a href="#"> <i class="fas fa-angle-right mr-1"></i>  Security Servilance</a></li>
+        <li><a href="#"> <i class="fas fa-angle-right mr-1"></i>  Solution </a></li>
+        <li><a href="#"> <i class="fas fa-angle-right mr-1"></i>  Other </a></li>
         
         </ul>
     </div>
-    <div class="col-md-3">
-    <h1 class="">Contact</h1>
-        <ul>
-        <li>Unit no - 312, Tower B4</li>
-        <li><a href="#">Product 1</a></li>
-        <li><a href="#">Product 1</a></li>
-        <li><a href="#">Product 1</a></li>
-        <li><a href="#">Product 1</a></li>
+    <div class="col-md-3  pb-5">
+    <h1 class="text-left ">Contact</h1>
+        <hr>
+        <ul class="text-left">
+            <li> <a href="#"><i class="fas fa-map-marker-alt mr-2"></i> Unit no - 312, Tower B4 </a> </li>
+            <li><a href="#"> <i class="far fa-envelope mr-1"></i> support@tech.com</a></li>
+            <li><a href="#"> <i class="fas fa-phone mr-1"></i> +91 997766777</a></li>
+            <li><a href="#"> <i class="fas fa-phone mr-1"></i> +91 997766777</a></li>
+            
         
         </ul>
     </div>
-    <div class="col-md-3">
-    <h1 class="">Newsletter</h1>
-        <ul>
+    <div class="col-md-3 sub_in">
+    <h1 class="mb-5">Newsletter</h1>
+    
+        
             <form action="" method="post">
-                <li> <input type="text" name="" id="" class="form-control mb-1 mt-1" placeholder="Name"></li>
-
-                <li><input type="text" name="" id="" class="form-control mt-1" placeholder="Email"></li>
-
-                <li> <button type="submit" class="btn mb-1 mt-1">Subscribe</button> </li>
-                
+                     <input type="text" name="" id="" class=" " placeholder="Johndoe@gmail.com" required>
+                     <br> <br>
+                    <button type="submit" class=""><i class="fab fa-telegram-plane mr-2"></i> subscribe</button> 
             </form>
         
-        </ul>
+      
     </div>
 
     </div>

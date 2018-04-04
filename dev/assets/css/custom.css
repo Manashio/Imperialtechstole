@@ -141,13 +141,14 @@
 	font-weight: bold;
 }
 .title-link{
-	padding: 30px 160px;
+	padding: 20px 100px;
 	background:#8253dc; 
 	color: #fff;
 	position: relative;
-	top: 75px;
-	float: left;
+	top: 40px;
 	z-index: 1;
+	border-radius:500px; 
+	font-size: 18px;
 }
 .title-link:hover{
 	background: #6031b9;
@@ -280,8 +281,9 @@ nav{
 	border: 0px;
 	color: #fff;
 	width: 80%; */
-	border-radius:3px;
+	border-radius:50px;
 	border: 0px; 
+
 }
 
 .searchicon{
@@ -290,10 +292,11 @@ nav{
 }
 .org{
 	background: transparent;
-	padding: 10px;
+	padding: 10px 15px;;
 	border: 2px solid var(--white);
 	color: #fff;
 	margin:13px;
+	border-radius: 50px;
 }
 .org:hover{
 	background: #fff;
@@ -305,9 +308,12 @@ nav{
 		display: none;
 	}
 }
-@media(max-width: 995px){
+@media(max-width: 720px){
 	.title-link{
-		padding:20px 30px;
+		padding:20px 25px;
+		font-size: 13px;
+		font-weight: bold;
+		top: 20px;
 	}
     
 }
@@ -398,7 +404,6 @@ footer ul li a{
 	padding:50px;
 }
 #productSection .product-box{
-
 	border: 2px solid #eee;
 	height: auto;
 	width: 100%;
@@ -423,3 +428,51 @@ footer ul li a{
 	height:inherit;
 
 }
+
+hr{
+	height: 2px;
+	width:30%;
+	background: #fff;
+	margin: 20px 0px;
+}
+
+/*footer li set*/
+footer ul li a{
+	line-height: 28px;
+	color: #FFF;
+}
+footer ul li a:hover,footer ul li a:focus{
+ 	color:#8253dc;
+}
+
+/*For subscribe form style*/
+.sub_in input{
+	width: 100%;
+	display: inline-block;
+	border: 0px;
+	padding: 10px 30px;
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	box-sizing: border-box;
+	padding-left: 12px;
+	border-radius:500px; 
+	
+}
+.sub_in button{
+	border: 0px;
+	padding: 10px 30px;
+	border-radius:500px; 
+	cursor: pointer;
+	background: #da3535;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	border: 2px solid #da3535;
+	transition: 0.2s;
+}
+.sub_in button:hover, .sub_in button:focus{
+	background: hsl(0, 69%, 42%);
+	background: transparent;
+	border: 2px solid #da3535;
+	

@@ -33,7 +33,7 @@ $query = mysqli_query($dbquery, "SELECT * FROM tbl_service");
             list-style-type: none;
             display: inline-block;
             margin: 5px;
-            width: 250px;
+            width: 267px;
             height: 250px;
             text-align: center;
 

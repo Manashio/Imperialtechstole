@@ -9,7 +9,10 @@
 </head>
 <body>
 
-  <?php require('header/navbar.php'); ?>  
+	<?php require('header/navbar.php'); ?>  
+	<div class="jumbotron text-center">
+		<h1 class=" pt-5 pb-5 mt-5">Contact us</h1>
+	</div>
 
 <section id="formSection">
 	<div class="container">
@@ -64,6 +67,10 @@
 		</div>
 	</div>
 	</section>
+	<!-- end content here     -->
+
+    <?php require('footer/footer.php');?>
+    
     <?php require('footer/component.php'); ?>
 </body>
 </html>
