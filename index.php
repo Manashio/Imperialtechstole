@@ -8,57 +8,7 @@
 	<?php require('header/component.php'); ?>
 	
 	<style>
-	#catagory{
-		margin-top:70px;
-		background:#7040cc;
-		background:#fff;
-	}
-		#catagory ul{
-			text-align:center;
-			margin:0px;
-			transition: 0.5s;
-		}
-		#catagory ul li{
-			display: inline-block;
-		}
-		#catagory ul li a{
-			display: block;
-			padding: 10px 40px;
-			color:#8253dc;
-		}
 
-		#catagory ul li ul{
-			position: absolute;			
-			display: none;
-			background: #fff;
-			z-index:1;
-		}
-		
-		#catagory ul li:hover ul {
-			display: block;
-		}
-		
-		#catagory ul li:hover a{
-		}
-		#catagory ul li ul li{
-			display: block;			
-		}
-		
-		#catagory ul li ul li a{
-			padding: 8px 40px;
-			text-align: center;
-
-		}
-	
-	#catagory ul li ul li a{
-		color: #6031b9;
-	}
-	#catagory ul li ul li a:hover{
-		background: #6031b9;
-		color:#fff;
-	}
-		
-		
 	</style>
 </head>
 <body>
@@ -66,15 +16,50 @@
 <?php require('header/navbar.php'); ?>
 <?php require('header/catagory.php'); ?>
 
-	<div class="title-box">
-		
-		<div class="container pt-5 text-center">
-			<h1 class="title-heading">Connecting technologies <br> with their audience.</h1>
+<div class="title-box">	
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-6">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="First slide">
+									<div class="carousel-caption d-none d-md-block">
+											<h5>Item name</h5>
+										<p>Lorem ipsum dolor sit amet.</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="Third slide">
+								</div>
+					</div>
+						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+		</div>
+		<div class="col-lg-6">
+		<div class="container pt-5">
+			<h1 class="title-heading white">Connecting technologies <br> with their audience.</h1>
 
 				<a href="all-products.php" class="title-link">View All of our products</a>
 		</div>
-
-	
+		</div>
+	</div>
+	</div>
 	</div>
 
 
@@ -127,7 +112,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 pt-5 pb-5">
-				<h4 class="title-heading pt-5">Need help?</h4>
+				<h4 class="title-heading black pt-5">Need help?</h4>
 				
 				<p class="pt-5 pb-5">
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos consectetur ducimus non minima earum ipsam asperiores totam dolore nam maxime, nobis repellendus dolorem doloremque doloribus temporibus officiis. Veniam, praesentium ipsam ?
@@ -135,7 +120,7 @@
 			</div>
 
 			<div class="col-md-6 pt-5 pb-5">
-				<h4 class="title-heading pt-5 text-center">
+				<h4 class="title-heading black pt-5 text-center">
 					 We're on social media
 				</h4>
 				<p class="pt-5 pb-5 lg text-center">
@@ -200,7 +185,17 @@
 
 		<section>
 			<div class="container pt-5 pb-5">
-				<h1 class="pt-5 pb-5">Find us</h1>
+				<div id="company">
+					<h1 class="pt-5 pb-5">Find us</h1>
+
+					<img src="https://intercompras-a.akamaihd.net/product_thumb.php?img=images/product/HP_J1A83LA_ABM.jpg&w=280&h=280" alt="">
+
+					<img src="http://brand.emc.com/dellbrand/wp-content/uploads/2016/05/Dell_Logo_Blue_rgb-300x300.png" alt="">
+
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDNtWzlAwFrpb2kLtH-FoyxC07pZHqPhOiuanhFYTVlqEZR9Pu" alt="">
+
+					<img src="" alt="">
+				</div>
 			</div>
 		</section>
 

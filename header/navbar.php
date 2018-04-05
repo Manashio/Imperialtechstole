@@ -5,10 +5,10 @@
 				</div>
 				<div class="col-5">
 					<div class="search1">
-                         <form action="">
-                    	     <i class="fas fa-search searchicon"></i> 
-							  <input class="search1 ml-2" type="text" placeholder="Search here"> 
-                         </form>
+              <form action="">
+                  <i class="fas fa-search searchicon"></i> 
+							    <input class="search1 ml-2" type="text" placeholder="Search here"> 
+            </form>
 					</div>
 				</div>
 				<div class="col">

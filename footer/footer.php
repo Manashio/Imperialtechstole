@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row">
     <div class="col-md-3 pb-5">
-    <h1 class="text-left">Links</h1>
+    <h5 class="text-left">Links</h1>
     <hr class="">
         <ul class="text-left">
             <li><a href="#"> <i class="fas fa-angle-right mr-1"></i> Home</a></li>
@@ -12,7 +12,7 @@
         </ul>
     </div>
     <div class="col-md-3  pb-5">
-    <h1 class="text-left">Products</h1>
+    <h5 class="text-left">Products</h1>
         <hr>
         <ul class="text-left">
         <li><a href="#"> <i class="fas fa-angle-right mr-1"></i>  Audio/Video </a></li>
@@ -24,7 +24,7 @@
         </ul>
     </div>
     <div class="col-md-3  pb-5">
-    <h1 class="text-left ">Contact</h1>
+    <h5 class="text-left ">Contact</h1>
         <hr>
         <ul class="text-left">
             <li> <a href="#"><i class="fas fa-map-marker-alt mr-2"></i> Unit no - 312, Tower B4 </a> </li>
@@ -36,7 +36,7 @@
         </ul>
     </div>
     <div class="col-md-3 sub_in">
-    <h1 class="mb-5">Newsletter</h1>
+    <h5 class="mb-5">Newsletter</h1>
     
         
             <form action="" method="post">

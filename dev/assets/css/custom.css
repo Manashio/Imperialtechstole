@@ -128,11 +128,11 @@
  }
 
 .title-box{
+	width: 100%;
 	position: relative;
 	float: left;
-	width: 100%;
-	height: 350px;
-	padding: 30px 0px;
+	height: auto;
+	padding: 40px 0px;
 	background: #f2f2f2;
 }
 .title-heading{
@@ -436,10 +436,20 @@ hr{
 	margin: 20px 0px;
 }
 
-/*footer li set*/
+/*footer ui*/
+footer h5{
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 300;
+}
 footer ul li a{
 	line-height: 28px;
 	color: #FFF;
+}
+@media(max-width: 720px){
+	footer ul li a{
+		line-height: 45px;
+	}
 }
 footer ul li a:hover,footer ul li a:focus{
  	color:#8253dc;
@@ -474,5 +484,63 @@ footer ul li a:hover,footer ul li a:focus{
 .sub_in button:hover, .sub_in button:focus{
 	background: hsl(0, 69%, 42%);
 	background: transparent;
-	border: 2px solid #da3535;
+	border: 2px solid #da3535;	
+}
+
+
+#catagory{
+	margin-top:70px;
+	background:#7040cc;
+	background:#fff;
+}
+	#catagory ul{
+		text-align:center;
+		margin:0px;
+		transition: 0.5s;
+	}
+	#catagory ul li{
+		display: inline-block;
+	}
+	#catagory ul li a{
+		display: block;
+		padding: 10px 40px;
+		color:#8253dc;
+	}
+
+	#catagory ul li ul{
+		position: absolute;			
+		display: none;
+		background: #fff;
+		z-index:1;
+	}
 	
+	#catagory ul li:hover ul {
+		display: block;
+	}
+	
+	#catagory ul li:hover a{
+	}
+	#catagory ul li ul li{
+		display: block;			
+	}
+	
+	#catagory ul li ul li a{
+		padding: 8px 40px;
+		text-align: center;
+
+	}
+
+#catagory ul li ul li a{
+	color: #6031b9;
+}
+#catagory ul li ul li a:hover{
+	background: #6031b9;
+	color:#fff;
+}
+	.carousel-item{
+		height:350px;
+	}
+	.carousel-item img{
+		width:100%;
+		height:350px;
+	}
