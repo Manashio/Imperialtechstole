@@ -1,5 +1,5 @@
 :root{
-	--theme-color :#10011f;
+	--theme-color :#370c63;
 }
 *{
 	padding: 0px;
@@ -145,7 +145,7 @@
 }
 .title-link{
 	padding: 20px 100px;
-	background:#10011f; 
+	background:#370c63; 
 	color: #fff;
 	position: relative;
 	top: 40px;
@@ -171,7 +171,7 @@
 .menu-top{
      width: 100%;
      height: 70px;
-     background: #10011f;
+     background: #370c63;
      position: fixed;
      float: left;
      -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none; 
@@ -269,7 +269,7 @@ nav{
 }
 .brand-icon:hover{
 	color: #eee!important;
-	background: #10011f;
+	background: #370c63;
 	border-bottom: 3px solid #fff;
 }
 
@@ -303,7 +303,7 @@ nav{
 }
 .org:hover{
 	background: #fff;
-	color: #10011f!important;
+	color: #370c63!important;
 }
 /*for hiding  search bar and get stardted button*/
 @media(max-width: 995px){
@@ -333,7 +333,7 @@ nav{
 	background: transparent;
 }
 .input_bar:focus{
-	border-bottom: 2px solid #10011f!important;
+	border-bottom: 2px solid #370c63!important;
 	background: transparent;
 }
 :focus{
@@ -510,7 +510,7 @@ footer ul li a:hover,footer ul li a:focus{
 	#catagory ul li a{
 		display: block;
 		padding: 10px 40px;
-		color:#10011f;
+		color:#370c63;
 	}
 
 	#catagory ul li ul{
@@ -587,4 +587,14 @@ footer ul li a:hover,footer ul li a:focus{
 		padding-top: 20px;
 		text-align: center;
 	}
+}
+
+/*form validation ui*/
+.error{
+	width: 100%;
+	display: block;
+	color:red;
+	padding-left: 10px;
+	font-weight: 500;
+	font-size: 13px;
 }
