@@ -46,7 +46,7 @@
         <form action="store/mail.php" method="POST" id="form_data">
           <div class="form-group">
             <label for="name" class="col-form-label">Your name:</label>
-            	<input type="text" class="form-control" id="name" name="name" placeholder="John Doe">
+            	<input type="text" class="form-control" id="name" name="name" placeholder="John Doe" onkeyup="this.value = this.value.replace(/[^a-z]/, '')">
           </div>
 
 		<div class="form-group">
