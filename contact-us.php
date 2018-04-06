@@ -80,7 +80,7 @@
 					</div>
 
 					<div class="form-group pt-4">
-						<input type="text" class="form-control input_bar" id="phone" name="phone" placeholder="Phone no : 9706300000">
+						<input type="text" class="form-control input_bar" id="phone" maxlength="10" name="phone" placeholder="Phone no : 9706300000">
 						
 					</div>
 
