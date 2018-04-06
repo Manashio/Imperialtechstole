@@ -57,7 +57,7 @@
 
 					<div class="form-group pt-4">
 					<!-- <label for="message-text" class="col-form-label">Message:</label> -->
-					<textarea class="form-control input_bar" id="message-text" name="message" placeholder="message : Ask me anything"></textarea>
+					<textarea class="form-control input_bar" id="message_text" name="message" placeholder="message : Ask me anything"></textarea>
 					</div>
 						<button type="submit" class="btn mt-3 custom_btn">Send message</button>
 					</form>
@@ -67,6 +67,8 @@
 		</div>
 	</div>
 	</section>
+	
+
 	<!-- end content here     -->
 
     <?php require('footer/footer.php');?>

@@ -1,3 +1,6 @@
+:root{
+	--theme-color :#10011f;
+}
 *{
 	padding: 0px;
 	margin: 0px;
@@ -142,7 +145,7 @@
 }
 .title-link{
 	padding: 20px 100px;
-	background:#8253dc; 
+	background:#10011f; 
 	color: #fff;
 	position: relative;
 	top: 40px;
@@ -168,7 +171,7 @@
 .menu-top{
      width: 100%;
      height: 70px;
-     background: #8253dc;
+     background: #10011f;
      position: fixed;
      float: left;
      -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none; 
@@ -266,7 +269,7 @@ nav{
 }
 .brand-icon:hover{
 	color: #eee!important;
-	background: #8253dc;
+	background: #10011f;
 	border-bottom: 3px solid #fff;
 }
 
@@ -300,7 +303,7 @@ nav{
 }
 .org:hover{
 	background: #fff;
-	color: #8253dc!important;
+	color: #10011f!important;
 }
 /*for hiding  search bar and get stardted button*/
 @media(max-width: 995px){
@@ -330,7 +333,7 @@ nav{
 	background: transparent;
 }
 .input_bar:focus{
-	border-bottom: 2px solid #8253dc!important;
+	border-bottom: 2px solid #10011f!important;
 	background: transparent;
 }
 :focus{
@@ -452,7 +455,7 @@ footer ul li a{
 	}
 }
 footer ul li a:hover,footer ul li a:focus{
- 	color:#8253dc;
+ 	color:#999;
 }
 
 /*For subscribe form style*/
@@ -492,6 +495,9 @@ footer ul li a:hover,footer ul li a:focus{
 	margin-top:70px;
 	background:#7040cc;
 	background:#fff;
+	border-bottom: 1px solid #eee;
+
+	
 }
 	#catagory ul{
 		text-align:center;
@@ -504,7 +510,7 @@ footer ul li a:hover,footer ul li a:focus{
 	#catagory ul li a{
 		display: block;
 		padding: 10px 40px;
-		color:#8253dc;
+		color:#10011f;
 	}
 
 	#catagory ul li ul{
@@ -542,5 +548,42 @@ footer ul li a:hover,footer ul li a:focus{
 	}
 	.carousel-item img{
 		width:100%;
-		height:350px;
+		height:100%;
 	}
+
+/*search_item style*/
+.search_only{
+	background: #fff;
+}
+.search_item_link,.search_item_link:hover{
+	color: #333;
+}
+.search_item_link:hover .search_item_div{
+	background: #fff;
+	-webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+}
+.search_item_div{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: 10px;
+	border-radius: 3px;
+}
+.search_item_div img{
+	height: 200px;
+	overflow: hidden;
+}
+.item_title{
+	font-size: 30px;
+}
+.item_description{
+	margin: 0px;
+	padding:0px 0px;
+}
+@media(max-width: 720px){
+	.item_title{
+		padding-top: 20px;
+		text-align: center;
+	}
+}
