@@ -56,7 +56,7 @@
 
 		<div class="form-group">
             <label for="phone" class="col-form-label">Your Phone no:</label>
-            	<input type="text" class="form-control" id="phone" name="phone" placeholder="9706300000">
+            	<input type="text" class="form-control" id="phone" name="phone" maxlength="10" placeholder="9706300000" onkeyup="this.value = this.value.replace(/[^0-9]/, '')" >
           </div>
 
           <div class="form-group">
