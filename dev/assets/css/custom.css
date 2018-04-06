@@ -162,12 +162,37 @@
 	position: relative;
 	float: left;
 	width: 100%;
-	height: 100vh;
-	background: #eee url('https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+	height: 500px;
+}
+.computer{
+	background: #eee url('https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	background-size: cover;
-	background-position: center center;
+	background-position: center center;	
+}
+.lg_banner{
+	background: #eee url('https://3blaws.s3.amazonaws.com/images/LG_World_Environment_Day_Video_on_NY_Times_Square_120140603224629885.jpg.jpg');
+	background-size: cover;
+	background-position: center top;	
+}
+.dell_banner{
+	background: #eee url('https://images.pexels.com/photos/331788/pexels-photo-331788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: cover;
+	background-position: center bottom;	
 	
 }
+.server_banner{
+
+	background: #eee url('https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: cover;
+	background-position: center center;	
+}
+
+
+.small_cover{
+	height: 400px;
+}
+
+
 .menu-top{
      width: 100%;
      height: 70px;
@@ -344,11 +369,6 @@ nav{
 .lg{
 	color: slateblue;
 	font-size: 30px;
-}
-
-/*cover img*/
-.small_cover{
-	height: 400px;
 }
 
 /*happy_client*/

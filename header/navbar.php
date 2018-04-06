@@ -42,32 +42,30 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <form action="store/mail.php" method="POST" id="form_data">
-          <div class="form-group">
-            <label for="name" class="col-form-label">Your name:</label>
-            	<input type="text" class="form-control" id="name" name="name" placeholder="John Doe" onkeyup="this.value = this.value.replace(/[^a-z]/, '')">
-          </div>
-
-		<div class="form-group">
-            <label for="email" class="col-form-label">Your Email:</label>
-            	<input type="text" class="form-control" id="email" name="email" placeholder="Johndoe@gmail.com">
-          </div>
-
-		<div class="form-group">
-            <label for="phone" class="col-form-label">Your Phone no:</label>
-            	<input type="text" class="form-control" id="phone" name="phone" maxlength="10" placeholder="9706300000" onkeyup="this.value = this.value.replace(/[^0-9]/, '')" >
-          </div>
-
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text" name="message"></textarea>
-          </div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-primary">Send message</button>
+      <div class="modal-body p-5">
+      <form action="store/mail.php" method="POST" id="form_data">
+					<div class="form-group pt-4">
+						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^a-z]/, '')">
 					</div>
-        </form>
 
+					<div class="form-group pt-4">
+						<input type="text" class="form-control input_bar" id="email" name="email" placeholder="Email : Johndoe@gmail.com">
+
+						
+					</div>
+
+					<div class="form-group pt-4">
+						<input type="text" class="form-control input_bar" id="phone" maxlength="10" name="phone" placeholder="Phone no : 9706300000" onkeyup="this.value = this.value.replace(/[^0-9]/, '')">
+						
+					</div>
+
+					<div class="form-group pt-4">
+					<textarea class="form-control input_bar" id="message_text" name="message" placeholder="message : Ask me anything"></textarea>
+
+					
+					</div>
+						<button type="submit" class="btn mt-3 custom_btn">Send message</button>
+					</form>
 
       </div>
      </div>

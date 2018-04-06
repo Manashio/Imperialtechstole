@@ -103,7 +103,7 @@
 	</div>
 </section>
 
-	<div class="cover-img">
+	<div class="cover-img lg_banner">
 		
 	</div>
 
@@ -137,7 +137,7 @@
 
 
 
-	<div class="cover-img small_cover">	
+	<div class="cover-img small_cover dell_banner">	
 	</div>
 
 
@@ -180,7 +180,7 @@
 	</div>
 	</section>
 
-		<div class="cover-img small_cover">	
+		<div class="cover-img small_cover server_banner">	
 		</div>
 
 		<section>
@@ -188,11 +188,7 @@
 				<div id="company">
 					<h1 class="pt-5 pb-5">Find us</h1>
 
-					<img src="https://intercompras-a.akamaihd.net/product_thumb.php?img=images/product/HP_J1A83LA_ABM.jpg&w=280&h=280" alt="">
 
-					<img src="http://brand.emc.com/dellbrand/wp-content/uploads/2016/05/Dell_Logo_Blue_rgb-300x300.png" alt="">
-
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDNtWzlAwFrpb2kLtH-FoyxC07pZHqPhOiuanhFYTVlqEZR9Pu" alt="">
 
 					<img src="" alt="">
 				</div>
