@@ -45,10 +45,6 @@
 					<div class="happy_client mb-5">
 						<i class="far fa-smile"></i> John Doe
 					</div>
-
-
-
-
 			</div>
 			<script>
 						function initMap() {
