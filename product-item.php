@@ -49,6 +49,7 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
                               </div>
                               <div class="col-lg-4">
                               <form action="/action_page.php">
+                              <h3 class="text-center">Put Your Enquiry Here</h3>
                                     <div class="form-group">
                                         <label for="name">Name:</label>
                                         <input type="name" class="form-control" id="name">
