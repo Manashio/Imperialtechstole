@@ -2,10 +2,10 @@
 
 require('config/dbconnect.php');
 $srch_id = $_GET['search'];
-$sql="SELECT * FROM tbl_service  WHERE fld_mkeywords like '%".$srch_id."%' OR fld_product_name like '%".$srch_id."%'";
+$sql="SELECT * FROM tbl_service  WHERE fld_mkeywords like '%".$srch_id."%' OR fld_product_name like '%".$srch_id."%'  OR fld_mtitle like '%".$srch_id."%'";
 
 $search_query = mysqli_query($dbquery,$sql);
-
+$search_query_array = mysqli_fetch_array($search_query);
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,13 +23,16 @@ $search_query = mysqli_query($dbquery,$sql);
 
      <section class="search_only">
           <div class="container mt-5 mb-5">
-               <h1 class="mt-5 mb-5">Search items</h1>
+               <h2 class="mt-5 mb-5">Search for :  <span><b> <?php echo $srch_id; ?> </b></span></h2>
                <?php 
-              
+              if($search_query_array <= 0){
+                  ?>
+                  <h1 class="text-center">OOPS !</h1>
+                  <p class="text-center">Result Not Found</p>
+                  <?php
+               }else{
                while($a=mysqli_fetch_array($search_query)){
-                if($search_query <= 0){
-                    echo "No Data found";
-                   }else{
+                
                 ?>
 
 
