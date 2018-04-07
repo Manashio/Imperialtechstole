@@ -1,4 +1,7 @@
 <?php
+require 'Exception.php';
+require 'PHPMailer.php';
+require 'SMTP.php';
 error_reporting(0);
 if(empty($_POST)===false){
      $name = $_POST['name'];
@@ -10,44 +13,62 @@ if(empty($_POST)===false){
                     This is a danger alert—check it out!
                     </div>";
           }else{
-
                     $data = array();
                     $data=array($name,$phone,$email,$message);
-
                     $data_input = "<div class='input-group mb-3 mt-5'>
                     <div class='input-group-prepend'>
                       <span class='input-group-text' id='basic-addon1'>Name</span>
                     </div>
                     <input type='text' class='form-control' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$name.">
                   </div>
-
                   <div class='input-group mb-3 mt-2'>
                     <div class='input-group-prepend'>
                       <span class='input-group-text' id='basic-addon1'>Email</span>
                     </div>
                     <input type='text' class='form-control' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$email.">
                   </div>
-
                   <div class='input-group mb-3 mt-2'>
                     <div class='input-group-prepend'>
                       <span class='input-group-text' id='basic-addon1'>Phone no</span>
                     </div>
                     <input type='text' class='form-control' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$phone.">
                   </div>
-
                   <div class='input-group mb-3 mt-2'>
                     <div class='input-group-prepend'>
                       <span class='input-group-text' id='basic-addon1'>Message</span>
                     </div>
-                    
 
                     <textarea class='form-control' aria-describedby='basic-addon1' disabled >".$message."</textarea>
                   </div>
-                  
-                  
                   " ;
-                    
+                  // $mail = new PHPMailer(true);                   
+                  // try {
+                  //     $mail->SMTPDebug = 2;                                 
+                  //     $mail->isSMTP();                                      
+                  //     $mail->Host = '';  
+                  //     $mail->SMTPAuth = true;                              
+                  //     $mail->Username = 'nubulmachary@gmail.com';                
+                  //     $mail->Password = 'boogiemannn';                         
+                  //     $mail->SMTPSecure = 'tls';                          
+                  //     $mail->Port = 587;                                   
+    
+                  //     $mail->setFrom($email, 'Mailer');
+                  //     // $mail->addAddress('joe@example.net', 'Joe User');     
+                  //     // $mail->addAddress('ellen@example.com');               
+                  //     // $mail->addReplyTo('info@example.com', 'Information');
+                  //     // $mail->addCC('cc@example.com');
+                  //     // $mail->addBCC('bcc@example.com');
+                  //     //Content
+                  //     $mail->isHTML(true);                                
+                  //     $mail->Subject = 'Here is the subject';
+                  //     $mail->Body    = 'This is the HTML message body <b>in bold!</b>'.$message;
+                  //     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
+                  //     $mail->send();
+                  //     echo 'Message has been sent';
+                  // } catch (Exception $e) {
+                  //     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+                  // }
           }
      }
 

@@ -198,35 +198,5 @@
 <?php require('footer/footer.php'); ?>
 <?php require("footer/component.php");?>
 
-		<script>
-				$("#form_data").validate({
-					rules: {
-							name: "required",
-							email: {
-								required: true,
-								email: true
-							},
-							phone: {
-								required: true,
-								number: true
-							},
-							message: {
-								required: true,
-							},
-					},
-					messages: {
-					name: "Please specify your name",
-					email: {
-						required: "We need your email address to contact you",
-						email: "Your email address must be in the format of name@domain.com"
-					},phone: {
-						required: "We need your phone number to contact you",
-					},message: {
-						required: "Please write something",
-					}
-				}
-				});
-		</script>
-
 </body>
 </html>
