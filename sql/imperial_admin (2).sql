@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2018 at 11:42 PM
+-- Generation Time: Apr 07, 2018 at 03:01 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
 
@@ -21,6 +21,36 @@ SET time_zone = "+00:00";
 --
 -- Database: `imperial_admin`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products_lists`
+--
+
+CREATE TABLE `products_lists` (
+  `id` int(11) NOT NULL,
+  `product_of` varchar(100) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `model` varchar(100) NOT NULL,
+  `description` varchar(1000) NOT NULL,
+  `price` int(11) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `broucher` varchar(255) NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  `status` enum('active','inactive') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `products_lists`
+--
+
+INSERT INTO `products_lists` (`id`, `product_of`, `name`, `model`, `description`, `price`, `image`, `broucher`, `created_at`, `updated_at`, `status`) VALUES
+(1, 'video wal', 'LG DIGITAL', '32SE3KB/D', '32” display,350 nits brightness, inbuilt Digital Signage,18x7 operation,in built speaker(10W x 2), HDMI, DVID, VGA, USB, RS232,', 37000, '', '', 0, 0, 'active'),
+(2, 'video wal', 'LG Flat Wall Display', '43SE3KB/D', '43” display,350 nits brightness, inbuilt Digital Signage,18x7 operation,in built speaker(10W x 2), HDMI, DVID, VGA, USB, RS232,', 52000, '', '', 0, 0, 'active'),
+(3, 'dummy', 'Dummy name', 'dummy model', 'dummy descriptions', 2131, '', '', 0, 0, ''),
+(4, 'dummy', 'Dummy Name', 'dummy model', 'dummy descriptions', 2131, '', '', 0, 0, '');
 
 -- --------------------------------------------------------
 
@@ -69,7 +99,7 @@ CREATE TABLE `tbl_administrator` (
 
 INSERT INTO `tbl_administrator` (`fld_id`, `fld_name`, `fld_username`, `fld_userpass`, `fld_email`, `fld_phone`, `fld_facebook`, `fld_twitter`, `fld_linkedin`, `fld_googleplus`, `fld_llogintime`, `fld_lloginip`, `fld_datetime`, `fld_company_name`, `fld_address`, `fld_contact_number`, `fld_map`, `fld_status`) VALUES
 (1, 'Administrator', 'admin', 'cws312#', 'LAURA.SHI@CBEC365.COM', '+86 27-59730365', 'https://www.facebook.com/', 'https://twitter.com/', 'https://in.linkedin.com/', 'https://google.com/', '2018-03-31 15:44:53', '171.50.169.190', '2016-01-01 00:00:00', '', 'China', '', '', 1),
-(2, 'nubul', 'nubul', 'pass', 'nubulmachary@gmail.com', NULL, '', '', '', '', '2018-04-03 16:03:04', '::1', '0000-00-00 00:00:00', '', '', '', '', 1);
+(2, 'nubul', 'nubul', 'pass', 'nubulmachary@gmail.com', NULL, '', '', '', '', '2018-04-07 10:54:31', '::1', '0000-00-00 00:00:00', '', '', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -1159,6 +1189,12 @@ INSERT INTO `tbl_slider` (`fld_id`, `fld_title`, `fld_content`, `fld_image`, `fl
 --
 
 --
+-- Indexes for table `products_lists`
+--
+ALTER TABLE `products_lists`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_addonimages`
 --
 ALTER TABLE `tbl_addonimages`
@@ -1317,6 +1353,12 @@ ALTER TABLE `tbl_slider`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `products_lists`
+--
+ALTER TABLE `products_lists`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tbl_addonimages`

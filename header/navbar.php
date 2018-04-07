@@ -1,3 +1,13 @@
+<?php
+// require('config/dbconnect.php');
+// $sql=	"SELECT * FROM users WHERE fname like '%".$name."%' OR user_email like '%".$email."%'";
+
+	if(isset($_POST['search'])){
+		$search = $_POST['search'];
+		header('location: search-lists.php?search='.$search);
+	}
+
+?>
 <div class="menu-top">
           <div class="row">
 			   <div class="col-3">
@@ -5,9 +15,9 @@
 				</div>
 				<div class="col-5">
 					<div class="search1">
-              <form action="">
+              <form action="" method="POST">
                   <i class="fas fa-search searchicon"></i> 
-							    <input class="search1 ml-2" type="text" placeholder="Search here"> 
+									<input class="search1 ml-2" name="search" type="text" placeholder="Search here"> 																	
             </form>
 					</div>
 				</div>
