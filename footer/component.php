@@ -3,8 +3,27 @@
 	<script src="dev/assets/js/fontawesome.js"></script>
 	<script src="dev/assets/js/jquery.validate.min.js"></script>
 	
+
+	 <script>
+     	$(document).ready(function(){
+					$("#target").click( function(){
+					$("#menu").toggleClass('active');
+					$(".div").toggleClass('off');
+					$("#target").toggleClass('on');
+				});	
+
+				$("#block").click( function(){
+					$("#menu").toggleClass('active');
+					$(".div").toggleClass('off');
+					$("#target").toggleClass('on');
+				});
+
+		});
+
+     </script>
+
 	<script>
-				$("#form_data").validate({
+				$("#form_data_nav").validate({
 					rules: {
 							name: "required",
 							email: {
@@ -32,21 +51,3 @@
 				}
 				});
 		</script>
-
-	 <script>
-     	$(document).ready(function(){
-					$("#target").click( function(){
-					$("#menu").toggleClass('active');
-					$(".div").toggleClass('off');
-					$("#target").toggleClass('on');
-				});	
-
-				$("#block").click( function(){
-					$("#menu").toggleClass('active');
-					$(".div").toggleClass('off');
-					$("#target").toggleClass('on');
-				});
-
-		});
-
-     </script>

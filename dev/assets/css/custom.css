@@ -310,8 +310,19 @@ nav{
 	color: #fff;
 	width: 80%; */
 	border-radius:50px;
-	border: 0px; 
-
+	border: 0px;
+	padding-left: 20px;
+}
+.search-btn{
+	padding: 12px 20px;
+	border-radius: 0px 50px 50px 0px;
+	border: 0px;
+	position: absolute;
+	right: 102px;
+	cursor: pointer;
+	background: #fff;
+	color: rgb(149, 22, 199);
+	border-left:1px solid #eee;
 }
 
 .searchicon{

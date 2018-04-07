@@ -68,7 +68,7 @@
 					 Get in touch
 				</h4>
 				<div class="form pb-5">
-					<form action="store/mail.php" method="POST" id="form_data">
+				<form action="store/mail.php" method="POST" id="form_data">
 					<div class="form-group pt-4">
 						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^A-z]/, '')">
 					</div>
@@ -85,9 +85,7 @@
 					</div>
 
 					<div class="form-group pt-4">
-					<textarea class="form-control input_bar" id="message_text" name="message" placeholder="message : Ask me anything"></textarea>
-
-					
+						<textarea class="form-control input_bar" id="message_text" name="message" 	placeholder="message : Ask me anything"></textarea>
 					</div>
 						<button type="submit" class="btn mt-3 custom_btn">Send message</button>
 					</form>
@@ -105,7 +103,7 @@
     
     <?php require('footer/component.php'); ?>
 
-		<script>
+    	<script>
 				$("#form_data").validate({
 					rules: {
 							name: "required",
@@ -134,5 +132,7 @@
 				}
 				});
 		</script>
+
+		
 </body>
 </html>

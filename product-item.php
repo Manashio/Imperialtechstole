@@ -48,28 +48,29 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
                                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed aspernatur vero minima nihil, tenetur exercitationem eum cupiditate voluptate, numquam libero nemo iusto modi corporis temporibus accusantium obcaecati error, provident ipsa.</p> -->
                               </div>
                               <div class="col-lg-4">
-                              <form action="/action_page.php">
-                              <h3 class="text-center">Put Your Enquiry Here</h3>
-                                    <div class="form-group">
-                                        <label for="name">Name:</label>
-                                        <input type="name" class="form-control" id="name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email address:</label>
-                                        <input type="email" class="form-control" id="email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pwd">Password:</label>
-                                        <input type="password" class="form-control" id="pwd">
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox"> Remember me
-                                        </label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
+                              <form action="store/mail.php" method="POST" id="form_data">
+					<div class="form-group pt-4">
+						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^A-z]/, '')">
+					</div>
 
+					<div class="form-group pt-4">
+						<input type="text" class="form-control input_bar" id="email" name="email" placeholder="Email : Johndoe@gmail.com">
+
+						
+					</div>
+
+					<div class="form-group pt-4">
+						<input type="text" class="form-control input_bar" id="phone" maxlength="10" name="phone" placeholder="Phone no : 9706300000" onkeyup="this.value = this.value.replace(/[^0-9]/, '')">
+						
+					</div>
+
+					<div class="form-group pt-4">
+					<textarea class="form-control input_bar" id="message_text" name="message" placeholder="message : Ask me anything"></textarea>
+
+					
+					</div>
+						<button type="submit" class="btn mt-3 custom_btn">Send message</button>
+					</form>
                               </div>
                          </div>
                     </div>
@@ -84,6 +85,34 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
 
 <?php require('footer/footer.php'); ?>
 <?php require("footer/component.php");?>
-
+<script>
+				$("#form_data").validate({
+					rules: {
+							name: "required",
+							email: {
+								required: true,
+								email: true
+							},
+							phone: {
+								required: true,
+								number: true
+							},
+							message: {
+								required: true,
+							},
+					},
+					messages: {
+					name: "Please specify your name",
+					email: {
+						required: "We need your email address to contact you",
+						email: "Your email address must be in the format of name@domain.com"
+					},phone: {
+						required: "We need your phone number to contact you",
+					},message: {
+						required: "Please write something",
+					}
+				}
+				});
+		</script>
 </body>
 </html>

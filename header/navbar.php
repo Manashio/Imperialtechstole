@@ -17,7 +17,8 @@
 					<div class="search1">
               <form action="" method="POST">
                   <i class="fas fa-search searchicon"></i> 
-									<input class="search1 ml-2" name="search" type="text" placeholder="Search here"> 																	
+									<input class="search1 ml-2" name="search" type="text" placeholder="Search here" autocomplete="off"> 
+									<button type="submit" class="search-btn">Search</button>																	
             </form>
 					</div>
 				</div>
@@ -52,8 +53,8 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body p-5">
-      <form action="store/mail.php" method="POST" id="form_data">
+      <div class="modal-body pl-5 pr-5 pb-5">
+      <form action="store/mail.php" method="POST" id="form_data_nav">
 					<div class="form-group pt-4">
 						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^A-z]/, '')">
 					</div>
