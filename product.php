@@ -5,6 +5,11 @@ $data = getstaticPagesContant($dbquery, 9);
 $query = mysqli_query($dbquery, "SELECT * FROM tbl_service where fld_id='$id'");
 $query2 = mysqli_query($dbquery, "SELECT * FROM tbl_service where fld_id='$id'");
 $array = mysqli_fetch_array($query2);
+$product_name = $array['fld_product_name'];
+
+$products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists where product_of='$product_name'");
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,6 +68,9 @@ $array = mysqli_fetch_array($query2);
             background-size:cover;
             margin:-15px;
         }
+        .item-holder{
+            padding:25px 150px;
+        }
     </style>
 </head>
 <body>
@@ -80,21 +88,33 @@ $array = mysqli_fetch_array($query2);
 
         </div>
         
-        <ul>
-            <?php while($a=mysqli_fetch_array($query)){
-                echo "<a href='product.php?id=".$a['fld_id']."'><li>";
-                echo "<div class='product-list'>
-                    <div class='img'>
-                        <img src='images/packages/".$a['fld_image']."' />
+      
+        <div class="item-holder">
+      
+      <?php
+        //  echo $products_lists_query
+        while($a=mysqli_fetch_array($products_lists_query)){
+                    
+        ?>
+
+                <a href="product-item.php?id=<?php echo $a['id']; ?>" class="search_item_link ">
+                    <div class="search_item_div mb-2">
+                         <div class="row">
+                              <div class="col-lg-4">
+                                   <img class="" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+                              </div>
+                              <div class="col-lg-8">
+                                  <h5 class="item_title"><?php echo $a['name']; ?></h5>
+                                   <h5>Model: <?php echo $a['model']; ?></h5>
+                                   <br>
+                                   <p class="item_describtion"> <?php echo $a['description']; ?></p>
+                              </div>
+                         </div>
                     </div>
-                    <h3>".$a['fld_product_name']."</h3>
-                ";
-                echo "</div>";
-                echo "</li></a>";
-            }
-            ?>
-        </ul>
-           
+               </a>
+
+         <?php } ?>
+        </div>
 
         </div>
         </section>

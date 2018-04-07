@@ -77,6 +77,7 @@
                         
                     <li><a href="slider-mgmt.php"<?php if($selectedPage==3) { echo 'class="active"'; } ?>>Slider </a></li>
                     <li><a href="service-mgmt.php"<?php if($selectedPage==4) { echo 'class="active"'; } ?>>Manage Products </a></li>
+                    <li><a href="products-services-list.php"<?php if($selectedPage==4) { echo 'class="active"'; } ?>>Products Services list</a></li>
                     <li><a href="gallery-mgmt.php"<?php if($selectedPage==4) { echo 'class="active"'; } ?>>Brands </a></li>
                     <li><a href="page-mgmt.php"<?php if($selectedPage==2) { echo 'class="active"'; } ?>>Pages </a></li>
                    <!-- <li><a href="events.php"<?php if($selectedPage==3) { echo 'class="active"'; } ?>>Events </a></li>-->
