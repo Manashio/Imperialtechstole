@@ -50,7 +50,7 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
                               <div class="col-lg-4">
                               <form action="store/mail.php" method="POST" id="form_data">
 					<div class="form-group pt-4">
-						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^A-z]/, '')">
+						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe">
 					</div>
 
 					<div class="form-group pt-4">

@@ -56,7 +56,7 @@
       <div class="modal-body pl-5 pr-5 pb-5">
       <form action="store/mail.php" method="POST" id="form_data_nav">
 					<div class="form-group pt-4">
-						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^A-z]/, '')">
+						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe">
 					</div>
 
 					<div class="form-group pt-4">

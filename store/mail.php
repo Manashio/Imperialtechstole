@@ -1,7 +1,7 @@
 <?php
-require 'Exception.php';
-require 'PHPMailer.php';
-require 'SMTP.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require '../vendor/autoload.php';
 error_reporting(0);
 if(empty($_POST)===false){
      $name = $_POST['name'];
@@ -41,34 +41,38 @@ if(empty($_POST)===false){
                     <textarea class='form-control' aria-describedby='basic-addon1' disabled >".$message."</textarea>
                   </div>
                   " ;
-                  // $mail = new PHPMailer(true);                   
-                  // try {
-                  //     $mail->SMTPDebug = 2;                                 
-                  //     $mail->isSMTP();                                      
-                  //     $mail->Host = '';  
-                  //     $mail->SMTPAuth = true;                              
-                  //     $mail->Username = 'nubulmachary@gmail.com';                
-                  //     $mail->Password = 'boogiemannn';                         
-                  //     $mail->SMTPSecure = 'tls';                          
-                  //     $mail->Port = 587;                                   
+                  $mail = new PHPMailer(true);                   
+                  try {
+                    $mail->SMTPOptions = array(
+                      'ssl' => array(
+                          'verify_peer' => false,
+                          'verify_peer_name' => false,
+                          'allow_self_signed' => true
+                      )
+                    );
+                      $mail->SMTPDebug = 2;                                 
+                      $mail->isSMTP();                                      
+                      $mail->Host = gethostbyname('smtp.gmail.com');
+                      $mail->SMTPAuth = true;                              
+                      $mail->Username = 'nubulmachary@gmail.com';                
+                      $mail->Password = 'boogiemannn';                         
+                      $mail->SMTPSecure = 'tls';                          
+                      $mail->Port = 587;                              
     
-                  //     $mail->setFrom($email, 'Mailer');
-                  //     // $mail->addAddress('joe@example.net', 'Joe User');     
-                  //     // $mail->addAddress('ellen@example.com');               
-                  //     // $mail->addReplyTo('info@example.com', 'Information');
-                  //     // $mail->addCC('cc@example.com');
-                  //     // $mail->addBCC('bcc@example.com');
-                  //     //Content
-                  //     $mail->isHTML(true);                                
-                  //     $mail->Subject = 'Here is the subject';
-                  //     $mail->Body    = 'This is the HTML message body <b>in bold!</b>'.$message;
-                  //     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                      $mail->setFrom($email, $email);
+                      $mail->addAddress('nubulmachary@gmail.com', 'Admin');
+       
+                      $mail->isHTML(true);                                
+                      $mail->Subject = 'Mail from '.$name;
+                      $mail->Body    = '<h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.' and phone no is '.$phone.'</h5> <br><br><br> '.$message;
+                      $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                      $mail->send();
+                      
 
-                  //     $mail->send();
-                  //     echo 'Message has been sent';
-                  // } catch (Exception $e) {
-                  //     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-                  // }
+                      echo 'Message has been sent';
+                  } catch (Exception $e) {
+                     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+                  }
           }
      }
 
