@@ -49,19 +49,19 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
                               </div>
                               <div class="col-lg-4">
                               <form action="store/mail.php" method="POST" id="form_data">
-					<div class="form-group pt-4">
-						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe">
-					</div>
+
+						<input type="hidden" class="form-control input_bar" name="model" value="<?php echo "Name : ".$a['name']." | model : ".$a['model'];?>">
+
+						<div class="form-group pt-4">
+							<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe">
+						</div>
 
 					<div class="form-group pt-4">
 						<input type="text" class="form-control input_bar" id="email" name="email" placeholder="Email : Johndoe@gmail.com">
-
-						
 					</div>
 
 					<div class="form-group pt-4">
-						<input type="text" class="form-control input_bar" id="phone" maxlength="10" name="phone" placeholder="Phone no : 9706300000" onkeyup="this.value = this.value.replace(/[^0-9]/, '')">
-						
+						<input type="text" class="form-control input_bar" id="phone" maxlength="10" name="phone" placeholder="Phone no : 9706300000" onkeyup="this.value = this.value.replace(/[^0-9]/, '')">		
 					</div>
 
 					<div class="form-group pt-4">

@@ -8,14 +8,15 @@ if(empty($_POST)===false){
      $phone  = $_POST['phone'];
      $email  = $_POST['email'];
      $message  = $_POST['message'];
+     $model = $_POST['model'];
            if (empty($name) || empty($phone) || empty($email) || empty($message)) {
                     $alert = "<div class='alert alert-danger' role='alert'>
                     This is a danger alert—check it out!
                     </div>";
           }else{
-                    $data = array();
-                    $data=array($name,$phone,$email,$message);
-                    $data_input = "<div class='input-group mb-3 mt-5'>
+                  $data = array();
+                  $data= array($name,$phone,$email,$message,$model);
+                  $data_input = "<div class='input-group mb-3 mt-5'>
                     <div class='input-group-prepend'>
                       <span class='input-group-text' id='basic-addon1'>Name</span>
                     </div>
@@ -61,10 +62,15 @@ if(empty($_POST)===false){
     
                       $mail->setFrom($email, $email);
                       $mail->addAddress('nubulmachary@gmail.com', 'Admin');
+
+                      //$mail->addAddress('manashbharali79@gmail.com', 'Admin');
+                      
        
                       $mail->isHTML(true);                                
                       $mail->Subject = 'Mail from '.$name;
-                      $mail->Body    = '<h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.' and phone no is '.$phone.'</h5> <br><br><br> '.$message;
+
+                      $mail->Body    = '<h1>'.$model.'</h1><h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.'and phone no is '.$phone.'</h5> <br><br><br> '.$message;
+
                       $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
                       $mail->send();
                       
