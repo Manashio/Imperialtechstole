@@ -28,7 +28,7 @@
 
 <section id="formSection">
 	<div class="container">
-		<div class="row">
+		<div class="row pt-5 pb-5">
 
 
 			<div class="col-md-6  pt-5 pb-5" >
@@ -50,7 +50,7 @@
 						function initMap() {
 							var uluru = {lat: 28.413014, lng: 77.044226};
 							var map = new google.maps.Map(document.getElementById('map'), {
-								zoom: 18,
+								zoom: 14,
 								center: uluru
 							});
 							var marker = new google.maps.Marker({
@@ -58,9 +58,11 @@
 								map: map
 							});
 						}
+						
 		</script>
 		<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9FDi9NYChqbm06P8EI9_dttClbWhxWhQ&callback=initMap">
+    
     </script>
 
 			<div class="col-md-6 pt-5 pb-5 ">

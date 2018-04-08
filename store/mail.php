@@ -59,7 +59,6 @@ if(empty($_POST)===false){
                       $mail->Password = 'boogiemannn';                         
                       $mail->SMTPSecure = 'tls';                          
                       $mail->Port = 587;                              
-    
                       $mail->setFrom($email, $email);
                       $mail->addAddress('nubulmachary@gmail.com', 'Admin');
 
