@@ -323,8 +323,11 @@ nav{
 	background: #fff;
 	color: rgb(149, 22, 199);
 	border-left:1px solid #eee;
+	font-weight: bold;
 }
-
+.search-btn:hover{
+	background: #eee;
+}
 .searchicon{
 	color: #fff;
 	font-size: 20px;
@@ -593,7 +596,7 @@ footer ul li a:hover,footer ul li a:focus{
 	color: #333;
 }
 .search_item_link:hover .search_item_div{
-	background: #fff;
+	background: #eee;
 	-webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
     box-shadow: 0 1px 8px rgba(0,0,0,.3);
 }
@@ -602,15 +605,16 @@ footer ul li a:hover,footer ul li a:focus{
 	height: 100%;
 	background: #fff;
 	padding: 10px;
-	border-radius: 3px;
 }
 .search_item_div img{
-	height: 200px;
+	width: 100%;
 	overflow: hidden;
 }
 .item_title{
-	font-size: 30px;
+	font-size: 23px;
+	color: rgb(101, 25, 172);
 }
+
 .item_description{
 	margin: 0px;
 	padding:0px 0px;
@@ -631,3 +635,16 @@ footer ul li a:hover,footer ul li a:focus{
 	font-weight: 500;
 	font-size: 13px;
 }
+/*search img*/
+.search_img{
+	height: 100%;
+	width:100%;
+	border:0px;
+	overflow: hidden;
+ }
+ .search_img img{
+	 width: 350px;
+	 height: 180px;
+	 position: relative;
+	 margin: 0 auto;
+ }

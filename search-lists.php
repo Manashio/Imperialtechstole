@@ -40,10 +40,13 @@ $search_query_array = mysqli_fetch_array($search_query);
                     <div class="search_item_div mb-2">
                          <div class="row">
                               <div class="col-lg-4">
-                                   <img class="" src="images/packages/<?php echo $a['fld_image']; ?>">
+                                    <div class="search_img">    
+                                    <img class="" src="images/packages/<?php echo $a['fld_image']; ?>" align="middle">
+                                   </div>
                               </div>
                               <div class="col-lg-8">
                                    <h5 class="item_title"><?php echo $a['fld_product_name']; ?></h5>
+                                   
                                    <br>
                                    <p class="item_describtion"><?php echo $a['']; ?> </p>
                               </div>
