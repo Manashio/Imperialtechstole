@@ -182,11 +182,24 @@
 		<section>
 			<div class="container pt-5 pb-5">
 				<div id="company">
-					<h1 class="pt-5 pb-5">Find us</h1>
+					<h1 class="pt-5 pb-5 text-center">Sposored by</h1>
+							<ul class="company_logo text-center">
+								<li>LG</li>
 
+								<li>PHILIPS</li>
 
+								<li>DELL</li>
 
-					<img src="" alt="">
+								<li>HP</li>
+
+								<li>HITACHI</li>
+
+								<li>BOSE</li>
+
+								<li>YAMAHA</li>
+
+								<li>SENNHEISER</li>
+							</ul>
 				</div>
 			</div>
 		</section>
