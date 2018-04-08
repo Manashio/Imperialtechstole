@@ -36,11 +36,13 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
                <div class="search_item_div mb-2">
                          <div class="row">
                               <div class="col-lg-4">
-                                   <img class="" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
-                              </div>
+																	<div class="overflow">
+                                   <img class="" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" >
+																	 </div>
+																	</div>
                               <div class="col-lg-4">
-                                   <h5 class="item_title"><?php echo $a['name']; ?></h5>
-                                   <h5>Model: <?php echo $a['model']; ?></h5>
+                                   <h4 class="item_title_single"><?php echo $a['name']; ?></h4>
+                                   <h5 class="">Model: <?php echo $a['model']; ?></h5>
                                    <br>
                                    <h5>Product description</h5>
                                    <p class="item_description"><?php echo $a['description']; ?> </p><br>

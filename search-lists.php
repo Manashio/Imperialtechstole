@@ -21,7 +21,7 @@ $search_query_array = mysqli_fetch_array($search_query);
 <?php require('header/navbar.php'); ?>
 <?php require('header/catagory.php'); ?>
 
-     <section class="search_only">
+     <section class="search_only eee mb-5">
           <div class="container mt-5 mb-5">
                <h2 class="mt-5 mb-5">Search for :  <span><b> <?php echo $srch_id; ?> </b></span></h2>
                <?php 
@@ -32,48 +32,21 @@ $search_query_array = mysqli_fetch_array($search_query);
                   <?php
                }else{
                while($a=mysqli_fetch_array($search_query)){
-                
                 ?>
-
-
-               <a href="product-item.php?id=<?php echo $a['fld_id']; ?>" class="search_item_link ">
-                    <div class="search_item_div mb-2">
-                         <div class="row">
-                              <div class="col-lg-4">
-                                    <div class="search_img">    
+                <a href="product-item.php?id=<?php echo $a['fld_id']; ?>" class="search_item_link ">
+                    <div class="items_search">
+                                <div class="search_img">    
                                     <img class="" src="images/packages/<?php echo $a['fld_image']; ?>" align="middle">
-                                   </div>
-                              </div>
-                              <div class="col-lg-8">
-                                   <h5 class="item_title"><?php echo $a['fld_product_name']; ?></h5>
-                                   
-                                   <br>
-                                   <p class="item_describtion"><?php echo $a['']; ?> </p>
-                              </div>
-                         </div>
+                                    <h5 class="item_title"><?php echo $a['fld_product_name']; ?></h5>
+                                    <p class="item_describtion"><?php echo $a['']; ?> </p>
+                                 </div>
                     </div>
-               </a>
+                   </a>
 
                <?php
                      }
                    }
-               ?>
-
-               <!-- <a href="search_item.php" class="search_item_link">
-                    <div class="search_item_div">
-                         <div class="row">
-                              <div class="col-lg-4">
-                                   <img class="" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
-                              </div>
-                              <div class="col-lg-8">
-                                   <h5 class="item_title">Product name</h5>
-                                   <br>
-                                   <p class="item_describtion">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              </div>
-                         </div>
-                    </div>
-               </a> -->
-               
+               ?>          
           </div>
      </section>
 
