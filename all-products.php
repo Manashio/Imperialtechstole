@@ -71,7 +71,7 @@ $query = mysqli_query($dbquery, "SELECT * FROM tbl_service");
             vertical-align:middle;
             height: 300px;
             width: 100vw;
-            background: #ccc url('https://pre00.deviantart.net/0ea8/th/pre/i/2006/019/e/3/cctv_1280x800_wallpaper_by_mountaincanon.jpg');
+            background: #ccc url('http://pasoroblestech.com/wp-content/uploads/843-7th-Product-Wall-2.jpg');
             background-position:center;
             background-size:cover;
             margin:-15px;
@@ -89,7 +89,7 @@ $query = mysqli_query($dbquery, "SELECT * FROM tbl_service");
   <!-- Start change content here -->
         <section id="all-product">
         <div class="banner">            
-            <h1 class="text-center">Our Products</h1>
+            <h1 class="text-center white-heading">Our Products</h1>
 
         </div>
         <div class="container pt-5 pb-5">

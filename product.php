@@ -63,7 +63,7 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
             vertical-align:middle;
             height: 300px;
             width: 100vw;
-            background: #ccc url('https://pre00.deviantart.net/0ea8/th/pre/i/2006/019/e/3/cctv_1280x800_wallpaper_by_mountaincanon.jpg');
+            background: #ccc url('http://pasoroblestech.com/wp-content/uploads/843-7th-Product-Wall-2.jpg');
             background-position:center;
             background-size:cover;
             margin:-15px;
@@ -84,7 +84,7 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
   <!-- Start change content here -->
         <section id="all-product">
         <div class="banner">            
-            <h1 class="text-center"><?php echo $array['fld_product_name'] ?></h1>
+            <h1 class="text-center white-heading"><?php echo $array['fld_product_name'] ?></h1>
 
         </div>
         

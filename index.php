@@ -182,7 +182,7 @@
 		<section>
 			<div class="container pt-5 pb-5">
 				<div id="company">
-					<h1 class="pt-5 pb-5 text-center">Sposored by</h1>
+					<h1 class="pt-5 pb-5 text-center">Products Partners</h1>
 							<ul class="company_logo text-center">
 								<li>LG</li>
 
