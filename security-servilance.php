@@ -1,8 +1,7 @@
 <?php 
 
 require('config/dbconnect.php');
-$srch_id = $_GET['search'];
-$sql="SELECT * FROM tbl_service  WHERE fld_mkeywords like '%".$srch_id."%' OR fld_product_name like '%".$srch_id."%'  OR fld_mtitle like '%".$srch_id."%'";
+$sql="SELECT * FROM tbl_service  WHERE fld_catagory = 'securityservilance'";
 
 $search_query = mysqli_query($dbquery,$sql);
 $search_query_array = mysqli_fetch_array($search_query);
@@ -24,7 +23,7 @@ $search_query_array = mysqli_fetch_array($search_query);
      <section class="search_only eee">
         <section class=" mb-5">
             <div class="container mt-5 mb-5">
-                <h2 class="mt-5 mb-5">Search for :  <span><b> <?php echo $srch_id; ?> </b></span></h2>
+                <h2 class="mt-5 mb-5">SECURITY SERVILANCE</h2>
                 <?php 
                 if($search_query_array <= 0){
                     ?>

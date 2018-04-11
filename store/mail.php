@@ -40,7 +40,8 @@ if(empty($_POST)===false){
                     </div>
 
                     <textarea class='form-control' aria-describedby='basic-addon1' disabled >".$message."</textarea>
-                  </div>
+                  </div><br><br>
+                  <a class='btn btn-success' href='../index.php'> Back to Home </a><br><br>
                   " ;
                   $mail = new PHPMailer(true);                   
                   try {

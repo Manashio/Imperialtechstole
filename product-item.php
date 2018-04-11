@@ -46,7 +46,8 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
                                    <br>
                                    <h5>Product description</h5>
                                    <p class="item_description"><?php echo $a['description']; ?> </p><br>
-                                   <a href="" class="btn btn-info">Download Broucher</a>
+                                   <a href="brochure/brochure.pdf" class="btn btn-info" download>Download Broucher</a>
+
                                    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed aspernatur vero minima nihil, tenetur exercitationem eum cupiditate voluptate, numquam libero nemo iusto modi corporis temporibus accusantium obcaecati error, provident ipsa.</p> -->
                               </div>
                               <div class="col-lg-4">

@@ -75,23 +75,27 @@
 			</div>
 
 
-				<div class="col-sm-4">
+			<div class="col-sm-4">
+			<a href="it-networking.php">
 				<div class="product-box">
 					<div class="img">
 					<img src="http://www.rawstockmedia.com/photos/high-tech-laptops-for-passionate-gamers-pictures/High-Tech-Laptops-for-Passionate-Gamers2.jpg" alt="" >
 					</div>
-				<h2 class="text-center">Some Product</h2>
+				<h2 class="text-center">IT networking</h2>
 				</div>
+				</a>
 			</div>
 
 				
 				<div class="col-sm-4">
+			<a href="security-servilance.php">
 				<div class="product-box">
 					<div class="img">
 					<img src="http://www.rawstockmedia.com/photos/high-tech-laptops-for-passionate-gamers-pictures/High-Tech-Laptops-for-Passionate-Gamers2.jpg" alt="" >
 					</div>
-				<h2 class="text-center">Some Product</h2>
+				<h2 class="text-center">Security Servilance</h2>
 				</div>
+				</a>
 			</div>
 
 
