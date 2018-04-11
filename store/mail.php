@@ -1,7 +1,7 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require '../vendor/autoload.php';
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
+// require '../vendor/autoload.php';
 error_reporting(0);
 if(empty($_POST)===false){
      $name = $_POST['name'];
@@ -14,70 +14,59 @@ if(empty($_POST)===false){
                     This is a danger alert—check it out!
                     </div>";
           }else{
-                  $data = array();
-                  $data= array($name,$phone,$email,$message,$model);
-                  $data_input = "<div class='input-group mb-3 mt-5'>
-                    <div class='input-group-prepend'>
-                      <span class='input-group-text' id='basic-addon1'>Name</span>
-                    </div>
-                    <input type='text' class='form-control' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$name.">
-                  </div>
-                  <div class='input-group mb-3 mt-2'>
-                    <div class='input-group-prepend'>
-                      <span class='input-group-text' id='basic-addon1'>Email</span>
-                    </div>
-                    <input type='text' class='form-control' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$email.">
-                  </div>
-                  <div class='input-group mb-3 mt-2'>
-                    <div class='input-group-prepend'>
-                      <span class='input-group-text' id='basic-addon1'>Phone no</span>
-                    </div>
-                    <input type='text' class='form-control' aria-label='Username' aria-describedby='basic-addon1' disabled value=".$phone.">
-                  </div>
-                  <div class='input-group mb-3 mt-2'>
-                    <div class='input-group-prepend'>
-                      <span class='input-group-text' id='basic-addon1'>Message</span>
-                    </div>
 
-                    <textarea class='form-control' aria-describedby='basic-addon1' disabled >".$message."</textarea>
-                  </div>
-                  " ;
-                  $mail = new PHPMailer(true);                   
-                  try {
-                    $mail->SMTPOptions = array(
-                      'ssl' => array(
-                          'verify_peer' => false,
-                          'verify_peer_name' => false,
-                          'allow_self_signed' => true
-                      )
-                    );
-                      $mail->SMTPDebug = 2;                                 
-                      $mail->isSMTP();                                      
-                      $mail->Host = gethostbyname('smtp.gmail.com');
-                      $mail->SMTPAuth = true;                              
-                      $mail->Username = 'nubulmachary@gmail.com';                
-                      $mail->Password = 'boogiemannn';                         
-                      $mail->SMTPSecure = 'tls';                          
-                      $mail->Port = 587;                              
-                      $mail->setFrom($email, $email);
-                      $mail->addAddress('nubulmachary@gmail.com', 'Admin');
+              $thank_you_div = "
+                                                <div class='thank_you_div text-center'>
+                                                      <div class='thank_you_header'>
+                                                          <i class=' mt-5 far fa-envelope'></i>
+                                                      </div>
+                                                      <div class='pt-5 pb-5'>
+                                                          <h2 class='display-4 thank_you_heading'>Thank you,</h2>
+                                                          <p class='p-5'>
+                                                              You're now a member of our list of awesome people. We will message you on <span class='email_m'>".$email."</span> for further information. 
+                                                          </p>
 
-                      //$mail->addAddress('manashbharali79@gmail.com', 'Admin');
+                                                          <a href='../index.php' class='btn custom_btn'>Back to home</a>
+                                                      <div>
+                                                </div>
+              ";
+                  
+                  // $mail = new PHPMailer(true);                   
+                  // try {
+                  //   $mail->SMTPOptions = array(
+                  //     'ssl' => array(
+                  //         'verify_peer' => false,
+                  //         'verify_peer_name' => false,
+                  //         'allow_self_signed' => true
+                  //     )
+                  //   );
+                  //     $mail->SMTPDebug = 2;                                 
+                  //     $mail->isSMTP();                                      
+                  //     $mail->Host = gethostbyname('smtp.gmail.com');
+                  //     $mail->SMTPAuth = true;                              
+                  //     $mail->Username = 'nubulmachary@gmail.com';                
+                  //     $mail->Password = 'boogiemannn';                         
+                  //     $mail->SMTPSecure = 'tls';                          
+                  //     $mail->Port = 587;                              
+                  //     $mail->setFrom($email, $email);
+                  //     $mail->addAddress('nubulmachary@gmail.com', 'Admin');
+
+                  //     //$mail->addAddress('manashbharali79@gmail.com', 'Admin');
                       
        
-                      $mail->isHTML(true);                                
-                      $mail->Subject = 'Mail from '.$name;
+                  //     $mail->isHTML(true);                                
+                  //     $mail->Subject = 'Mail from '.$name;
 
-                      $mail->Body    = '<h1>'.$model.'</h1><h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.'and phone no is '.$phone.'</h5> <br><br><br> '.$message;
+                  //     $mail->Body    = '<h1>'.$model.'</h1><h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.'and phone no is '.$phone.'</h5> <br><br><br> '.$message;
 
-                      $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-                      $mail->send();
+                  //     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                  //     $mail->send();
                       
 
-                      echo 'Message has been sent';
-                  } catch (Exception $e) {
-                     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-                  }
+                  //     echo 'Message has been sent';
+                  // } catch (Exception $e) {
+                  //    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+                  // }
           }
      }
 
@@ -98,12 +87,11 @@ if(empty($_POST)===false){
 
 </head>
 <body>
-     <div class="container pt-5">
-          <h1>Form data</h1>
+     <div class="mail">
           <?php echo $alert;?>
-          <div class="well">
-               <?php print_r($data);
-                         echo $data_input;
+          <div>
+               <?php
+                         echo $thank_you_div;
                ?>
           </div>
      </div>
