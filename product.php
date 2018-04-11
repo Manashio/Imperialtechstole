@@ -9,6 +9,8 @@ $product_name = $array['fld_product_name'];
 
 $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists where product_of='$product_name'");
 
+// $testarray= mysqli_fetch_array($products_lists_query);
+$rowcount=mysqli_num_rows($products_lists_query);
 
 ?>
 <!DOCTYPE html>
@@ -93,6 +95,8 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
       
       <?php
         //  echo $products_lists_query
+         if($rowcount>0){
+            
         while($a=mysqli_fetch_array($products_lists_query)){
                     
         ?>
@@ -113,7 +117,14 @@ $products_lists_query = mysqli_query($dbquery, "SELECT * FROM products_lists whe
                     </div>
                </a>
 
-         <?php } ?>
+         <?php } 
+         
+        }else{
+            echo "<h3 class='text-center'>Details Have Not Been Updated in Database Yet</h3><br>";
+            echo "<h3 class='text-center'>Please Add Into Your DataBase</h3>";
+            echo "<p class='text-center'><a  href='siteadmin/'>Click Here </a>  To Add Product Details.</p>";
+        }
+        ?>
         </div>
 
         </div>
