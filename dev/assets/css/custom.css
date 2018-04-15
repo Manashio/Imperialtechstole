@@ -548,8 +548,9 @@ footer ul li a:hover,footer ul li a:focus{
 	}
 	#catagory ul li a{
 		display: block;
-		padding: 10px 40px;
-		color:#370c63;
+		padding: 10px 10px;
+		color: #370c63;
+		font-size: 12px;
 	}
 
 	#catagory ul li ul{
