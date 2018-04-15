@@ -1,3 +1,8 @@
+<?php 
+
+    require("config/dbconnect.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,56 +12,66 @@
     <?php require('header/component.php'); ?>
     <title>Document</title>
     <style>
-        .panel-title a{
-            background: #333;
-            padding: 15px;
-            margin-bottom: -10px;
-            display: block;
-            font-size: 0.87rem;
-            color:#fff;
-            transition: 0.5s;
-            border-left: 4px solid #333;
-        }
-        
-        .panel-title a:hover,.panel-title a:focus{
-            background:#000;
-            color:#fff;
-            /* border-top: 2px solid #8253dc; */
-            border-left: 4px solid #8253dc;
-        }
+      #videoSection .box{
+    /* display: table-cell; */
+    /* vertical-align: middle; */
+    position: relative;
+    padding: 50px 10px;
+    /* height: 300px; */
+    /* width: 100vw; */
+    background: #ccc;
+    /* margin: 50px!important; */
+    text-align: center;
+    /* bottom: 50px; */
+    margin-bottom: 50px;
+      }
     </style>
 </head>
 <body>
     <?php require('header/navbar.php'); ?>
-    <div class="sidebar" id="style-3">
-    <?php require('addons/sidebar.php'); ?>
-    </div>
+    <?php require('header/catagory.php'); ?>
 
-
+     <div class="contents" style="padding:70px 0px 1px 0px">
 
   <!-- Start change content here -->
-
-    <div class="contents">
-        <div class="p-3">
-            <h1>This is amazing</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi animi veritatis dicta, dolorum enim saepe impedit harum culpa aliquid suscipit repellat tempore explicabo architecto, fuga maxime, quis ut ea veniam!
-                Temporibus similique quidem in possimus quibusdam exercitationem rerum tempora? Quas ea officiis voluptate facere, minima iure? Aliquam adipisci mollitia suscipit animi qui quasi rem esse ipsam, praesentium, quia sapiente harum.
-                Veritatis voluptatum incidunt, beatae necessitatibus, quibusdam vero reiciendis voluptatibus repudiandae culpa veniam unde eius, tenetur harum architecto ipsum! Tempore, et ad voluptatibus in commodi distinctio amet nobis quas nihil repellendus!
-                Voluptas commodi voluptate voluptatum eius reiciendis expedita exercitationem ipsa nemo neque. Inventore quo autem dignissimos possimus veniam voluptate totam magni facere voluptatum harum quas minus ea ex asperiores, fugiat impedit.
-   </p>
+    <section id="videoSection">
+        <div class="jumbotron">
+        <h1 class="text-center">Video Wall</h1>
+        </div>
+        <div class="container">
+        <div class="row">
+        
+             <div class="col-sm-3">
+             
+            </div>
+            <div class="col-sm-3">
+                <a href="video-wall-product.php?id=1">
+                <div class="box">
+                    LCD Video Wall
+                </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+             <a href="video-wall-product.php?id=2">             
+                <div class="box">
+                    LCD Video Wall
+                </div>
+            </div>
+            </a>
+             <div class="col-sm-3">
+             
+            </div>
+        </div>
         </div>
 
+    </section>
 
-
-
-
+<!-- end content here     -->
 
     <?php require('footer/footer.php');?>
     
     </div>
 
-<!-- end content here     -->
 
 
 
