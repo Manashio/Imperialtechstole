@@ -1,2 +1,0 @@
-this is a 404 page
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quidem fugit dolores itaque provident, dolorem enim nam quae, consequuntur doloribus voluptates accusantium aspernatur qui illum iusto alias quas, quaerat rerum!
