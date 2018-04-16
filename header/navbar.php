@@ -1,6 +1,6 @@
 <?php
 	if(isset($_POST['search'])){
-		$search = $_POST['search'];
+		$search = mysql_real_escape_string ($_POST['search']);
 		header('location: search-lists.php?search='.$search);
 	}
 

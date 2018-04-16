@@ -12,12 +12,17 @@
     <?php require('header/component.php'); ?>
     <title>Document</title>
     <style>
-        
+        .img{
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
-    <?php require('header/navbar.php'); ?>
-    <?php require('header/catagory.php'); ?>
+    <?php require_once('header/navbar.php'); ?>
+    <?php
+     require_once('header/catagory.php');
+      ?>
 
         
 
@@ -26,9 +31,47 @@
 
   <!-- Start change content here -->
 
+  <?php 
+    $query = mysqli_query($dbquery,"SELECT * FROM my_projector");
+    
+  ?>
+
     <div class="jumbotron">
         <h1 class="text-center">Projector</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-4">
+                <img src="images/dummy.png" class="img" alt="">
         </div>
+        <div class="col-sm-8">
+            <table class="table">
+                <tr>
+                    <th>SL.No</th>
+                    <th>Brand</th>
+                    <th>Specification</th>
+                    <th>Broucher</th>
+                </tr>
+                <?php
+                $slno = 1;
+                  while($a=mysqli_fetch_array($query)){
+                        echo "
+                        <tr>
+                            <td>".$slno."</td>
+                            <td>".$a['my_projector_brand']."</td>
+                            <td>".$a['my_projector_specification']."</td>
+                            <td><a href='".$a['my_projector_broucher']."' class='btn btn-info' download> Download </a></td>
+                        </tr>
+                        ";
+                        $slno++;
+                    }
+               
+                ?>
+            </table>
+            </div>
+        </div>
+    </div>
 
 <!-- end content here     -->
 

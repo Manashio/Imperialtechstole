@@ -22,57 +22,7 @@ $rowcount=mysqli_num_rows($products_lists_query);
     <?php require('header/component.php'); ?>
     <title>Document</title>
     <style>
-        .panel-title a{
-            background: #333;
-            padding: 15px;
-            margin-bottom: -10px;
-            display: block;
-            font-size: 0.87rem;
-            color:#fff;
-            transition: 0.5s;
-            border-left: 4px solid #333;
-        }
-        
-        .panel-title a:hover,.panel-title a:focus{
-            background:#000;
-            color:#fff;
-            /* border-top: 2px solid #8253dc; */
-            border-left: 4px solid #8253dc;
-        }
-        #all-product li{
-            list-style-type: none;
-            display: inline-block;
-            margin: 5px;
-            width: 250px;
-            height: 250px;
-            text-align: center;
-        }
-        #all-product .product-list{
-        }
-        
-        #all-product .product-list h3{
-            font-size: 16px;
-            color: #555;
-            padding: 15px;
-        }
-        
-        #all-product .product-list img{
-            height: auto;
-            width: 250px;
-        }
-        .banner{
-            display:table-cell;
-            vertical-align:middle;
-            height: 300px;
-            width: 100vw;
-            background: #ccc url('http://pasoroblestech.com/wp-content/uploads/843-7th-Product-Wall-2.jpg');
-            background-position:center;
-            background-size:cover;
-            margin:-15px;
-        }
-        .item-holder{
-            padding:25px 150px;
-        }
+      
     </style>
 </head>
 <body>

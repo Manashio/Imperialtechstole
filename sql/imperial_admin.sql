@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2018 at 09:35 PM
+-- Generation Time: Apr 16, 2018 at 10:51 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
 
@@ -46,7 +46,7 @@ INSERT INTO `my_catagory` (`my_id`, `my_catagory_name`, `my_catagory_seo`, `my_p
 (1, 'Video Wall', 'video wall', 'video-wall.php', 'active', 0, 0),
 (2, 'Large Format Display/Digital Signage', 'Large Format Display/Digital Signage', 'format-display.php', 'active', 0, 0),
 (3, 'Projector', 'Projector', 'projector.php', 'active', 0, 0),
-(4, 'Video Conferencing ', 'Video Conferencing ', '', 'active', 0, 0),
+(4, 'Video Conferencing ', 'Video Conferencing ', 'conference.php', 'active', 0, 0),
 (5, 'Audio/Video Solution', 'Audio/Video Solution', '', 'active', 0, 0),
 (6, 'Smart/Virtual Classroom', 'Smart/Virtual Classroom', '', 'active', 0, 0),
 (7, 'IT/Networking/UPS', 'IT/Networking/UPS', '', 'active', 0, 0),
@@ -83,6 +83,33 @@ INSERT INTO `my_format_display` (`my_id`, `my_subcatagory_id`, `my_display_name`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `my_projector`
+--
+
+CREATE TABLE `my_projector` (
+  `my_id` int(11) NOT NULL,
+  `my_catagory_id` int(11) NOT NULL,
+  `my_projector_name` varchar(100) NOT NULL,
+  `my_projector_brand` varchar(100) NOT NULL,
+  `my_projector_specification` varchar(1000) NOT NULL,
+  `my_projector_broucher` varchar(100) NOT NULL,
+  `image` varchar(100) NOT NULL,
+  `my_projector_created_at` int(11) NOT NULL,
+  `my_projector_updated_at` int(11) NOT NULL,
+  `my_projector_status` enum('active','inactive') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `my_projector`
+--
+
+INSERT INTO `my_projector` (`my_id`, `my_catagory_id`, `my_projector_name`, `my_projector_brand`, `my_projector_specification`, `my_projector_broucher`, `image`, `my_projector_created_at`, `my_projector_updated_at`, `my_projector_status`) VALUES
+(1, 3, 'Projector 1', 'LG', 'Projector Specification', '', '', 0, 0, 'active'),
+(2, 3, 'Projector 2', 'Samsung', 'Some Specification', '', '', 0, 0, 'active');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `my_subcatagory`
 --
 
@@ -115,6 +142,32 @@ INSERT INTO `my_subcatagory` (`my_id`, `my_catagory_id`, `my_subcatagory_name`, 
 (11, 3, 'LCD/DLP Projector', 'LCD/DLP Projector', 'projector.php', 'active', 0, 0),
 (12, 6, 'Smart Classroom Solution\r\n', 'Smart Classroom Solution\r\n', '', 'active', 0, 0),
 (13, 6, 'Virtual Classroom Solution\r\n', 'Virtual Classroom Solution\r\n', '', 'active', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `my_videoconferencing`
+--
+
+CREATE TABLE `my_videoconferencing` (
+  `my_id` int(11) NOT NULL,
+  `my_catagory_id` int(11) NOT NULL,
+  `my_videoconference_name` varchar(100) NOT NULL,
+  `my_images` varchar(100) NOT NULL,
+  `my_point_desc` varchar(1000) NOT NULL,
+  `my_multipart_desc` varchar(1000) NOT NULL,
+  `my_brand` varchar(100) NOT NULL,
+  `my_status` enum('active','inactive') NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `my_videoconferencing`
+--
+
+INSERT INTO `my_videoconferencing` (`my_id`, `my_catagory_id`, `my_videoconference_name`, `my_images`, `my_point_desc`, `my_multipart_desc`, `my_brand`, `my_status`, `created_at`, `updated_at`) VALUES
+(1, 4, 'VIDEO CONFERENCE', '', 'A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose', 'A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose', 'LG', 'active', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -220,7 +273,7 @@ CREATE TABLE `tbl_administrator` (
 
 INSERT INTO `tbl_administrator` (`fld_id`, `fld_name`, `fld_username`, `fld_userpass`, `fld_email`, `fld_phone`, `fld_facebook`, `fld_twitter`, `fld_linkedin`, `fld_googleplus`, `fld_llogintime`, `fld_lloginip`, `fld_datetime`, `fld_company_name`, `fld_address`, `fld_contact_number`, `fld_map`, `fld_status`) VALUES
 (1, 'Administrator', 'admin', 'cws312#', 'LAURA.SHI@CBEC365.COM', '+86 27-59730365', 'https://www.facebook.com/', 'https://twitter.com/', 'https://in.linkedin.com/', 'https://google.com/', '2018-03-31 15:44:53', '171.50.169.190', '2016-01-01 00:00:00', '', 'China', '', '', 1),
-(2, 'nubul', 'nubul', 'pass', 'nubulmachary@gmail.com', NULL, '', '', '', '', '2018-04-15 09:44:24', '::1', '0000-00-00 00:00:00', '', '', '', '', 1);
+(2, 'nubul', 'nubul', 'pass', 'nubulmachary@gmail.com', NULL, '', '', '', '', '2018-04-15 22:33:06', '::1', '0000-00-00 00:00:00', '', '', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -1323,11 +1376,23 @@ ALTER TABLE `my_format_display`
   ADD KEY `my_subcatagory_id` (`my_subcatagory_id`);
 
 --
+-- Indexes for table `my_projector`
+--
+ALTER TABLE `my_projector`
+  ADD PRIMARY KEY (`my_id`);
+
+--
 -- Indexes for table `my_subcatagory`
 --
 ALTER TABLE `my_subcatagory`
   ADD PRIMARY KEY (`my_id`),
   ADD KEY `my_catagory_id` (`my_catagory_id`);
+
+--
+-- Indexes for table `my_videoconferencing`
+--
+ALTER TABLE `my_videoconferencing`
+  ADD PRIMARY KEY (`my_id`);
 
 --
 -- Indexes for table `my_videowall`
@@ -1515,10 +1580,22 @@ ALTER TABLE `my_format_display`
   MODIFY `my_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `my_projector`
+--
+ALTER TABLE `my_projector`
+  MODIFY `my_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `my_subcatagory`
 --
 ALTER TABLE `my_subcatagory`
-  MODIFY `my_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `my_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `my_videoconferencing`
+--
+ALTER TABLE `my_videoconferencing`
+  MODIFY `my_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `my_videowall`

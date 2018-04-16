@@ -25,6 +25,7 @@
     /* bottom: 50px; */
     margin-bottom: 50px;
       }
+
     </style>
 </head>
 <body>
@@ -47,14 +48,14 @@
             <div class="col-sm-3">
                 <a href="video-wall-product.php?id=1">
                 <div class="box">
-                    LCD Video Wall
+                    LCD Video Wall 
                 </div>
                 </a>
             </div>
             <div class="col-sm-3">
              <a href="video-wall-product.php?id=2">             
                 <div class="box">
-                    LCD Video Wall
+                    LED Video Wall 
                 </div>
             </div>
             </a>

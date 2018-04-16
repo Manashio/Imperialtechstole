@@ -1,5 +1,7 @@
-<?php include("config/config.inc.php");
-    $query = mysqli_query($dbquery,"SELECT * FROM my_format_display");
+<?php 
+
+    // include("config/config.inc.php");
+    require('config/dbconnect.php');
     
 ?>
 <!DOCTYPE html>
@@ -25,6 +27,7 @@
 </head>
 <body>
     <?php require('header/navbar.php'); ?>
+    <?php require('header/catagory.php'); ?>
 
         
 
@@ -47,7 +50,9 @@
             <th>Specification</th>
             <th>View</th>
         </tr>
-            <?php
+            <?php 
+             $query = mysqli_query($dbquery,"SELECT * FROM my_format_display");
+  
             $slno=1;
             while($array = mysqli_fetch_array($query)){
                 echo " 
