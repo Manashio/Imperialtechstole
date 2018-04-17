@@ -50,7 +50,7 @@
         </button>
       </div>
       <div class="modal-body p-5">
-      <form action="store/mail.php" method="POST" id="form_data">
+      <form action="store/mail.php" method="POST" id="form_data_nav">
 					<div class="form-group pt-4">
 						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^a-z]/, '')">
 					</div>
