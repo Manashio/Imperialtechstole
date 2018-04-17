@@ -1,6 +1,7 @@
 <?php
 	if(isset($_POST['search'])){
-		$search = mysql_real_escape_string ($_POST['search']);
+		$search = preg_replace('/[^\w]/', '', $_POST['search']);
+		//$search = mysql_real_escape_string ($_POST['search']);
 		header('location: search-lists.php?search='.$search);
 	}
 
