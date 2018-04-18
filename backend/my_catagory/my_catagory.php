@@ -1,10 +1,10 @@
 <?php
-     require_once('core/session.php');
-     require_once('core/db_conn.php');
-     include_once('controller/date_time.php');
-     include_once('functions/function.inc.php');
-     include_once('views/head.php');
-     include_once('views/sidenav.php');
+     require_once('../core/session.php');
+     require_once('../core/db_conn.php');
+     include_once('../controller/date_time.php');
+     include_once('../functions/function.inc.php');
+     include_once('../subview/head.php');
+     include_once('../subview/sidenav.php');
 ?>          
 
 <div class="content">
@@ -31,9 +31,11 @@
                         <th>SEO Name</th>
                         <th>Page Name</th>                      
                         <th>Status</th>
+                        <th><i class="fas fa-pencil-alt"></i></th>
+                        <th><i class="far fa-trash-alt"></i></th>
                     </tr>
                     <?php 
-                    require_once('controller/my_catagory.php'); 
+                    require_once('../controller/my_catagory.php'); 
                     foreach ($getRows as $row) {
                       $id = $row['my_id'];
                     ?>
@@ -45,9 +47,10 @@
                           <td><?php echo $row["my_catagory_status"];?></td>
                           <td>
                               <b><?php echo "<a href='my_catagory_edit.php?id=$id'> EDIT </a>"?></b>
+                              
                               </td><td>
-                              <b><?php echo "<a href='my_catagory_delete.php?id=$id'> Delete </a>"?></b>
-                              <span></span>
+                              <b><?php echo "<a href='my_catagory_delete.php?id=$id'> DELETE </a>"?></b>
+                              
                           </td>
                       </tr>
                 <?php
@@ -78,11 +81,8 @@
                 <input type="text" name="seo" id="" class="form-control input_bar" placeholder="Seo">
                 <input type="text" name="pagename" class="form-control input_bar" id="" placeholder="Pagename">
                 <!-- <input type="text" name="status" id="" placeholder="Active / Disable"> -->
-               
                <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
         </form>
-
-
       </div>
      </div>
   </div>
@@ -96,5 +96,5 @@
 
 
 <?php
-     include_once('views/footer.php');
+     include_once('../subview/footer.php');
 ?>

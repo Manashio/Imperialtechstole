@@ -19,36 +19,9 @@
                   
           </div>
           <div class="mt-5">
-            <div class="jumbotron">
-                <?php  require_once('controller/my_catagory.php');?>
-            </div>
-
-            <div class="jumbotron">
-                <?php  require_once('controller/my_format_display.php');?>
-            </div>
-
-            <div class="jumbotron">
-                <?php  require_once('controller/my_projector.php');?>
-            </div>
-
-            <div class="jumbotron">
-                <?php  require_once('controller/my_subcatagory.php');?>
-            </div>
             
 
-            <div class="jumbotron">
-                <?php  require_once('controller/my_videoconferencing.php');?>
-            </div>
-           
-
-            <div class="jumbotron">
-                <?php  require_once('controller/my_videowall.php');?>
-            </div>
-
-         <h1>Footer</h1>
-      
-          
-
+                    <a href="my_catagory/my_catagory.php">My Catagory</a>
           
        </div>
 </div>

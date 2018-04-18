@@ -1,14 +1,14 @@
 <?php
+     require_once('../core/session.php');
+     require_once('../core/db_conn.php');
+     include_once('../controller/date_time.php');
+     include_once('../functions/function.inc.php');
+     include_once('../subview/head.php');
+     include_once('../subview/sidenav.php');
 
-     require_once('core/session.php');
-     require_once('core/db_conn.php');
-     include_once('controller/date_time.php');
-     include_once('functions/function.inc.php');
-     include_once('views/head.php');
-     include_once('views/sidenav.php');
      
      $id = $_GET['id'];
-     require_once('controller/my_catagory.php'); 
+     require_once('../controller/my_catagory.php'); 
    
 ?>          
 
@@ -33,7 +33,7 @@
 </div>
 
 <?php
-     include_once('views/footer.php');
+     include_once('../subview/footer.php');
 
      
 ?>

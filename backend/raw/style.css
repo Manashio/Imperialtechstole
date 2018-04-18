@@ -316,13 +316,7 @@ table{
   table tr td a:hover table span{
     background: #333;
   }
-  table span{
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: #58f724;
-    margin-top: -2px;
-  }
+
   .no-background{
     background: #fff!important;
   }
