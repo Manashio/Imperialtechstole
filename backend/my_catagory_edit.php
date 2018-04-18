@@ -31,15 +31,7 @@
                         <th>Link</th>
                     </tr>
                     <?php 
-                    $id = $_GET['id'];
-                    while ($id == 1) {
-                        
-                        
-                    }
                     require_once('controller/my_catagory.php'); 
-                    
-                    
-                    
                     ?>
                 </table>    
 

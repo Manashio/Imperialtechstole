@@ -9,27 +9,28 @@
 
 <div class="content">
      <div class="container">
-          <div class="hero">
+          <div class="hero" style="height:100px;">
                   <span class="time">
                   <?php echo $index_date;?>
                       <div></div>
                       <em>Ghy <i id="weather"> 00&deg;C</i></em>
                   </span>
-                  <h1 class="text-center cards_p">Admin</h1>
-                  
           </div>
 
-            <a href="" class="btn btn-info"  data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Add new</a>
+          <div class="text-center pt-5">
+          <a href="" class="btn btn-info"  data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><i class="fas fa-plus"></i> &nbsp;&nbsp;&nbsp; Add new</a>
+          </div>
+
 
           <div class="mt-5">
             
                 <table class="main" >
                     <tr>
-                        <th>App Key</th>
+                        <th>ID</th>
                         <th>Name</th>
-                        <th>Phone No</th>
-                        <th>Posted At</th>
-                        <th>Link</th>
+                        <th>SEO Name</th>
+                        <th>Page Name</th>                      
+                        <th>Status</th>
                     </tr>
                     <?php require_once('controller/my_catagory.php'); ?>
                 </table>
@@ -58,7 +59,8 @@
                 <input type="text" name="seo" id="" class="form-control input_bar" placeholder="Seo">
                 <input type="text" name="pagename" class="form-control input_bar" id="" placeholder="Pagename">
                 <!-- <input type="text" name="status" id="" placeholder="Active / Disable"> -->
-               <button type="submit" class="btn mt-3 btn-danger">Save</button>
+               
+               <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
         </form>
 
 
