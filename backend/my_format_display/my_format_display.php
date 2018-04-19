@@ -5,6 +5,7 @@
      include_once('../functions/function.inc.php');
      include_once('../subview/head.php');
      include_once('../subview/sidenav.php');
+
 ?>          
 
 <div class="content">
@@ -27,7 +28,7 @@
                 <table class="main" >
                     <tr>
                         <th><i class="fas fa-key fa-lg"></i></th>
-                        <th>Name</th>
+                        <th>Display Name</th>
                         <th>SEO Name</th>
                         <th>Page Name</th>                      
                         <th>Status</th>
@@ -35,16 +36,22 @@
                         <th><i class="far fa-trash-alt fa-lg"></i></th>
                     </tr>
                     <?php 
-                    require_once('../controller/my_catagory.php'); 
+                    require_once('../controller/my_format_display.php');     
                     foreach ($getRows as $row) {
                       $id = $row['my_id'];
                     ?>
                     <tr class="first">
-                          <td><?php echo $row['my_id'] ;?></td>
-                          <td><?php echo $row["my_catagory_name"];?></td>
-                          <td><?php echo $row["my_catagory_seo"];?></td>
-                          <td><?php echo $row["my_pagename"];?></td>
-                          <td><?php echo $row["my_catagory_status"];?></td>
+                          <td><?php echo $row["my_subcatagory_id"];?></td>
+                          <td><?php echo $row["my_display_name"];?></td>
+                          <td><?php echo $row["my_display_size"];?></td>
+                          <td><?php echo $row["my_display_brand"];?></td>
+                          <td><?php echo $row["my_display_specification"];?></td>
+                          <td><?php echo $row["my_display_broucher"];?></td>
+                          <td><?php echo $row["my_display_image"];?></td>
+                          <td><?php echo $row["my_display_status"];?></td>
+                          <td><?php echo $row["my-display_created_at"];?></td>
+                          <td><?php echo $row["my_display_updated_at"];?></td>
+
                           <td>
                               <b><?php echo "<a href='my_catagory_edit.php?id=$id'> Edit </a>"?></b>
                               
@@ -76,12 +83,15 @@
       </div>
       <div class="modal-body p-5">
 
-      <form action="" method="post">
-                <input type="text" name="name" id="" class="form-control input_bar" placeholder="Name">
-                <input type="text" name="seo" id="" class="form-control input_bar" placeholder="Seo">
-                <input type="text" name="pagename" class="form-control input_bar" id="" placeholder="Pagename">
-                <!-- <input type="text" name="status" id="" placeholder="Active / Disable"> -->
-               <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
+      <form action="" method="POST">
+          <input type="text" name="name" class="form-control input_bar" placeholder="Display name">
+          <input type="text" name="size" class="form-control input_bar" placeholder="Display size">         
+          <input type="text" name="brand" class="form-control input_bar" placeholder="Display brand">    
+          <input type="text" name="specification" class="form-control input_bar" placeholder="Display specification">
+          <input type="text" name="broucher" class="form-control input_bar" placeholder="Display broucher">
+          <input type="text" name="image" class="form-control input_bar" placeholder="Display Image">
+          <!-- <input type="text" name="status" class="form-control input_bar" id="" placeholder="Display status"> -->
+          <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
         </form>
       </div>
      </div>
