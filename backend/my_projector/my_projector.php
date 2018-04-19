@@ -46,10 +46,10 @@
                           <td><?php echo $row["my_projector_specification"];?></td>
                           <td><?php echo $row["my_projector_broucher"];?></td>
                           <td>
-                              <b><?php echo "<a href='my_catagory_edit.php?id=$id'> Edit </a>"?></b>
+                              <b><?php echo "<a href='my_projector_edit.php?id=$id'> Edit </a>"?></b>
                             
                               </td><td>
-                              <b><?php echo "<a href='my_catagory_delete.php?id=$id'> Delete </a>"?></b>
+                              <b><?php echo "<a href='my_projector_delete.php?id=$id'> Delete </a>"?></b>
                               
                           </td>
                       </tr>
@@ -76,13 +76,17 @@
       </div>
       <div class="modal-body p-5">
 
-      <form action="" method="post">
-                <input type="text" name="name" id="" class="form-control input_bar" placeholder="Name">
-                <input type="text" name="seo" id="" class="form-control input_bar" placeholder="Seo">
-                <input type="text" name="pagename" class="form-control input_bar" id="" placeholder="Pagename">
-                <!-- <input type="text" name="status" id="" placeholder="Active / Disable"> -->
-               <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
+           <form action="" method="POST">
+          <input type="text" name="name" class="form-control input_bar" placeholder="Projector name">
+          <input type="text" name="brand" class="form-control input_bar" placeholder="Projector brand">    
+          <input type="text" name="specification" class="form-control input_bar" placeholder="Projector specification">
+          <input type="text" name="broucher" class="form-control input_bar" placeholder="Projector broucher">
+          <input type="text" name="image" class="form-control input_bar" placeholder="Projector Image">
+          <!-- <input type="text" name="status" class="form-control input_bar" id="" placeholder="Display status"> -->
+          <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
         </form>
+
+
       </div>
      </div>
   </div>
