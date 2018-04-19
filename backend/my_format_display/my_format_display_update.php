@@ -1,18 +1,24 @@
 <?php
 require_once('../core/db_conn.php');
+
 if(empty($_POST)===false){
-  $id = $_POST['id'];
-  $new_name = $_POST['new_name'];
-  $new_seo = $_POST['new_seo'];
-  $new_pagename = $_POST['new_pagename'];
-  $new_status = "active";
-  if(empty($new_name) || empty($new_seo) || empty($new_pagename) || empty($new_status)) {
+    $id = $_POST['id'];
+    $name =$_POST['name'];
+    $size =$_POST['size'];
+    $brand = $_POST['brand'];
+    $specification = $_POST['specification'];
+    $broucher = $_POST['broucher'];
+    $image = $_POST['image'];
+    // cng
+    $status = "active";
+  if(empty($name) || empty($size) || empty($brand) || empty($specification) || empty($broucher) || empty($image) || empty($status)) {
       echo 
        "<div class='error_box' id='box_e'>
                             You might Left Some Empty Fields
          </div>";
   }else{
-      $updateData = $db->updateData("UPDATE my_catagory SET `my_catagory_name` = ? , `my_catagory_seo` = ? ,`my_pagename` = ? , `my_catagory_status` = ? , `my_catagory_updated_at`  = ? WHERE my_id = ? ", [$new_name,$new_seo,$new_pagename,$new_status,TIME(),$id]);
-      header("location: my_catagory.php");
+      $updateData = $db->updateData("UPDATE my_format_display SET `my_display_name` = ? , `my_display_size` = ? ,`my_display_brand` = ? , `my_display_specification` = ? , `my_display_broucher` = ? ,`my_display_image` = ? ,`my_display_status` = ? ,`my_display_updated_at` = ? WHERE my_id = ? ", [$name,$size,$brand,$specification,$broucher,$image,$status,TIME(),$id]);
+     
+      header("location: my_format_display.php");
   }
 }

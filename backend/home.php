@@ -22,6 +22,8 @@
             
 
                     <a href="my_catagory/my_catagory.php">My Catagory</a>
+                    <a href="my_format_display/my_format_display.php">My Format Display</a>
+                    <a href="my_projector/my_projector.php">my_projector</a>
           
        </div>
 </div>

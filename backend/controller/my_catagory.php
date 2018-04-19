@@ -1,6 +1,5 @@
 <?php
      if(empty($_POST)===false){
-      $id = $POST['my_id'];
       $name = $_POST['name'];
       $seo = $_POST['seo'];
       $pagename = $_POST['pagename'];
