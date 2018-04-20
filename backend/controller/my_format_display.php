@@ -14,7 +14,7 @@
                          </div>";
           }else{
 
-                    $db->insertData("INSERT INTO my_format_display(my_subcatagory_id,my_display_name,my_display_size,my_display_brand,my_display_specification,my_display_broucher, my_display_image,my_display_status,my_display_created_at,my_display_updated_at) VALUE (?,?,?,?,?,?,?,?,?,?)", [$some_id,$name,$size,$brand,$specification,$broucher,$image,$status,TIME(),TIME()]);
+                    $db->insertData("INSERT INTO my_format_display(my_catagory_id,my_display_name,my_display_size,my_display_brand,my_display_specification,my_display_broucher, my_display_image,my_display_status,my_display_created_at,my_display_updated_at) VALUE (?,?,?,?,?,?,?,?,?,?)", [$some_id,$name,$size,$brand,$specification,$broucher,$image,$status,TIME(),TIME()]);
                 echo "<div id='box_e'>
                             <div class='error_box green'>
                                 Your complain has been registered.

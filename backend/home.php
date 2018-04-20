@@ -18,12 +18,16 @@
                   <h1 class="text-center cards_p">Admin</h1>
                   
           </div>
-          <div class="mt-5">
-            
-
-                    <a href="my_catagory/my_catagory.php">My Catagory</a>
-                    <a href="my_format_display/my_format_display.php">My Format Display</a>
-                    <a href="my_projector/my_projector.php">my_projector</a>
+          <div class="mt-5">     
+                    
+            <ul>
+                <li><a href="my_catagory/my_catagory.php">Catagory</a></li>
+                <li><a href="my_format_display/my_format_display.php">Format Display</a></li>
+                <li><a href="my_projector/my_projector.php">Projector</a></li>
+                <li><a href="my_subcatagory/my_subcatagory.php">Sub catagory</a></li>
+                
+            </ul>
+                    
           
        </div>
 </div>

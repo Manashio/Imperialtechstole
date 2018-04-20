@@ -1,5 +1,5 @@
 <?php
-require_once('core/db_conn.php');
+require_once('../core/db_conn.php');
 if(empty($_POST)===false){
   $id = $_POST['id'];
   $new_name = $_POST['new_name'];
@@ -12,7 +12,7 @@ if(empty($_POST)===false){
                             You might Left Some Empty Fields
          </div>";
   }else{
-      $updateData = $db->updateData("UPDATE my_catagory SET `my_catagory_name` = ? , `my_catagory_seo` = ? ,`my_pagename` = ? , `my_catagory_status` = ? , `my_catagory_updated_at`  = ? WHERE my_id = ? ", [$new_name,$new_seo,$new_pagename,$new_status,TIME(),$id]);
-      header("location: my_catagory.php");
+      $updateData = $db->updateData("UPDATE my_subcatagory SET `my_subcatagory_name` = ? , `my_subcatagory_seo` = ? ,`my_pagename` = ? , `my_subcatagory_status` = ? , `my_catagory_updated_at`  = ? WHERE my_id = ? ", [$new_name,$new_seo,$new_pagename,$new_status,TIME(),$id]);
+      header("location: my_subcatagory.php");
   }
 }
