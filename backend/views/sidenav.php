@@ -10,7 +10,7 @@ error_reporting(0);
         $setting = "active";                       
   }
 ?>
-<nav id="menu">
+<nav class="my_nav" id="menu">
 		<ul class="sidenav">
 			<li class = "<?php echo $home;?>">
 				<a href="home.php">Dashboard</a>

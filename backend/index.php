@@ -5,6 +5,7 @@
      include_once('views/head.php');
 ?>
      <div class="container text-center mt-5">
+
           
           <div class="row justify-content-md-center">
                <div class="col col-lg-4 mt-5">

@@ -5,7 +5,11 @@
      include_once('functions/function.inc.php');
      include_once('views/head.php');
      include_once('views/sidenav.php');
-?>          
+
+?>
+
+
+         
 
 <div class="content">
      <div class="container">
@@ -19,12 +23,17 @@
                   
           </div>
           <div class="mt-5">     
+          
+          
+
+
                     
             <ul>
                 <li><a href="my_catagory/my_catagory.php">Catagory</a></li>
-                <li><a href="my_format_display/my_format_display.php">Format Display</a></li>
+                <li><a href="my_format_display/my_format_display.php">Display</a></li>
                 <li><a href="my_projector/my_projector.php">Projector</a></li>
                 <li><a href="my_subcatagory/my_subcatagory.php">Sub catagory</a></li>
+                <li><a href="my_videoconferencing/my_videoconferencing.php">Video conferencing</a></li>
                 
             </ul>
                     
