@@ -39,16 +39,19 @@
                         <th>Last Updated On</th>
                         <th><i class="fas fa-pencil-alt fa-lg"></i></th>
                         <th><i class="far fa-trash-alt fa-lg"></i></th>
-
                     </tr>
+                    <script>let x = 1; </script>
                     <?php 
                     require_once('../controller/my_format_display.php');     
-                    foreach ($getRows as $row) {
-                      $id = $row['my_id'];
-                      
+                    foreach ($getRows as $row) {    
+                       $id = $row["my_id"];
                     ?>
                     <tr class="first">
-                          <td><?php echo $row["my_id"];?></td>
+                          <td>
+                            <script>
+                                document.write(x++);        
+                            </script>
+                          </td>
                           <td><?php echo $row["my_display_name"];?></td>
                           <td><?php echo $row["my_display_size"];?></td>
                           <td><?php echo $row["my_display_brand"];?></td>
