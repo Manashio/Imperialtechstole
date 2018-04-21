@@ -29,19 +29,26 @@
                     <tr>
                         <th><i class="fas fa-key fa-lg"></i></th>
                         <th>Display Name</th>
-                        <th>SEO Name</th>
-                        <th>Page Name</th>                      
+                        <th>Size</th>
+                        <th>Brand</th>                      
+                        <th>Specification</th>
+                        <th>Broucher</th>
+                        <th>Image</th>
                         <th>Status</th>
+                        <th>Created On</th>
+                        <th>Last Updated On</th>
                         <th><i class="fas fa-pencil-alt fa-lg"></i></th>
                         <th><i class="far fa-trash-alt fa-lg"></i></th>
+
                     </tr>
                     <?php 
                     require_once('../controller/my_format_display.php');     
                     foreach ($getRows as $row) {
                       $id = $row['my_id'];
+                      
                     ?>
                     <tr class="first">
-                          <td><?php echo $row["my_subcatagory_id"];?></td>
+                          <td><?php echo $row["my_id"];?></td>
                           <td><?php echo $row["my_display_name"];?></td>
                           <td><?php echo $row["my_display_size"];?></td>
                           <td><?php echo $row["my_display_brand"];?></td>
@@ -49,14 +56,32 @@
                           <td><?php echo $row["my_display_broucher"];?></td>
                           <td><?php echo $row["my_display_image"];?></td>
                           <td><?php echo $row["my_display_status"];?></td>
-                          <td><?php echo $row["my-display_created_at"];?></td>
-                          <td><?php echo $row["my_display_updated_at"];?></td>
+                          <td><?php
+                          if($row["my_display_created_at"]>'0'){
+                            date_default_timezone_set('Asia/Kolkata');
+                           $created_date =  date("dS M Y,  h:ia ",$row["my_display_created_at"]);
+                           echo $created_date;
+                          }else{
+                            echo "<span style='color:red'>null</span>";
+                          }
+                           ?>
+                           </td>
+                          <td><?php
+                          if($row["my_display_updated_at"]>'0'){                        
+                          $updated_date = date("dS M Y,  h:ia ",$row["my_display_updated_at"]);
+                          echo $updated_date;
+                          }else{
+                            echo "<span style='color:red'>null</span>";
+                          }
+                          
+                          ?></td>
 
                           <td>
                               <b><?php echo "<a href='my_format_display_edit.php?id=$id'> Edit </a>"?></b>
                               
                               </td><td>
-                              <b><?php echo "<a href='my_format_display_delete.php?id=$id'> Delete </a>"?></b>
+
+                              <b><a href="my_format_display_delete.php?id=<?php echo $id; ?>" onClick="return confirm('Are you sure you want to delete?');"> Delete </a></b>
                               
                           </td>
                       </tr>
@@ -90,7 +115,18 @@
           <input type="text" name="specification" class="form-control input_bar" placeholder="Display specification">
           <input type="text" name="broucher" class="form-control input_bar" placeholder="Display broucher">
           <input type="text" name="image" class="form-control input_bar" placeholder="Display Image">
+
+
+
           <!-- <input type="text" name="status" class="form-control input_bar" id="" placeholder="Display status"> -->
+
+          <select class="form-control" name="status" id="">
+                    <option value="">Choose</option>
+                    <option value="active">Active</option>
+                    <option value="Inctive">Inctive</option>
+          </select>
+
+
           <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
         </form>
       </div>

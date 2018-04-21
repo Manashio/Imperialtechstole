@@ -358,3 +358,11 @@ table{
     .hide_print {display: none;}
     .show_print{display: block;}
    }
+
+label{
+    padding: 0px!important;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #000;
+}

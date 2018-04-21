@@ -17,7 +17,7 @@ if(empty($_POST)===false){
       $db->insertData("INSERT INTO my_videoconferencing(my_catagory_id,my_videoconference_name,my_images,my_point_desc,my_multipart_desc, my_brand,my_status,created_at,updated_at) VALUE (?,?,?,?,?,?,?,?,?)", [$some_id,$name,$image,$point,$multipart,$brand,$status,TIME(),TIME()]);
       echo "<div id='box_e'>
                     <div class='error_box green'>
-                        Your complain has been registered.
+                    Your data has been saved successfully!
                     </div>
                     </div>";
   }

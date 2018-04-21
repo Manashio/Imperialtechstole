@@ -18,7 +18,9 @@
           <div class="mt-5">
                 <form action="my_videoconferencing_update.php" method="post">
                 <input type="hidden" name="id" class="form-control input_bar" value ="<?php echo $getRow['my_id']; ?>">
+                
                 <input type="text" name="name" class="form-control input_bar" value ="<?php echo $getRow['my_videoconference_name']; ?>">
+
                 <input type="text" name="image" class="form-control input_bar" value ="<?php echo $getRow['my_images']; ?>"> 
 
                   <textarea name="point" id=""  rows="4" class="form-control input_bar">

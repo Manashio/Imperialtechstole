@@ -1,5 +1,4 @@
 <?php
-
      function get_the_titlename($string){
           $filenameExt = basename($string);         
           $file_name = basename($string, ".php");
@@ -23,7 +22,7 @@
                 $breadcrumbs[] = "<li class='breadcrumb-item'><a href=\"$base$crumb\">$title</a></li>";
             else
                 $breadcrumbs[] =  "<li class='breadcrumb-item'>".$title."</li>";
-        }
+            }
         return implode($breadcrumbs);
     }    
 

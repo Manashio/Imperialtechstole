@@ -12,18 +12,16 @@ if(empty($_POST)===false){
 
   if(empty($name) || empty($brand) || empty($specification) || empty($image) || empty($broucher) || empty($status)) {
       echo  "<div class='error_box' id='box_e'>
-                            You might Left Some Empty Fields
+                            You might have left some empty fields!
                  </div>";
   }else{
           
 
             $db->insertData("INSERT INTO my_projector(my_projector_id,my_projector_name,my_projector_brand,my_projector_specification,my_projector_broucher,image,my_projector_status,my_projector_created_at,my_projector_updated_at) VALUE (?,?,?,?,?,?,?,?,?)", [$some,$name,$brand,$specification,$broucher,$image,$status,TIME(),TIME()]);
 
-            // $db->insertData("INSERT INTO my_projector(my_projector_id,my_projector_name,my_projector_brand,my_projector_specification,my_projector_broucher) VALUE (?,?,?,?,?)", [$some,$name,$brand]);
-
         echo "<div id='box_e'>
                     <div class='error_box green'>
-                        Your complain has been registered.
+                    Your data has been saved successfully!
                     </div>
                     </div>";
   }

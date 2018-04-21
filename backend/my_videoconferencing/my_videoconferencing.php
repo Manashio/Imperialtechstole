@@ -18,9 +18,9 @@
                   </span>
           </div>
 
-          <div class="text-center pt-5">
+          <!-- <div class="text-center pt-5">
           <a href="" class="btn btn-info"  data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><i class="fas fa-plus"></i> &nbsp;&nbsp;&nbsp; Add new</a>
-          </div>
+          </div> -->
 
 
           <div class="mt-5">
@@ -58,7 +58,7 @@
                               <b><?php echo "<a href='my_videoconferencing_edit.php?id=$id'> Edit </a>"?></b>
                               
                               </td><td>
-                              <b><?php echo "<a href='my_videoconferencing_delete.php?id=$id'> Delete </a>"?></b>
+                              <b><a href="my_videoconferencing_delete.php?id=<?php echo $id;?>" onClick="return confirm('Are you sure you want to delete?');"> Delete </a></b>
                               
                           </td>
                       </tr>

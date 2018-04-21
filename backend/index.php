@@ -12,9 +12,7 @@
                     <h1><?php echo $title_name;?></h1>
                     <form class="form-signin" action="" method="POST">
                          
-                              <?php echo $message;?>
-                         
-      
+                         <?php echo $message;?>
                          <label for="username" class="sr-only">Username</label>
                          <input type="username" id="username" class="form-control  mt-5" name="username" placeholder="Username" required autofocus>
 

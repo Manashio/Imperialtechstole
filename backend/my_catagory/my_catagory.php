@@ -53,7 +53,7 @@
                               <b><?php echo "<a href='my_catagory_edit.php?id=$id'> Edit </a>"?></b>
                               
                               </td><td>
-                              <b><?php echo "<a href='my_catagory_delete.php?id=$id'> Delete </a>"?></b>
+                              <b><a href="my_catagory_delete.php?id=<?php echo $id; ?>" onClick="return confirm('Are you sure you want to delete?');"> Delete </a></b>
                               
                           </td>
                       </tr>

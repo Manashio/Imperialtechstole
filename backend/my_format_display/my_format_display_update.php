@@ -9,8 +9,7 @@ if(empty($_POST)===false){
     $specification = $_POST['specification'];
     $broucher = $_POST['broucher'];
     $image = $_POST['image'];
-    // cng
-    $status = "active";
+    $status =  $_POST['status'];
   if(empty($name) || empty($size) || empty($brand) || empty($specification) || empty($broucher) || empty($image) || empty($status)) {
       echo 
        "<div class='error_box' id='box_e'>
