@@ -17,7 +17,7 @@
                if($count==1){
                     $_SESSION['username'] = $_REQUEST['username'];
                     if(isset($_SESSION['username'])){
-                         header("location: home.php");
+                         header("location: index.php");
                     }else{
                          echo "not set";
                     }

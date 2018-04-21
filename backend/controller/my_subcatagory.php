@@ -21,4 +21,5 @@ if(empty($_POST)===false){
  }
      $getRows = $db->getRows("SELECT * FROM my_subcatagory");
      $getRow = $db->getRow("SELECT * FROM my_subcatagory WHERE my_id =? ", [$id]);
+     $row_count_scat = sizeof($getRows);
 ?>

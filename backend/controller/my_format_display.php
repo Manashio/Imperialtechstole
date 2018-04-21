@@ -24,5 +24,5 @@
 
       $getRows = $db->getRows("SELECT * FROM my_format_display");
       $getRow = $db->getRow("SELECT * FROM my_format_display WHERE my_id =? ", [$id]);
-    
+      $row_count_dis = sizeof($getRows);
 ?>

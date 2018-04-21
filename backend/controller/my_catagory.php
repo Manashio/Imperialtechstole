@@ -21,7 +21,7 @@
   $getRow = $db->getRow("SELECT * FROM my_catagory WHERE my_id =? ", [$id]);
 
 
-
+  $row_count_cata = sizeof($getRows);
 
 ?>
 

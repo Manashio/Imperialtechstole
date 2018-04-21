@@ -7,11 +7,11 @@
      <script>              
 	$(document).ready(function() {
 		$.simpleWeather({
-			location:'Guwahati',
+			location:'Delhi',
 			woeid: '',
 			unit: 'C',
 			success: function(weather) {
-			html = weather.temp+'&deg;'+weather.units.temp;
+			html = weather.city+"  "+weather.temp+'&deg;'+weather.units.temp;
 			$("#weather").html(html);
 			},
 			error: function(error) {

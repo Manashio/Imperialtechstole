@@ -124,7 +124,7 @@ nav{
 }
 .hero{
     width: 100%;
-    height: 300px;
+    height: 200px;
     background: #FFF;
     background-size: cover;
     background-position: center center; 
@@ -365,4 +365,27 @@ label{
     margin-bottom: 0px;
     font-size: 18px;
     color: #000;
+}
+
+
+.page_card{
+    display: block;
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 16px;
+    background-image: -webkit-gradient(linear,left top,right bottom,from(#02b3e4),to(#02ccba));
+    background-image: linear-gradient(to bottom right,#02b3e4,#02ccba);
+    color: #fff;
+    margin-bottom:30px; 
+    border-radius: 6px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.5s;
+    -webkit-transition: 0.3s;
+}
+.page_card:hover{
+    background: #fff;
+    color: #02ccba;
+ 
 }

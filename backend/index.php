@@ -1,32 +1,66 @@
-<?php 
-     session_start();
+<?php
+     require_once('core/session.php');
+     require_once('core/db_conn.php');
+     include_once('controller/date_time.php');
      include_once('functions/function.inc.php');
-     require_once('core/auth.php');
      include_once('views/head.php');
-?>
-     <div class="container text-center mt-5">
+     include_once('views/sidenav.php');
 
-          
-          <div class="row justify-content-md-center">
-               <div class="col col-lg-4 mt-5">
-                    <h1><?php echo $title_name;?></h1>
-                    <form class="form-signin" action="" method="POST">
-                         
-                         <?php echo $message;?>
-                         <label for="username" class="sr-only">Username</label>
-                         <input type="username" id="username" class="form-control  mt-5" name="username" placeholder="Username" required autofocus>
-
-                         <label for="inputPassword" class="sr-only ">Password</label>
-                         <input type="password" id="inputPassword" class="form-control  mt-3" placeholder="Password" name="password" required>
-
-                         <button class="custom-btn submit btn-block mt-5" type="submit">Sign in</button>
-
-
-                    </form>
-
-               </div>
-               </div>
-     </div>
+     include_once('controller/my_catagory.php');
+     include_once('controller/my_subcatagory.php');
+     include_once('controller/my_projector.php');
+     include_once('controller/my_format_display.php');
+     include_once('controller/my_videoconferencing.php');
      
-</body>
-</html>
+     
+     
+?>
+   
+
+<div class="content">
+     <div class="container">
+          <div class="hero">
+                  <span class="time">
+                  <?php echo $index_date;?>
+                      <div></div>
+                      <em><i id="weather"> 00&deg;C</i></em>
+                  </span>
+                  <h1 class="text-center cards_p">Admin</h1>
+                  
+          </div>
+          
+          <?php echo $_SERVER['SCRIPT_NAME'];?>
+          <div class="row mt-5 text-center">     
+
+
+              
+
+              <div class="col-md-4">
+                   <a href="my_catagory/my_catagory.php">
+                   <div class="page_card"><i class="fas fa-list-ul"></i> Catagory &dash; <big><?php echo $row_count_cata;?></big></div></a>  
+              </div>
+
+              <div class="col-md-4">
+              <a href="my_format_display/my_format_display.php">  <div class="page_card"><i class="fas fa-tv"></i> Display &dash; <big><?php echo $row_count_dis;?></big></div></a> 
+              </div>
+
+               <div class="col-md-4">
+                    <a href="my_projector/my_projector.php"><div class="page_card">Projector &dash; <big><?php echo $row_count_proj;?></big></div></a> 
+                </div>
+
+              <div class="col-md-4">
+                    <a href="my_subcatagory/my_subcatagory.php"><div class="page_card"><i class="fas fa-ellipsis-v"></i> Sub catagory &dash; <big><?php echo $row_count_scat;?></big></div></a> 
+                </div>
+
+               <div class="col-md-4">
+                    <a href="my_videoconferencing/my_videoconferencing.php"><div class="page_card"> <i class="fas fa-video"></i> Video conferencing &dash; <big><?php echo $row_count_video;?></big></div></a> 
+                </div>
+
+
+
+       </div>
+</div>
+
+<?php
+     include_once('views/footer.php');
+?>

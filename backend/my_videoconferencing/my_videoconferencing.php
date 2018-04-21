@@ -14,7 +14,7 @@
                   <span class="time">
                   <?php echo $index_date;?>
                       <div></div>
-                      <em>Ghy <i id="weather"> 00&deg;C</i></em>
+                      <em><i id="weather"> 00&deg;C</i></em>
                   </span>
           </div>
 
@@ -35,13 +35,14 @@
                         <th><i class="fas fa-pencil-alt fa-lg"></i></th>
                         <th><i class="far fa-trash-alt fa-lg"></i></th>
                     </tr>
+                    <script>let x = 1; </script>
                     <?php 
                     require_once('../controller/my_videoconferencing.php');     
                     foreach ($getRows as $row) {
                       $id = $row['my_id'];
                     ?>
                     <tr class="first">
-                          <td><?php echo $row["my_catagory_id"];?></td>
+                          <td><script>document.write(x++);</script></td>
                           <td><?php echo $row["my_videoconference_name"];?></td>
                  
                           <td><?php echo $row["my_point_desc"];?></td>

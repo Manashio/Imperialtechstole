@@ -29,6 +29,7 @@ if(empty($_POST)===false){
 
 $getRows = $db->getRows("SELECT * FROM my_projector");
 $getRow = $db->getRow("SELECT * FROM my_projector WHERE my_id =? ", [$id]);
-print_r($getRow);
+ 
+$row_count_proj = sizeof($getRows);
 
 ?>

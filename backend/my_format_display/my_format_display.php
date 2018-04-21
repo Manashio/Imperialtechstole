@@ -14,7 +14,7 @@
                   <span class="time">
                   <?php echo $index_date;?>
                       <div></div>
-                      <em>Ghy <i id="weather"> 00&deg;C</i></em>
+                      <em><i id="weather"> 00&deg;C</i></em>
                   </span>
           </div>
 
@@ -48,9 +48,7 @@
                     ?>
                     <tr class="first">
                           <td>
-                            <script>
-                                document.write(x++);        
-                            </script>
+                            <script>document.write(x++);</script>
                           </td>
                           <td><?php echo $row["my_display_name"];?></td>
                           <td><?php echo $row["my_display_size"];?></td>

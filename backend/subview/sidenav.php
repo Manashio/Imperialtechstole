@@ -1,37 +1,46 @@
 <?php
 error_reporting(0);
-  if($title_name == "Admin : home"){
+  if($title_name == "Admin : index"){
         $home = "active";
-  }elseif($title_name == "Admin : add"){
-        $add = "active";                       
-  }elseif($title_name == "Admin : logbook"){
-        $log = "active";                       
-  }elseif($title_name == "Admin : setting"){
-        $setting = "active";                       
+  }elseif($title_name == "Admin : my_catagory"){
+	$catagory = "active";                       
+  }elseif($title_name == "Admin : my_format_display"){
+        $display = "active";                       
+  }elseif($title_name == "Admin : my_subcatagory"){
+        $subcatagory = "active";                       
+  }elseif($title_name == "Admin : my_projector"){
+	$projector = "active";
+  }elseif($title_name == "Admin : my_videoconferencing"){
+	$video = "active";
   }
 ?>
-<nav id="menu">
+<nav class="my_nav" id="menu">
 		<ul class="sidenav">
 			<li class = "<?php echo $home;?>">
-				<a href="../home.php">Dashboard</a>
+				<a href="http://localhost/dev.run/backend/index.php">Dashboard</a>
+			</li>
+			<li class = "<?php echo $catagory;?>">
+				<a href="http://localhost/dev.run/backend/my_catagory/my_catagory.php">Catagory</a>
+			</li>
+			<li class = "<?php echo $subcatagory;?>">
+				<a href="http://localhost/dev.run/backend/my_subcatagory/my_subcatagory.php">Sub Catagory</a>
+			</li>
+			<li class = "<?php echo $display;?>">
+				<a href="http://localhost/dev.run/backend/my_format_display/my_format_display.php">Display</a>
+			</li>
+			<li class = "<?php echo $projector;?>">
+				<a href="http://localhost/dev.run/backend/my_projector/my_projector.php">Projector</a>
 			</li>
 			
-			<li class = "<?php echo $setting;?>">
-				<a href="" class="">Settings</a>
+			<li class = "<?php echo $video;?>">
+				<a href="http://localhost/dev.run/backend/my_videoconferencing/my_videoconferencing.php">Video Conferencing</a>
 			</li>
-			<li class = "<?php echo $api;?>">
-				<a href="../logout.php">Logout</a>
-			</li>
+			
 			<div class="hr"></div>
-			<li class = "<?php echo $profile;?>">
-				<a href="">profile</a>
+			<li>
+				<a href="logout.php">Logout</a>
 			</li>
-			<li class = "<?php echo $databse;?>">
-				<a href="">database</a>
-			</li>
-			<li class = "<?php echo $api;?>">
-				<a href="">API</a>
-			</li>
+			
 			
 			
 		</ul>

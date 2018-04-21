@@ -24,4 +24,5 @@ if(empty($_POST)===false){
 }
 $getRow = $db->getRow("SELECT * FROM my_videoconferencing WHERE my_id =? ", [$id]);
 $getRows = $db->getRows("SELECT * FROM my_videoconferencing");
+$row_count_video = sizeof($getRows);
 ?>
