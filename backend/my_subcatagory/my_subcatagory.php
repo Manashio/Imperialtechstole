@@ -34,14 +34,14 @@
                         <th><i class="fas fa-pencil-alt fa-lg"></i></th>
                         <th><i class="far fa-trash-alt fa-lg"></i></th>
                     </tr>
-                    <script>let x = 1; </script>
+                    
                     <?php 
                     require_once('../controller/my_subcatagory.php'); 
                     foreach ($getRows as $row) {
                       $id = $row['my_id'];
                     ?>
                     <tr class="first">
-                          <td><script>document.write(x++);</script></td>
+                          <td><?php echo $row["my_catagory_id"];?></td>
                           <td><?php echo $row["my_subcatagory_name"];?></td>
                           <td><?php echo $row["my_subcatagory_seo"];?></td>
                           <td><?php echo $row["my_pagename"];?></td>
