@@ -18,6 +18,6 @@ if(empty($_POST)===false){
   }else{
       $updateData = $db->updateData("UPDATE my_format_display SET `my_display_name` = ? , `my_display_size` = ? ,`my_display_brand` = ? , `my_display_specification` = ? , `my_display_broucher` = ? ,`my_display_image` = ? ,`my_display_status` = ? ,`my_display_updated_at` = ? WHERE my_id = ? ", [$name,$size,$brand,$specification,$broucher,$image,$status,TIME(),$id]);
      
-      header("location: my_format_display.php");
+      header("location: index.php");
   }
 }

@@ -13,6 +13,6 @@ if(empty($_POST)===false){
          </div>";
   }else{
       $updateData = $db->updateData("UPDATE my_subcatagory SET `my_subcatagory_name` = ? , `my_subcatagory_seo` = ? ,`my_pagename` = ? , `my_subcatagory_status` = ? , `my_catagory_updated_at`  = ? WHERE my_id = ? ", [$new_name,$new_seo,$new_pagename,$new_status,TIME(),$id]);
-      header("location: my_subcatagory.php");
+      header("location: index.php");
   }
 }

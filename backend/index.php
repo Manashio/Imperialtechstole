@@ -28,35 +28,52 @@
                   <h1 class="text-center cards_p">Admin</h1>
                   
           </div>
-          
-          <?php echo $_SERVER['SCRIPT_NAME'];?>
+          <?php
+                $result = $conn->query("show tables");
+                while ($row = $result->fetch(PDO::FETCH_NUM)) {
+                    foreach ($row as $key => $value) {
+                        echo $value;
+                    }
+                }
+          ?>
+
           <div class="row mt-5 text-center">     
-
-
-              
-
               <div class="col-md-4">
-                   <a href="my_catagory/my_catagory.php">
-                   <div class="page_card"><i class="fas fa-list-ul"></i> Catagory &dash; <big><?php echo $row_count_cata;?></big></div></a>  
+                   <a href="my_catagory/index.php">
+                   <div class="page_card">
+                        <big><i class="fas fa-list-ul"></i> </big>
+                         <br><br> Catagory &dash; <big><?php echo $row_count_cata;?></big></div></a>  
               </div>
 
               <div class="col-md-4">
-              <a href="my_format_display/my_format_display.php">  <div class="page_card"><i class="fas fa-tv"></i> Display &dash; <big><?php echo $row_count_dis;?></big></div></a> 
+                    <a href="my_format_display/index.php">
+                        <div class="page_card">
+                            <big><i class="fas fa-tv"></i></big>
+                             <br><br> Display &dash; <big><?php echo $row_count_dis;?></big>
+                        </div>
+                    </a> 
               </div>
 
                <div class="col-md-4">
-                    <a href="my_projector/my_projector.php"><div class="page_card">Projector &dash; <big><?php echo $row_count_proj;?></big></div></a> 
+                    <a href="my_projector/index.php">
+                        <div class="page_card">
+                            <big><i class="fas fa-video"></i></big>
+                             <br><br> Projector &dash; <big><?php echo $row_count_proj;?></big></div></a> 
                 </div>
 
               <div class="col-md-4">
-                    <a href="my_subcatagory/my_subcatagory.php"><div class="page_card"><i class="fas fa-ellipsis-v"></i> Sub catagory &dash; <big><?php echo $row_count_scat;?></big></div></a> 
+                    <a href="my_subcatagory/index.php">
+                        <div class="page_card">
+                            <big><i class="fas fa-ellipsis-v"></i></big>
+                             <br><br> Sub catagory &dash; <big><?php echo $row_count_scat;?></big></div></a> 
                 </div>
 
                <div class="col-md-4">
-                    <a href="my_videoconferencing/my_videoconferencing.php"><div class="page_card"> <i class="fas fa-video"></i> Video conferencing &dash; <big><?php echo $row_count_video;?></big></div></a> 
+                    <a href="my_videoconferencing/index.php">
+                        <div class="page_card">
+                            <big><i class="fas fa-video"></i></big>
+                             <br><br>  Video conferencing &dash; <big><?php echo $row_count_video;?></big></div></a> 
                 </div>
-
-
 
        </div>
 </div>

@@ -16,6 +16,6 @@ if(empty($_POST)===false){
          </div>";
   }else{
       $updateData = $db->updateData("UPDATE my_videoconferencing SET `my_videoconference_name` = ? , `my_images` = ? ,`my_point_desc` = ? , `my_multipart_desc` = ? , `my_brand` = ? ,`my_status` = ? ,`updated_at` = ? WHERE my_id = ? ", [$name,$image,$point,$multipart,$brand,$status,TIME(),$id]);
-      header("location: my_videoconferencing.php");
+      header("location: index.php");
   }
 }

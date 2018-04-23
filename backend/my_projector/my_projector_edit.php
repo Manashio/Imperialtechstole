@@ -17,6 +17,7 @@
      <div class="container">
 
           <div class="mt-5">
+          <?php include_once('../subview/bc.php');?>
     
                 <form action="my_projector_update.php" method="post">
                 <input type="hidden" name="id" class="form-control input_bar" value ="<?php echo $getRow['my_id']; ?>">

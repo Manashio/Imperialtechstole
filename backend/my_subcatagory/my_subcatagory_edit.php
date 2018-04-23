@@ -16,6 +16,7 @@
      <div class="container">
 
           <div class="mt-5">
+          <?php include_once('../subview/bc.php');?>
     
                 <form action="my_subcatagory_update.php" method="post">
                     <input type="hidden" name="id" id="" class="form-control input_bar" value="<?php echo $getRow['my_id']; ?>" required>                  

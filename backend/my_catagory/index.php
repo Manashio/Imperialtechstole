@@ -5,6 +5,9 @@
      include_once('../functions/function.inc.php');
      include_once('../subview/head.php');
      include_once('../subview/sidenav.php');
+  
+     
+     
 ?>          
 
 <div class="content">
@@ -20,9 +23,8 @@
           <div class="text-center pt-5">
           <a href="" class="btn btn-info"  data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><i class="fas fa-plus"></i> &nbsp;&nbsp;&nbsp; Add new</a>
           </div>
-
-
           <div class="mt-5">
+            <?php include_once('../subview/bc.php');?>
             
                 <table class="main" >
                     <tr>
@@ -36,25 +38,22 @@
                     </tr>
                     <script>let x = 1; </script>
                     <?php 
-                    require_once('../controller/my_projector.php'); 
-                    
+                    require_once('../controller/my_catagory.php'); 
                     foreach ($getRows as $row) {
                       $id = $row['my_id'];
                     ?>
                     <tr class="first">
-
-                          <td><script>document.write(x++);</script></td>
-                          <td><?php echo $row["my_projector_name"];?></td>
-                          <td><?php echo $row["my_projector_brand"];?></td>
-                          <td><?php echo $row["my_projector_specification"];?></td>
-                          <td><?php echo $row["my_projector_broucher"];?></td>
+                        <td><script>document.write(x++);</script></td>
+                         
+                          <td><?php echo $row["my_catagory_name"];?></td>
+                          <td><?php echo $row["my_catagory_seo"];?></td>
+                          <td><?php echo $row["my_pagename"];?></td>
+                          <td><?php echo $row["my_catagory_status"];?></td>
                           <td>
-                              <b><?php echo "<a href='my_projector_edit.php?id=$id'> Edit </a>"?></b>
-                            
+                              <b><?php echo "<a href='my_catagory_edit.php?id=$id'> Edit </a>"?></b>
+                              
                               </td><td>
-                             
-
-                              <b><a href="my_projector_delete.php?id=<?php echo $id; ?>" onClick="return confirm('Are you sure you want to delete?');"> Delete </a></b>
+                              <b><a href="my_catagory_delete.php?id=<?php echo $id; ?>" onClick="return confirm('Are you sure you want to delete?');"> Delete </a></b>
                               
                           </td>
                       </tr>
@@ -81,21 +80,23 @@
       </div>
       <div class="modal-body p-5">
 
-           <form action="" method="POST">
-          <input type="text" name="name" class="form-control input_bar" placeholder="Projector name">
-          <input type="text" name="brand" class="form-control input_bar" placeholder="Projector brand">    
-          <input type="text" name="specification" class="form-control input_bar" placeholder="Projector specification">
-          <input type="text" name="broucher" class="form-control input_bar" placeholder="Projector broucher">
-          <input type="text" name="image" class="form-control input_bar" placeholder="Projector Image">
-          <!-- <input type="text" name="status" class="form-control input_bar" id="" placeholder="Display status"> -->
-          <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
+      <form action="" method="post">
+                <input type="text" name="name" id="" class="form-control input_bar" placeholder="Name">
+                <input type="text" name="seo" id="" class="form-control input_bar" placeholder="Seo">
+                <input type="text" name="pagename" class="form-control input_bar" id="" placeholder="Pagename">
+                <!-- <input type="text" name="status" id="" placeholder="Active / Disable"> -->
+               <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
         </form>
-
-
       </div>
      </div>
   </div>
 </div>
+
+
+
+
+
+
 
 
 <?php
