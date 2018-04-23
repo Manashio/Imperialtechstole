@@ -36,16 +36,17 @@
     
   ?>
 
-    <div class="jumbotron">
-        <h1 class="text-center">Projector</h1>
-    </div>
+    
+       
+    
 
-    <div class="container">
-        <div class="row">
+    <div class="container pt-5 pb-5">
+        <div class="row pt-5 pb-5">
         <div class="col-sm-4">
                 <img src="images/dummy.png" class="img" alt="">
         </div>
         <div class="col-sm-8">
+        <h1 class="pb-5">Projector</h1>
             <table class="table">
                 <tr>
                     <th>SL.No</th>

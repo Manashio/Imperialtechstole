@@ -15,7 +15,9 @@
 					<div class="search1">
               <form action="" method="POST">
                   <i class="fas fa-search searchicon"></i> 
-									<input class="search1 ml-2" name="search" type="text" placeholder="Search here"> 																	
+									<input class="search1 ml-2" name="search" type="text" placeholder="Search here"> 							
+									<button type="submit" class="search-btn">Search</button>
+																			
             </form>
 					</div>
 				</div>
@@ -73,6 +75,7 @@
 					
 					</div>
 						<button type="submit" class="btn mt-3 custom_btn">Send message</button>
+						
 					</form>
 
       </div>

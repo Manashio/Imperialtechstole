@@ -1,15 +1,7 @@
 <?php 
-
-
-    // include("config/config.inc.php");
+// include("config/config.inc.php");
     require('config/dbconnect.php');
 
-    $id = $_GET['id'];
-   
-    // print_r($array['my_video_name']);
-
-    // $name = $array['my_video_name'];
-    // echo $name;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +12,7 @@
     <?php require('header/component.php'); ?>
     <title>Document</title>
     <style>
-       .cover{
+           .cover{
           width:100%;
           height:400px;
           background: #eee url('http://signagelive.com/wp-content/uploads/2015/05/Eurostar-Video-Wall-2.png');
@@ -40,18 +32,15 @@
 </head>
 <body>
     <?php require('header/navbar.php'); ?>
-    <?php require('header/catagory.php'); 
+    <?php require('header/catagory.php'); ?>
 
-     $query = mysqli_query($dbquery,"SELECT * FROM my_videowall where my_id='$id'");
-     $array = mysqli_fetch_array($query);
-    ?>
+        
 
     <div class="contents" style="padding:70px 0px 1px 0px">
 
 
   <!-- Start change content here -->
-
-    <div class="cover">
+        <div class="cover">
         <h1 class="text-center"><?php echo $array['my_video_name']; ?></h1>
     </div>
 
@@ -102,16 +91,35 @@
                         </table>
         </div>
     </div>
+    <section>
+			<div class="container pt-5 pb-5">
+				<div id="company">
+					<h1 class="pt-5 pb-5 text-center">Products Partners</h1>
+							<ul class="company_logo text-center">
+								<li><img src="images/lg.png" alt="" class="brandlogo"></li>
+								<li><img src="images/philips.png" alt="" class="brandlogo"></li>
+								
+								<li><img src="images/hp.png" alt="" class="brandlogo"></li>
+								<li><img src="images/dell.png" alt="" class="brandlogo"></li>
+								<li><img src="images/hitachi.png" alt="" class="brandlogo"></li>
+								<li><img src="images/bose.png" alt="" class="brandlogo"></li>
+								<li><img src="images/yamaha.png" alt="" class="brandlogo"></li>
+								<li><img src="images/sennheiser.png" alt="" class="brandlogo"></li>
+							</ul>
+				</div>
+			</div>
+		</section>
 </div>
-
-
-
 
 <!-- end content here     -->
 
     <?php require('footer/footer.php');?>
     
     </div>
+
+
+
+
     <?php require('footer/component.php');?>
 </body>
 </html>

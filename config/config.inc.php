@@ -42,9 +42,14 @@ else
 		@	DB SET USERNAEM PASSWORD
 	*/
 	
-	define("DB_USERNAME",'imp-user');
-	define("DB_PASSWORD",'ew$dJ8C~g[5!');
-	define("DB_DNAME",'inperial-db');
+	// define("DB_USERNAME",'imp-user');
+	// define("DB_PASSWORD",'ew$dJ8C~g[5!');
+	// define("DB_DNAME",'inperial-db');
+	// define("DB_HOST",'localhost');
+	
+	define("DB_USERNAME",'root');
+	define("DB_PASSWORD",'password');
+	define("DB_DNAME",'imperial_admin');
 	define("DB_HOST",'localhost');
 
 	/*

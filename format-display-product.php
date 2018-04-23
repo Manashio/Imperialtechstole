@@ -30,19 +30,20 @@
 
     <div class="contents" style="padding:70px 0px 1px 0px">
 
-
   <!-- Start change content here -->
 
-    <div class="jumbotron">
-        <h1 class="text-center">Large Format Display</h1>
-    </div>
-    <div class="container">
-       <div class="row">
+    
+        
+    
+    <div class="container pb-5 pt-5">
+    
+       <div class="row  pb-5 pt-5">
        
         <div class="col-sm-4">
             <img class="image" src="images/dummy.png" alt="dummy">
         </div>
         <div class="col-sm-8">
+        <h2 class="pb-5">Large Format Display</h2>
         <table class="table">
         <tr>
             <th class="text-center"  colspan="4">INFORMATIONS<th>
@@ -81,7 +82,7 @@
         </div>
     </div>
 
-    <!-- form section -->
+    <!-- form section
     <div class="col-md-6 pt-5 pb-5 offset-md-3">
 				<h4 class="title-heading text-center pt-5">
 					 Get in touch
@@ -111,7 +112,7 @@
 	     		</div>
 			</div>
 
-<!-- end content here     -->
+end content here     -->
 
 
 

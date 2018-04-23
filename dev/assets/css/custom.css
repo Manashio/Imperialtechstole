@@ -129,7 +129,7 @@
 	position: relative;
 	float: left;
 	height: auto;
-	padding: 40px 0px;
+	padding-bottom: 40px;
 	background: #f2f2f2;
 }
 .title-heading{
@@ -327,7 +327,6 @@ nav{
 		border-left:1px solid #eee;
 		font-weight: bold;
 		display: inline-block;
-
 	}
     
 	}
@@ -531,10 +530,14 @@ footer ul li a:hover,footer ul li a:focus{
 
 
 #catagory{
-	margin-top:70px;
-	background:#7040cc;
-	background:#fff;
-	border-bottom: 1px solid #eee;
+	width: 100%;
+    height: 40px;
+    margin-top: 70px;
+    background: #7040cc;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    z-index: 1;
 
 	
 }
@@ -585,9 +588,6 @@ footer ul li a:hover,footer ul li a:focus{
 	background: #6031b9;
 	color:#fff;
 }
-	.carousel-item{
-		height:350px;
-	}
 	.carousel-item img{
 		width:100%;
 		height:100%;
@@ -697,10 +697,11 @@ footer ul li a:hover,footer ul li a:focus{
 	
 }
 
-.company_logo li:hover{
-	border-bottom: 2px solid rgb(193, 45, 223);
-	
+
+	.company_logo li:hover {
+    transform: scale(1.1,1.1);
 }
+
 
 
 .white-heading{
@@ -714,3 +715,43 @@ footer ul li a:hover,footer ul li a:focus{
 	text-transform: uppercase;
 	padding: 20px 30px;
 }
+
+/*brand logo img style*/
+.brandlogo {
+	vertical-align: middle;
+	border-style: none;
+	width: 100px;
+	height: auto;
+}
+/*CRSL*/
+
+#carouselSection .sld {
+  position: absolute;
+  width: 600px;
+  height: auto; }
+  #carouselSection .sld h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase; }
+  #carouselSection .sld h3 {
+    text-transform: uppercase;
+    font-weight: 700; }
+#carouselSection .caption1 {
+  top: 150px;
+  left: 200px; }
+#carouselSection .caption2 {
+  top: 230px;
+  right: 100px; }
+  #carouselSection .caption2 h1 {
+    color: #000; }
+#carouselSection .caption3 {
+  top: 100px;
+  right: 0px; }
+  #carouselSection .caption3 h3 {
+    color: #fff; }
+#carouselSection .caption4 {
+  top: 250px;
+  left: 200px; }
+  #carouselSection .caption4 h1 {
+    color: #000; }

@@ -17,39 +17,56 @@
 <?php require('header/catagory.php'); ?>
 
 <div class="title-box">	
-<div class="row mb-5">
-	<div class="col-lg-12">
-				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-					
+	<div id="carouselSection">
+				<div id="carousel-1" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="First slide">
-									<div class="carousel-caption d-none d-md-block">
-											<h5>Item name</h5>
-										<p>Lorem ipsum dolor sit amet.</p>
+									<img class="d-block w-100" src="images\1.gif" alt="First slide">
+									<div class="sld caption1">
+										<h1>CCTV SERVILANCE</h1>
+										<h3>TRACK ALL MOMENTS OF YOUR VALUABLES</h3>
 									</div>
 								</div>
+
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+									<img class="d-block w-100" src="images\2.gif">
+									<div class="sld caption2">
+                  <h1>PRINTERS</h1>
+                  <h3>PRINT COLOUR OF YOUR LIFE ON A PAPER</h3>
+                </div>
+              </div>
+
+								<div class="carousel-item">
+									<img class="d-block w-100" src="images\3.gif" alt="Third slide">
+										<div class="sld caption3">
+										<h1>PROJECTOR</h1>
+										<h3>Fill Display Of Your Wall</h3>
+									</div>
 								</div>
+
+
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="Third slide">
+									<img class="d-block w-100" src="images\4.gif" alt="Third slide">
+									<div class="sld caption4">
+										<h1>Wall TV</h1>
+										<h3>Digital Flat Display on your Wall!</h3>
+									</div>
 								</div>
 					</div>
-						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		
+						<a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
 					</a>
-					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
-		</div>
-	</div>
-	<div class="container">
+				</div>
 	
-	<div class="row">
+	<div class="container">
+	<div class="row mt-5">
 		<div class="col-lg-6">
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 					
@@ -78,7 +95,7 @@
 					</a>
 				</div>
 		</div>
-		<div class="col-lg-6">
+		<div class="col-lg-6 mt-5">
 		<div class="container pt-5">
 			<h1 class="title-heading white">Connecting technologies <br> with their audience.</h1>
 
@@ -219,21 +236,15 @@
 				<div id="company">
 					<h1 class="pt-5 pb-5 text-center">Products Partners</h1>
 							<ul class="company_logo text-center">
-								<li>LG</li>
-
-								<li>PHILIPS</li>
-
-								<li>DELL</li>
-
-								<li>HP</li>
-
-								<li>HITACHI</li>
-
-								<li>BOSE</li>
-
-								<li>YAMAHA</li>
-
-								<li>SENNHEISER</li>
+								<li><img src="images/lg.png" alt="" class="brandlogo"></li>
+								<li><img src="images/philips.png" alt="" class="brandlogo"></li>
+								
+								<li><img src="images/hp.png" alt="" class="brandlogo"></li>
+								<li><img src="images/dell.png" alt="" class="brandlogo"></li>
+								<li><img src="images/hitachi.png" alt="" class="brandlogo"></li>
+								<li><img src="images/bose.png" alt="" class="brandlogo"></li>
+								<li><img src="images/yamaha.png" alt="" class="brandlogo"></li>
+								<li><img src="images/sennheiser.png" alt="" class="brandlogo"></li>
 							</ul>
 				</div>
 			</div>

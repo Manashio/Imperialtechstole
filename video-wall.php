@@ -16,14 +16,42 @@
     /* display: table-cell; */
     /* vertical-align: middle; */
     position: relative;
-    padding: 50px 10px;
     /* height: 300px; */
     /* width: 100vw; */
-    background: #ccc;
+
     /* margin: 50px!important; */
     text-align: center;
-    /* bottom: 50px; */
-    margin-bottom: 50px;
+
+    height:300px;
+    overflow:hidden;
+      }
+      .cover{
+          width:100%;
+          height:400px;
+          background: #eee url('https://www.technobuffalo.com/wp-content/uploads/2016/12/apple-tv-5.jpg');
+          background-size:100%;
+          background-repeat:no-repeat;
+          background-position:center center;
+      }
+      h4.card-title{
+           display:block;
+           background:#eee;
+           padding :20px 0px;
+           text-align:center;
+      }
+      
+      .lcd{
+          background:#fff url('https://product.hstatic.net/1000189326/product/upload_ab778b11295d4585b113e9d9ad5b6e7a_master.jpg');
+          background-position:center center;
+          background-size:70%;
+          background-repeat:no-repeat;
+      }
+
+      .led{
+        background:#fff url('https://4.imimg.com/data4/PM/KH/MY-34794816/lcd-500x500.png');
+          background-position:center center;
+          background-size:70%;
+          background-repeat:no-repeat;
       }
 
     </style>
@@ -36,32 +64,32 @@
 
   <!-- Start change content here -->
     <section id="videoSection">
-        <div class="jumbotron">
-        <h1 class="text-center">Video Wall</h1>
+    <div class="cover">
         </div>
-        <div class="container">
-        <div class="row">
+      
+        <div class="container pb-5 pt-5">
+        <div class="row pt-5">
         
-             <div class="col-sm-3">
              
-            </div>
-            <div class="col-sm-3">
+            <div class="col-md-6">
                 <a href="video-wall-product.php?id=1">
-                <div class="box">
-                    LCD Video Wall 
+                <div class="box lcd">
+     
                 </div>
+                <h4 class="card-title">LCD Video Wall</h4>
                 </a>
             </div>
-            <div class="col-sm-3">
+
+            <div class="col-md-6">
              <a href="video-wall-product.php?id=2">             
-                <div class="box">
-                    LED Video Wall 
+                <div class="box led">
+     
                 </div>
+                <h4 class="card-title"> LED Video Wall </h4>
+               
             </div>
             </a>
-             <div class="col-sm-3">
              
-            </div>
         </div>
         </div>
 

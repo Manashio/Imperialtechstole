@@ -29,8 +29,15 @@
             background: #555;
             width: 100px;
             color: #fff;
-
         }
+        .cover{
+          width:100%;
+          height:400px;
+          background: #eee url('http://www.conklinoffice.com/files/conklin/pages/about/conference-room-design-tips/Room---Conf-Cherry.jpg');
+          background-size:100%;
+          background-repeat:no-repeat;
+          background-position:center center;
+      }
     </style>
 </head>
 <body>
@@ -43,52 +50,65 @@
 
 
   <!-- Start change content here -->
+        <div class="cover"></div>
 
-        <div class="jumbotron">
-            <h1 class="text-center"> Video Conferencing</h1>
-        </div>
-
-        <div class="container">
-            <div class="row">
+        <div class="container pt-5 pb-5">
+            <div class="row pt-5 pb-5">
                 <div class="col-md-4">
                     <img class="img" src="images/dummy.png" alt="">
                 </div>
 
                 <div class="col-md-8">
+                    <h1 class="pb-5"> Video Conferencing</h1>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae assumenda esse nesciunt dicta soluta quibusdam magnam molestias, harum saepe minima qui maiores beatae deleniti magni explicabo incidunt exercitationem nobis pariatur?
                     Voluptas dicta provident eius iure fuga quidem sed consectetur neque placeat explicabo ex cum quam minima deserunt aliquid dolorum, ducimus corrupti rem dolor labore. Dicta, ducimus voluptatem. Aliquam, in cupiditate?
                     Nesciunt tempora, voluptatum in enim odit distinctio nobis? Soluta velit expedita inventore ut doloremque saepe fugiat voluptatibus distinctio, eos assumenda quasi atque totam eligendi quos odio optio a, aliquam illo.
                     Asperiores iusto, exercitationem, nisi dolor voluptatibus totam reiciendis iste, accusamus temporibus rerum nesciunt quod? Obcaecati quos nostrum dignissimos. Consequuntur error id quo doloremque aperiam! Esse adipisci rerum voluptatum harum recusandae!
-                    Temporibus unde tempore nulla ipsa obcaecati dolorum sit veniam, vel nam totam illo, sint soluta neque reiciendis consectetur nihil corrupti, maxime eveniet officiis eius laudantium. Veniam rem temporibus dolor ea.
-                    Minima voluptatibus delectus explicabo. Obcaecati error autem reprehenderit accusantium dolorem, dolores, tenetur modi eum quaerat recusandae exercitationem possimus dignissimos! Cum, aliquam voluptas nam doloribus fugit debitis quo sequi voluptates eligendi!
-                    Nam a repellendus sequi ut sunt mollitia placeat repellat obcaecati! Animi rerum eaque alias ullam voluptates vel et dolorem quisquam sint consequuntur. Explicabo corrupti, esse delectus facilis possimus eaque necessitatibus.
-                    Dicta officia perspiciatis earum aspernatur similique, magnam doloribus ut quam odit! Numquam nulla sequi mollitia, consectetur, commodi voluptatibus ducimus laborum sunt, voluptate amet itaque repellendus suscipit beatae nesciunt vel nam.
-                    At, et? Possimus dignissimos animi, provident culpa incidunt maxime numquam ducimus soluta exercitationem, corrupti illo praesentium quisquam aspernatur autem itaque pariatur? Assumenda soluta perferendis voluptas minus unde, tempora id reiciendis?
-                    Debitis neque est error corrupti commodi blanditiis adipisci sed, minima quia dolores dolor laborum inventore odio doloremque. Repudiandae facilis voluptatem deserunt nulla temporibus, eum iusto labore cupiditate, tempora consectetur sit.
+                    
                 </div>
-            </div><br>
+            </div>
 
-                <h1 class="text-center">Point-To-Point Solution</h1>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rerum provident qui! Dolore, laborum quidem, sint voluptatum voluptates tenetur ipsam itaque vitae magni distinctio nesciunt, placeat reprehenderit voluptas voluptatibus deleniti.
-                Non provident repellat aliquam veritatis. Vitae, adipisci iste! Amet, eius? Voluptatibus tempora modi placeat illum quis optio, doloremque esse veniam eveniet laboriosam cum dolorum ipsum dolore. Fugit, iste. Recusandae, deleniti.
+            <div class="row ">
+                <div class="col-md-4">
+                    <img class="img" src="images/dummy.png" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h3 class="pb-5"> About Product</h3>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae assumenda esse nesciunt dicta soluta quibusdam magnam molestias, harum saepe minima qui maiores beatae deleniti magni explicabo incidunt exercitationem nobis pariatur?
+                    Voluptas dicta provident eius iure fuga quidem sed consectetur neque placeat explicabo ex cum quam minima deserunt aliquid dolorum, ducimus corrupti rem dolor labore. Dicta, ducimus voluptatem. Aliquam, in cupiditate?
+                    Nesciunt tempora, voluptatum in enim odit distinctio nobis? Soluta velit expedita inventore ut doloremque saepe fugiat voluptatibus distinctio, eos assumenda quasi atque totam eligendi quos odio optio a, aliquam illo.
+                    Asperiores iusto, exercitationem, nisi dolor voluptatibus totam reiciendis iste, accusamus temporibus rerum nesciunt quod? Obcaecati quos nostrum dignissimos. Consequuntur error id quo doloremque aperiam! Esse adipisci rerum voluptatum harum recusandae!
+                    
+                </div>
+            </div>
+
+            <div class="mt-5 pt-5 pb-5">
+                <h1 class="">Point to point solution</h1>
+                <hr>
+                <p class="pt-5 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rerum provident qui! Dolore, laborum quidem, sint voluptatum voluptates tenetur ipsam itaque vitae magni distinctio nesciunt, placeat reprehenderit voluptas voluptatibus deleniti.Non provident repellat aliquam veritatis. Vitae, adipisci iste! Amet, eius? Voluptatibus tempora modi placeat illum quis optio, doloremque esse veniam eveniet laboriosam cum dolorum ipsum dolore. Fugit, iste. Recusandae, deleniti.
                 Nemo eos dolore, magnam, amet repudiandae at quas quis nisi, ipsam porro temporibus corrupti. Natus minima voluptatibus, consequuntur placeat voluptatem corporis ipsum aspernatur mollitia porro quod esse impedit eligendi maxime!
-                Omnis, necessitatibus laudantium placeat enim natus suscipit nesciunt soluta quidem quos voluptatum, ad sed provident nobis laborum dolore. Cumque praesentium ea possimus rerum quam consequuntur magni ullam eum alias excepturi.
-                Quia, voluptate esse eligendi nam iste praesentium quibusdam cum a magni. Molestiae veniam nulla aliquid nihil laboriosam veritatis ratione, deleniti modi cumque. Quasi, odit cum eveniet maiores saepe in modi.
-                    <br>
-                <h1 class="text-center">Multi Party Solution</h1>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum accusantium sed aliquam amet nam recusandae et nostrum molestiae deleniti fugit, ducimus natus exercitationem debitis incidunt corrupti nemo labore similique unde.
-                Fugit saepe nesciunt earum ad dolorum repellendus molestiae, enim magni. Qui nulla fugit ab voluptates, architecto aspernatur! Qui quas voluptatum consectetur aperiam unde officiis accusantium doloribus odio. Delectus, quasi voluptate.
-                Nostrum perspiciatis assumenda voluptatum fugiat facilis. Illum nam odio exercitationem, necessitatibus ad magni. Quisquam ducimus dolorem impedit nostrum repudiandae velit magni, architecto sunt voluptatibus maiores in quis optio minima odio.
-                <br><br>
-                <h1 class="text-center"> Our Partners </h1>
-                <ul class="ul">
-                    <li><a href="">LG</a></li>
-                    <li><a href="">Samsung</a></li>
-                    <li><a href="">Panasonic</a></li>
-                    <li><a href="">Koryo</a></li>
-                    <li><a href="">Brand</a></li>
-                </ul>
+                </p>
+            </div>
+
+
+               <section>
+			<div class="container pt-5 pb-5">
+				<div id="company">
+					<h1 class="pt-5 pb-5 text-center">Products Partners</h1>
+							<ul class="company_logo text-center">
+								<li><img src="images/lg.png" alt="" class="brandlogo"></li>
+								<li><img src="images/philips.png" alt="" class="brandlogo"></li>
+								
+								<li><img src="images/hp.png" alt="" class="brandlogo"></li>
+								<li><img src="images/dell.png" alt="" class="brandlogo"></li>
+								<li><img src="images/hitachi.png" alt="" class="brandlogo"></li>
+								<li><img src="images/bose.png" alt="" class="brandlogo"></li>
+								<li><img src="images/yamaha.png" alt="" class="brandlogo"></li>
+								<li><img src="images/sennheiser.png" alt="" class="brandlogo"></li>
+							</ul>
+				</div>
+			</div>
+		</section>
 
         </div>
 

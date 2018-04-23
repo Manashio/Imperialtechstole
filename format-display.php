@@ -23,6 +23,7 @@
     .view{        
     font-size: 30px;
     }
+
     </style>
 </head>
 <body>
@@ -36,9 +37,12 @@
 
   <!-- Start change content here -->
 
-        <div class="jumbotron">
-             <h1 class="text-center">Large Format Display</h1>
-        </div>
+        
+       
+
+        <div class="container pt-5 pb-5">
+        <h2 class="mt-5 mb-5">Large Format Display</h2>
+            
         
         <table class="table">
         <tr>
@@ -74,6 +78,7 @@
                 }
             ?>
         </table>
+        </div>
 
 
 <!-- end content here     -->
