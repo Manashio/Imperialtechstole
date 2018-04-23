@@ -1,9 +1,7 @@
 <?php
-
     require("config/config.inc.php");
 
-    $sql_catagory= mysqli_query($dbquery,"SELECT * FROM my_catagory");
-   
+    $sql_catagory= mysqli_query($dbquery,"SELECT * FROM my_catagory"); 
 ?>
 <section id="catagory">
      <ul>

@@ -17,7 +17,38 @@
 <?php require('header/catagory.php'); ?>
 
 <div class="title-box">	
+<div class="row mb-5">
+	<div class="col-lg-12">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					
+					<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="First slide">
+									<div class="carousel-caption d-none d-md-block">
+											<h5>Item name</h5>
+										<p>Lorem ipsum dolor sit amet.</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="Third slide">
+								</div>
+					</div>
+						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+		</div>
+	</div>
 	<div class="container">
+	
 	<div class="row">
 		<div class="col-lg-6">
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
