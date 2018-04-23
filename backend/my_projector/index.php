@@ -23,6 +23,7 @@
 
 
           <div class="mt-5">
+          <?php include_once('../subview/bc.php');?>
             
                 <table class="main" >
                     <tr>
@@ -34,22 +35,27 @@
                         <th><i class="fas fa-pencil-alt fa-lg"></i></th>
                         <th><i class="far fa-trash-alt fa-lg"></i></th>
                     </tr>
-                    
+                    <script>let x = 1; </script>
                     <?php 
-                    require_once('../controller/my_subcatagory.php'); 
+                    require_once('../controller/my_projector.php'); 
+                    
                     foreach ($getRows as $row) {
                       $id = $row['my_id'];
                     ?>
                     <tr class="first">
-                          <td><?php echo $row["my_catagory_id"];?></td>
-                          <td><?php echo $row["my_subcatagory_name"];?></td>
-                          <td><?php echo $row["my_subcatagory_seo"];?></td>
-                          <td><?php echo $row["my_pagename"];?></td>
-                          <td><?php echo $row["my_subcatagory_status"];?></td>
+
+                          <td><script>document.write(x++);</script></td>
+                          <td><?php echo $row["my_projector_name"];?></td>
+                          <td><?php echo $row["my_projector_brand"];?></td>
+                          <td><?php echo $row["my_projector_specification"];?></td>
+                          <td><?php echo $row["my_projector_broucher"];?></td>
                           <td>
-                              <b><?php echo "<a href='my_subcatagory_edit.php?id=$id'> Edit </a>"?></b>
+                              <b><?php echo "<a href='my_projector_edit.php?id=$id'> Edit </a>"?></b>
+                            
                               </td><td>
-                              <b><a href="my_subcatagory_delete.php?id=<?php echo $id; ?>" onClick="return confirm('Are you sure you want to delete?');"> Delete </a></b>
+                             
+
+                              <b><a href="my_projector_delete.php?id=<?php echo $id; ?>" onClick="return confirm('Are you sure you want to delete?');"> Delete </a></b>
                               
                           </td>
                       </tr>
@@ -76,23 +82,21 @@
       </div>
       <div class="modal-body p-5">
 
-      <form action="" method="post">
-                <input type="text" name="name" id="" class="form-control input_bar" placeholder="Name">
-                <input type="text" name="seo" id="" class="form-control input_bar" placeholder="Seo">
-                <input type="text" name="pagename" class="form-control input_bar" id="" placeholder="Pagename">
-                <!-- <input type="text" name="status" id="" placeholder="Active / Disable"> -->
-               <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
+           <form action="" method="POST">
+          <input type="text" name="name" class="form-control input_bar" placeholder="Projector name">
+          <input type="text" name="brand" class="form-control input_bar" placeholder="Projector brand">    
+          <input type="text" name="specification" class="form-control input_bar" placeholder="Projector specification">
+          <input type="text" name="broucher" class="form-control input_bar" placeholder="Projector broucher">
+          <input type="text" name="image" class="form-control input_bar" placeholder="Projector Image">
+          <!-- <input type="text" name="status" class="form-control input_bar" id="" placeholder="Display status"> -->
+          <button type="submit" class="mt-5 btn btn-success pl-5 pr-5"><i class="fas fa-plus"></i>&nbsp;&nbsp;&nbsp; save </button>
         </form>
+
+
       </div>
      </div>
   </div>
 </div>
-
-
-
-
-
-
 
 
 <?php

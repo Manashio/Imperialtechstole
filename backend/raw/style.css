@@ -383,9 +383,11 @@ label{
     letter-spacing: 3px;
     transition: 0.5s;
     -webkit-transition: 0.3s;
+    border: 2px solid #fff;
 }
 .page_card:hover{
     background: #fff;
     color: #02ccba;
- 
+    border: 2px solid #02ccba;
+    
 }

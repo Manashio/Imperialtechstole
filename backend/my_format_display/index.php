@@ -24,6 +24,7 @@
 
 
           <div class="mt-5">
+          <?php include_once('../subview/bc.php');?>
             
                 <table class="main" >
                     <tr>

@@ -20,20 +20,20 @@ error_reporting(0);
 				<a href="index.php">Dashboard</a>
 			</li>
 			<li class = "<?php echo $catagory;?>">
-				<a href="my_catagory/my_catagory.php">Catagory</a>
+				<a href="my_catagory/index.php">Catagory</a>
 			</li>
 			<li class = "<?php echo $subcatagory;?>">
-				<a href="my_subcatagory/my_subcatagory.php">Sub Catagory</a>
+				<a href="my_subcatagory/index.php">Sub Catagory</a>
 			</li>
 			<li class = "<?php echo $display;?>">
-				<a href="my_format_display/my_format_display.php">Display</a>
+				<a href="my_format_display/index.php">Display</a>
 			</li>
 			<li class = "<?php echo $projector;?>">
-				<a href="my_projector/my_projector.php" class="">Projector</a>
+				<a href="my_projector/index.php" class="">Projector</a>
 			</li>
 			
 			<li class = "<?php echo $video;?>">
-				<a href="my_videoconferencing/my_videoconferencing.php">Video Conferencing</a>
+				<a href="my_videoconferencing/index.php">Video Conferencing</a>
 			</li>
 			
 			<div class="hr"></div>

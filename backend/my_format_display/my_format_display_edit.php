@@ -17,6 +17,7 @@
      <div class="container">
 
           <div class="mt-5">
+          <?php include_once('../subview/bc.php');?>
     
                 <form action="my_format_display_update.php" method="post">
 
