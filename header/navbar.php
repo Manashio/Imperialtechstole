@@ -9,7 +9,7 @@
 <div class="menu-top">
           <div class="row">
 			   <div class="col-3">
-			   		<a href="index.php" class="brand-icon text-center" >Brand</a>
+			   		<a href="index.php" class="brand-icon text-center" ><img class="company_logo_image" src="images/logo.png"></a>
 				</div>
 				<div class="col-5">
 					<div class="search1">
@@ -35,8 +35,8 @@
 			<ul class="sidenav">
 				<li><a href="index.php"><i class="fas fa-home mr-2"></i>  Home</a></li>
 				<li><a href="#"><i class="fas fa-wrench mr-2"></i>  Service</a></li>
-				<li><a href="#"><i class="fas fa-home mr-2"></i>  About Us</a></li>
-				<li><a href="contact-us.php"><i class="fas fa-home mr-2"></i>  Contact Us</a></li>
+				<li><a href="aboutus.php"><i class="fas fa-bullhorn mr-2"></i>   About Us</a></li>
+				<li><a href="contact-us.php"><i class="fas fa-phone-volume mr-2" ></i>  Contact Us</a></li>
 			</ul>
 	</nav>
      <div class="div" id="block"></div>

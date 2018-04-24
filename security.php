@@ -23,7 +23,7 @@
       .product-img{
           width :100%;
           height:300px;
-          background:#eee url('http://bwindia.net/bwfiles/images/Monitor%20Dell%20Ultrasharp%20U2518D%2025%20inch%20QHD%20DP%20mDP%20HDMI%205%20USB%201.jpg');
+          background:#eee url('http://www.cctvkits.co.uk/images/detailed/9/hiwatch-4-channel_ip_kit-detailed.jpg');
           background-size:cover;
           background-repeat:no-repeat;
           background-position:center center;
@@ -41,7 +41,7 @@
 
   <!-- Start change content here -->
         <div class="cover">
-        <h1 class="text-center"><?php echo $array['my_video_name']; ?></h1>
+        <h1 class="text-center" style="padding-top:200px; font-weight:bold; font-size:40px; color:#fff;">SECURITY AND SERVILLANCE</h1>
     </div>
 
 <div class="container pt-5 pb-5">
@@ -94,17 +94,10 @@
     <section>
 			<div class="container pt-5 pb-5">
 				<div id="company">
-					<h1 class="pt-5 pb-5 text-center">Products Partners</h1>
+					<h1 class="pt-5 pb-5 text-center">Available Brands</h1>
 							<ul class="company_logo text-center">
 								<li><img src="images/lg.png" alt="" class="brandlogo"></li>
 								<li><img src="images/philips.png" alt="" class="brandlogo"></li>
-								
-								<li><img src="images/hp.png" alt="" class="brandlogo"></li>
-								<li><img src="images/dell.png" alt="" class="brandlogo"></li>
-								<li><img src="images/hitachi.png" alt="" class="brandlogo"></li>
-								<li><img src="images/bose.png" alt="" class="brandlogo"></li>
-								<li><img src="images/yamaha.png" alt="" class="brandlogo"></li>
-								<li><img src="images/sennheiser.png" alt="" class="brandlogo"></li>
 							</ul>
 				</div>
 			</div>

@@ -52,7 +52,7 @@
   <!-- Start change content here -->
 
     <div class="cover">
-        <h1 class="text-center"><?php echo $array['my_video_name']; ?></h1>
+        <h1 class="text-center" style="padding-top:200px;font-weight:bolder;color:#fff;"><?php echo $array['my_video_name']; ?></h1>
     </div>
 
 <div class="container pt-5 pb-5">

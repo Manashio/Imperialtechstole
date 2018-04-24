@@ -8,7 +8,7 @@
             <li><a href="index.php"> <i class="fas fa-angle-right mr-1"></i> Home</a></li>
             <li><a href="aboutus.php"> <i class="fas fa-angle-right mr-1"></i> About us</a></li>
             <li><a href="#"> <i class="fas fa-angle-right mr-1"></i> Our Products</a></li>
-            <li><a href="#"> <i class="fas fa-angle-right mr-1"></i> Contact Us</a></li>
+            <li><a href="contact-us.php"> <i class="fas fa-angle-right mr-1"></i> Contact Us</a></li>
         </ul>
     </div>
     <div class="col-md-3  pb-5">

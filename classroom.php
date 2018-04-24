@@ -79,7 +79,7 @@
         
              
             <div class="col-md-6">
-                <a href="classroom_types.php?id=1">
+                <a href="classroom_types.php?id=12">
                 <div class="box vcr">
      
                 </div>
@@ -88,7 +88,7 @@
             </div>
 
             <div class="col-md-6">
-             <a href="classroom_types.php?id=2">             
+             <a href="classroom_types.php?id=12">             
                 <div class="box scr">
      
                 </div>

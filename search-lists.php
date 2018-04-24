@@ -21,9 +21,11 @@ $search_query_array = mysqli_num_rows($search_query);
 <?php require('header/navbar.php'); ?>
 <?php require('header/catagory.php'); ?>
 
-     <section class="search_only eee">
+     <section class="search_only eee">         
         <section class=" mb-5">
             <div class="container mt-5 mb-5">
+                
+    <div style="margin-top:150px;"></div>
                 <h2 class="mt-5 mb-5">Search for :  <span><b> <?php echo $srch_id; ?> </b></span></h2>
                 <?php 
                 if($search_query_array <= 0){

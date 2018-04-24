@@ -64,8 +64,7 @@
 
   <!-- Start change content here -->
     <section id="videoSection">
-    <div class="cover">
-        </div>
+    <div class="cover"></div>
       
         <div class="container pb-5 pt-5">
         <div class="row pt-5">

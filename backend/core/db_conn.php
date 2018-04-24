@@ -2,7 +2,7 @@
 class Database{
 	public $isConn;
 	protected $dataB;
-	public function __construct($username = "root", $password="password",$host="127.0.0.1",$dbname="imperial_admin",$options = []){
+	public function __construct($username = "root", $password="",$host="127.0.0.1",$dbname="imperial_admin",$options = []){
 		$this->isConn = TRUE;
 		try {
 			$this->dataB = new PDO("mysql:host={$host};dbname={$dbname};charset=utf8",$username,$password,$options);
@@ -50,7 +50,7 @@ class Database{
 		$this->insertData($query,$params);	
 	}
 }
-	try {$conn = new PDO("mysql:host=localhost;dbname=imperial_admin", $username="root", $password="password");$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	try {$conn = new PDO("mysql:host=localhost;dbname=imperial_admin", $username="root", $password="");$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     	}catch(PDOException $e){echo $e->getMessage();}
 		$db = new Database();
 ?>

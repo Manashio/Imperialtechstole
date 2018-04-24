@@ -14,7 +14,7 @@ if(empty($_POST)===false){
                     This is a danger alert—check it out!
                     </div>";
           }else{
-                  $data = array();
+                  // $data = array();
                   $data= array($name,$phone,$email,$message,$model);
                   $data_input = "<div class='input-group mb-3 mt-5'>
                     <div class='input-group-prepend'>
@@ -63,17 +63,19 @@ if(empty($_POST)===false){
                       $mail->setFrom($email, $email);
                       $mail->addAddress('nubulmachary@gmail.com', 'Admin');
 
+                      // $mail->addAddress('imperialtechsol@gmail.com', 'Admin');
+
                       //$mail->addAddress('manashbharali79@gmail.com', 'Admin');
                       
        
                       $mail->isHTML(true);                                
-                      $mail->Subject = 'Mail from '.$name;
+                      // $mail->Subject = 'Mail from '.$name;             
+                      $mail->Subject = 'Lead from imperialtechsol.com ';
 
-                      $mail->Body    = '<h1>'.$model.'</h1><h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.'and phone no is '.$phone.'</h5> <br><br><br> '.$message;
+                      $mail->Body    = '<h1>'.$model.'</h1><h5>  <b>Name : </b> '.$name.',<br>Email address : '.$email.'<br>Phone no : '.$phone.'</h5> <br>Message : '.$message;
 
                       $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
                       $mail->send();
-                      
 
                       echo 'Message has been sent';
                   } catch (Exception $e) {
@@ -103,7 +105,8 @@ if(empty($_POST)===false){
           <h1>Form data</h1>
           <?php echo $alert;?>
           <div class="well">
-               <?php print_r($data);
+               <?php
+                // print_r($data);
                          echo $data_input;
                ?>
           </div>
