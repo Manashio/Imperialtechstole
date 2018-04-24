@@ -77,7 +77,8 @@ if(empty($_POST)===false){
                       $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
                       $mail->send();
 
-                      echo 'Message has been sent';
+                      // echo 'Message has been sent';
+                      header('location:thankyou.php');
                   } catch (Exception $e) {
                      echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
                   }
