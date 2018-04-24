@@ -29,12 +29,12 @@
                   
           </div>
           <?php
-                $result = $conn->query("show tables");
-                while ($row = $result->fetch(PDO::FETCH_NUM)) {
-                    foreach ($row as $key => $value) {
-                        echo $value;
-                    }
-                }
+                // $result = $conn->query("show tables");
+                // while ($row = $result->fetch(PDO::FETCH_NUM)) {
+                //     foreach ($row as $key => $value) {
+                //         echo $value;
+                //     }
+                // }
           ?>
 
           <div class="row mt-5 text-center">     

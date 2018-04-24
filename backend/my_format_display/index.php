@@ -36,8 +36,8 @@
                         <th>Broucher</th>
                         <th>Image</th>
                         <th>Status</th>
-                        <th>Created On</th>
-                        <th>Last Updated On</th>
+                        <th>Created</th>
+                        <th>Updated</th>
                         <th><i class="fas fa-pencil-alt fa-lg"></i></th>
                         <th><i class="far fa-trash-alt fa-lg"></i></th>
                     </tr>

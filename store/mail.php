@@ -17,7 +17,7 @@ if(empty($_POST)===false){
               $thank_you_div = "
                                                 <div class='thank_you_div text-center'>
                                                       <div class='thank_you_header'>
-                                                          <i class=' mt-5 far fa-envelope'></i>
+                                                          <i class=' mt-5 far fa-envel          ope'></i>
                                                       </div>
                                                       <div class='pt-5 pb-5'>
                                                           <h2 class='display-4 thank_you_heading'>Thank you,</h2>
@@ -47,14 +47,52 @@ if(empty($_POST)===false){
                       $mail->SMTPSecure = 'tls';                          
                       $mail->Port = 587;                              
                       $mail->setFrom($email, $email);
-                      $mail->addAddress('nubulmachary@gmail.com', 'Admin');
-                      //$mail->addAddress('manashbharali79@gmail.com', 'Admin');
+                      //$mail->addAddress('nubulmachary@gmail.com', 'Admin');
+                      $mail->addAddress('manashbharali79@gmail.com', 'Admin');
                       
-       
                       $mail->isHTML(true);                                
                       $mail->Subject = 'Mail from '.$name;
-                      $mail->Body    = '<h1>'.$model.'</h1><h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.'and phone no is '.$phone.'</h5> <br><br><br> '.$message;
-                      $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                      //$mail->Body    = '<h1>'.$model.'</h1><h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.'and phone no is '.$phone.'</h5> <br><br><br> '.$message;
+                      //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                      $mail->body = "
+                      <div class='container' style='padding: 0;margin: 20px auto;width: 90%;background: #fff;padding-bottom: 50px'>
+                      <div class='header' style='padding: 20px 0;margin: 0;width: 100%;background: #370c63;text-align: center;display: block'>
+                           <p class='heading' style='padding: 0;margin: 0;color: #fff;font-weight: 500;font-size: 20px;letter-spacing: 1px;text-transform: uppercase'>Buyer's Contact Information</p>
+                      </div>
+                      <div class='content' style='padding: 20px 20px;margin: 0;color: #555;font-size: 15px'>
+                           <table style='padding: 0;margin: 0'>
+                                <tr style='padding: 0;margin: 0'>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>Name</td>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>".$name."</td>
+                                </tr>
+                                <tr style='padding: 0;margin: 0'>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>Mobile Number</td>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>".$phone."</td>
+                                </tr>
+                                <tr style='padding: 0;margin: 0'>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>Email</td>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>".$email."</td>
+                                </tr>
+                                <tr style='padding: 0;margin: 0'>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>Address</td>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>".$address."</td>
+                                </tr>
+                           </table>    
+                           
+                           <div style='padding: 10px 0;margin: 0;width: 100%;background: #fff;text-align: center;display: block;margin-top: 30px;border-radius: 500px;border: 2px solid #370c63;letter-spacing: 1px;text-transform: uppercase;color: #370c63'>
+                                <p style='padding: 0;margin: 0'> Buylead Details</p>
+                           </div>
+                           <br style='padding: 0;margin: 0'/><br style='padding: 0;margin: 0'/>
+                           <h2 style='padding: 0;margin: 0;color: #370c63'>Product name : $model</h2>
+                           <br style='padding: 0;margin: 0'/><br style='padding: 0;margin: 0'/><br style='padding: 0;margin: 0'/>
+                           <table style='padding: 0;margin: 0'>
+                                <tr style='padding: 0;margin: 0'>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>Message</td>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>$message</td>
+                                </tr>
+                           </table>
+                      </div>
+                 </div> ";
                       $mail->send();
                       
                       echo 'Message has been sent';
