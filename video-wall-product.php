@@ -100,8 +100,57 @@
                             </tr>
                         </tbody>
                         </table>
+            <br><br>
+            <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal-e" data-whatever="@getbootstrap">Enquiry</a>
+            <a href="#" class="btn btn-info">Download Broucher</a>
         </div>
     </div>
+</div>
+
+<!--Model-->
+<div class="modal fade" id="exampleModal-e" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" >
+    <div class="modal-content" style="width:100%!important;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ask me anything</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-5">
+      <form action="store/mail.php" method="POST" id="form_data_nav">
+             
+			<input type="hidden" name="name" value="<?php echo $array['my_video_name'];?>">
+
+			<div class="form-group pt-4">
+				<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^a-Z]/, '')" required>
+			</div>
+
+                    
+
+					<div class="form-group pt-4">
+						<input type="text" class="form-control input_bar" id="email" name="email" placeholder="Email : Johndoe@gmail.com"  required>
+
+						
+					</div>
+
+					<div class="form-group pt-4">
+						<input type="text" class="form-control input_bar" id="phone" maxlength="10" name="phone" placeholder="Phone no : 9706300000" onkeyup="this.value = this.value.replace(/[^0-9]/, '')"  required>
+						
+					</div>
+
+					<div class="form-group pt-4">
+					<textarea class="form-control input_bar" id="message_text" name="message" placeholder="message : Ask me anything"  required></textarea>
+
+					
+					</div>
+						<button type="submit" class="btn mt-3 custom_btn">Send message</button>
+						
+					</form>
+
+      </div>
+     </div>
+  </div>
 </div>
 
 
