@@ -39,22 +39,6 @@
   <!-- Start change content here -->
 
         <div class="cover"></div>
-
-        
-
-
-
-            Classroom Solution
-
-            Cinema Solution
-
-            Home Theater Solution
-
-            Available Brands-
-
-       
-
-
         </div>
         
 
