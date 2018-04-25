@@ -1,15 +1,34 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-
 	<title>Imperialtechstole : Home </title>
 	<?php require('header/component.php'); ?>
-	
 	<style>
 		.slider_done{
 			height:360px;
+		}
+		.mystyle{
+			width:100%;
+			height:100vh;
+			background:#eee;
+			position:fixed;
+			z-index:3;
+			-webkit-animation: mymove 0.9s ease-out; /* Safari 4.0 - 8.0 */
+    			animation: mymove 0.9s ease-out;
+		}
+		.res{
+			width:100%;
+			height:300px;
+			background:#eee;
+		}
+		@-webkit-keyframes mymove {
+			from {bottom: 1000px;}
+			to {bottom: 0px;}
+		}
+		@keyframes mymove {
+			from {bottom: 1000px;}
+			to {bottom: 0px;}
 		}
 	</style>
 </head>
@@ -17,6 +36,34 @@
 
 <?php require('header/navbar.php'); ?>
 <?php require('header/catagory.php'); ?>
+
+<div id="div_target" class="" style="display:none;">
+	<div class="container pt-5 pb-5">
+		<div class="text-right">
+			<button class="btn btn-danger" id="close"><i class="fas fa-times"></i> Close</button>
+		</div>
+		<h1>OUR PRODUCTS</h1>
+		<br><br>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="https://images.yourstory.com/2016/08/125-fall-in-love.png" alt="" class="res mb-3">
+					<h4 class="text-center">Product Name</h4>
+				</div>
+
+				<div class="col-md-4">
+					<img src="https://images.yourstory.com/2016/08/125-fall-in-love.png" alt="" class="res mb-3">
+					<h4 class="text-center">Product Name</h4>
+				</div>
+
+				<div class="col-md-4">
+					<img src="https://images.yourstory.com/2016/08/125-fall-in-love.png" alt="" class="res mb-3">
+					<h4 class="text-center">Product Name</h4>
+				</div>				
+			</div>
+		<br><br><br><br>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tempore placeat provident eveniet a ad harum exercitationem quae rerum, neque, quidem iusto, rem distinctio ullam. Commodi aperiam quo sequi reprehenderit.</p>
+	</div>
+</div>
 
 <div class="title-box">	
 	<div id="carouselSection">
@@ -213,8 +260,6 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
 
-
-
                     <small class="text-muted">9 mins</small>
                   </div>
                 </div>
@@ -262,6 +307,19 @@
 
 <?php require('footer/footer.php'); ?>
 <?php require("footer/component.php");?>
+
+<script>
+	const div_target = document.getElementById("div_target");
+	const close = document.getElementById("close");
+	close.addEventListener("click", function(){
+    		div_target.style.display = "none";
+	});
+	setTimeout(() => {
+		div_target.classList.add("mystyle");
+		div_target.style.display = "block";
+	}, 5000);
+
+</script>
 
 </body>
 </html>
