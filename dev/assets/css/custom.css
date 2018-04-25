@@ -458,7 +458,7 @@ footer ul li a{
 #productSection .product-box .img{
 	width: 100%;
 	height: 250px;
-	background: #ccc;
+	background: #fff;
 }
 
 #productSection .product-box h2{
@@ -741,26 +741,47 @@ footer ul li a:hover,footer ul li a:focus{
   #carouselSection .sld h1 {
     font-size: 70px;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     text-transform: uppercase; }
   #carouselSection .sld h3 {
     text-transform: uppercase;
     font-weight: 700; }
 #carouselSection .caption1 {
-  top: 150px;
-  left: 200px; }
+  top: 200px;
+  left: 200px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+	width: auto; 
+	opacity: .6;
+}
 #carouselSection .caption2 {
   top: 230px;
-  right: 100px; }
+  right: 100px;
+  background: #fff;
+ padding: 20px;
+ border-radius: 20px;
+ width: auto; 
+ opacity: .6; }	
   #carouselSection .caption2 h1 {
     color: #000; }
 #carouselSection .caption3 {
   top: 100px;
-  right: 0px; }
+  right: 200px;
+  background: #fff;
+ padding: 20px;
+ border-radius: 20px;
+ width: auto; 
+ opacity: .6;  }
   #carouselSection .caption3 h3 {
-    color: #fff; }
+    color: #000; }
 #carouselSection .caption4 {
   top: 250px;
-  left: 200px; }
+  left: 200px;
+  background: #fff;
+ padding: 20px;
+ border-radius: 20px;
+ width: auto; 
+ opacity: .6; }
   #carouselSection .caption4 h1 {
     color: #000; }

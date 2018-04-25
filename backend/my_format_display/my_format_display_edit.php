@@ -34,6 +34,10 @@
                 <input type="text" name="size" class="form-control input_bar" value ="<?php echo $getRow['my_display_size']; ?>"> 
 
 
+             <label for="exampleInputEmail1">Model Number</label>
+                <input type="text" name="model" class="form-control input_bar" value ="<?php echo $getRow['my_model_number']; ?>"> 
+
+
 
              <label for="exampleInputEmail1">Dispaly Brand</label>   
                 <input type="text" name="brand" class="form-control input_bar" value ="<?php echo $getRow['my_display_brand']; ?>">  

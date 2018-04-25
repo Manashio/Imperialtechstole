@@ -52,12 +52,14 @@ if(empty($_POST)===false){
                       
        
                       $mail->isHTML(true);                                
-                      $mail->Subject = 'Mail from '.$name;
+                      // $mail->Subject = 'Mail from '.$name;             
+                      $mail->Subject = 'Lead from Imperialtechsol.com ';
                       $mail->Body    = '<h1>'.$model.'</h1><h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.'and phone no is '.$phone.'</h5> <br><br><br> '.$message;
                       $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
                       $mail->send();
                       
-                      echo 'Message has been sent';
+                      // echo 'Message has been sent';
+                      header('location:thankyou.php');
                   } catch (Exception $e) {
                     //  echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
                     header('location:failed.php');
