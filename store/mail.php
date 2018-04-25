@@ -14,21 +14,7 @@ if(empty($_POST)===false){
                     This is a danger alert—check it out!
                     </div>";
           }else{
-              $thank_you_div = "
-                                                <div class='thank_you_div text-center'>
-                                                      <div class='thank_you_header'>
-                                                          <i class=' mt-5 far fa-envel          ope'></i>
-                                                      </div>
-                                                      <div class='pt-5 pb-5'>
-                                                          <h2 class='display-4 thank_you_heading'>Thank you,</h2>
-                                                          <p class='p-5'>
-                                                              You're now a member of our list of awesome people. We will message you on <span class='email_m'>".$email."</span> for further information. 
-                                                          </p>
-                                                          <a href='../index.php' class='btn custom_btn'>Back to home</a>
-                                                      <div>
-                                                </div>
-              ";
-                  
+              
                   $mail = new PHPMailer(true);                   
                   try {
                     $mail->SMTPOptions = array(
@@ -47,14 +33,15 @@ if(empty($_POST)===false){
                       $mail->SMTPSecure = 'tls';                          
                       $mail->Port = 587;                              
                       $mail->setFrom($email, $email);
-                      //$mail->addAddress('nubulmachary@gmail.com', 'Admin');
                       $mail->addAddress('manashbharali79@gmail.com', 'Admin');
+                    //   $mail->addAddress('manashbharali79@gmail.com', 'Admin');
+                    $mail->addCC('nubulmachary@gmail.com', 'Admin');
                       
                       $mail->isHTML(true);                                
                       $mail->Subject = 'Mail from '.$name;
                       //$mail->Body    = '<h1>'.$model.'</h1><h5> Hey I am <b> '.$name.' </b>, my email address is '.$email.'and phone no is '.$phone.'</h5> <br><br><br> '.$message;
                       //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-                      $mail->body = "
+                      $mail->Body = "
                       <div class='container' style='padding: 0;margin: 20px auto;width: 90%;background: #fff;padding-bottom: 50px'>
                       <div class='header' style='padding: 20px 0;margin: 0;width: 100%;background: #370c63;text-align: center;display: block'>
                            <p class='heading' style='padding: 0;margin: 0;color: #fff;font-weight: 500;font-size: 20px;letter-spacing: 1px;text-transform: uppercase'>Buyer's Contact Information</p>
@@ -75,13 +62,15 @@ if(empty($_POST)===false){
                                 </tr>
                                 <tr style='padding: 0;margin: 0'>
                                      <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>Address</td>
-                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'>".$address."</td>
+                                     <td style='padding: 0;margin: 0;line-height: 32px;width: 150px'></td>
                                 </tr>
                            </table>    
                            
                            <div style='padding: 10px 0;margin: 0;width: 100%;background: #fff;text-align: center;display: block;margin-top: 30px;border-radius: 500px;border: 2px solid #370c63;letter-spacing: 1px;text-transform: uppercase;color: #370c63'>
                                 <p style='padding: 0;margin: 0'> Buylead Details</p>
-                           </div>
+                            </div>
+                          
+
                            <br style='padding: 0;margin: 0'/><br style='padding: 0;margin: 0'/>
                            <h2 style='padding: 0;margin: 0;color: #370c63'>Product name : $model</h2>
                            <br style='padding: 0;margin: 0'/><br style='padding: 0;margin: 0'/><br style='padding: 0;margin: 0'/>
@@ -96,7 +85,8 @@ if(empty($_POST)===false){
                       $mail->send();
                       
                       // echo 'Message has been sent';
-                      header('location:thankyou.php');
+                    //   header('location:thankyou.php');
+                      echo "<script> window.location = 'thankyou.php'; </script>";
                   } catch (Exception $e) {
                     //  echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
                     header('location:failed.php');
