@@ -2,6 +2,7 @@
      if(empty($_POST)===false){
           $name = $_POST['name'];
           $size = $_POST['size'];
+          $model = $_POST['model'];
           $brand = $_POST['brand'];
           $specification = $_POST['specification'];
           $broucher = $_POST['broucher'];
@@ -13,11 +14,13 @@
                                     You might have left some empty fields!
                          </div>";
           }else{
-                    $db->insertData("INSERT INTO my_format_display(my_catagory_id,my_display_name,my_display_size,my_display_brand,my_display_specification,my_display_broucher, my_display_image,my_display_status,my_display_created_at) VALUE (?,?,?,?,?,?,?,?,?)", [$some_id,$name,$size,$brand,$specification,$broucher,$image,$status,TIME()]);
+                    $db->insertData("INSERT INTO my_format_display(my_catagory_id,my_display_name,my_display_size,my_model_number,my_display_brand,my_display_specification,my_display_broucher, my_display_image,my_display_status,my_display_created_at) VALUE (?,?,?,?,?,?,?,?,?,?)", [$some_id,$name,$size,$model,$brand,$specification,$broucher,$image,$status,TIME()]);
+                    
                 echo "<div id='box_e'>
                             <div class='error_box green'>
                             Your data has been saved successfully!
-                            </div>
+                            
+                            <div>
                             </div>";
           }
       }

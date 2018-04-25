@@ -5,6 +5,7 @@ if(empty($_POST)===false){
     $id = $_POST['id'];
     $name =$_POST['name'];
     $size =$_POST['size'];
+    $model =$_POST['model'];
     $brand = $_POST['brand'];
     $specification = $_POST['specification'];
     $broucher = $_POST['broucher'];
@@ -16,7 +17,7 @@ if(empty($_POST)===false){
                             You might Left Some Empty Fields
          </div>";
   }else{
-      $updateData = $db->updateData("UPDATE my_format_display SET `my_display_name` = ? , `my_display_size` = ? ,`my_display_brand` = ? , `my_display_specification` = ? , `my_display_broucher` = ? ,`my_display_image` = ? ,`my_display_status` = ? ,`my_display_updated_at` = ? WHERE my_id = ? ", [$name,$size,$brand,$specification,$broucher,$image,$status,TIME(),$id]);
+      $updateData = $db->updateData("UPDATE my_format_display SET `my_display_name` = ? , `my_display_size` = ?, `my_model_number` = ? ,`my_display_brand` = ? , `my_display_specification` = ? , `my_display_broucher` = ? ,`my_display_image` = ? ,`my_display_status` = ? ,`my_display_updated_at` = ? WHERE my_id = ? ", [$name,$size,$model,$brand,$specification,$broucher,$image,$status,TIME(),$id]);
      
       header("location: index.php");
   }

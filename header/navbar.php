@@ -22,12 +22,13 @@
 					</div>
 				</div>
 				<div class="col">
-					<a href="#" class="btn org" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Get started</a>
+					<a href="#" class="btn org" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Enquiry</a>
+					<a href="tel:+91-9910146063">+91-9910146063</a>
 					<div id="target" class="hum-btn pt-3 pr-5">   
                          <span></span>
                          <span></span>
                          <span></span>
-                    </div>
+            </div>
 				</div>
           </div>
      </div>

@@ -8,7 +8,9 @@
 	<?php require('header/component.php'); ?>
 	
 	<style>
-
+		.slider_done{
+			height:360px;
+		}
 	</style>
 </head>
 <body>
@@ -48,7 +50,7 @@
 								<div class="carousel-item">
 									<img class="d-block w-100" src="images\4.gif" alt="Third slide">
 									<div class="sld caption4">
-										<h1>Wall TV</h1>
+										<h1>Video Wall</h1>
 										<h3>Digital Flat Display on your Wall!</h3>
 									</div>
 								</div>
@@ -71,18 +73,18 @@
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 					
 					<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="First slide">
+								<div class="carousel-item active slider_done">
+									<img class="d-block w-100" src="http://carsonsigns.com.au/gallery/d3.jpg" alt="First slide">
 									<div class="carousel-caption d-none d-md-block">
-											<h5>Item name</h5>
-										<p>Lorem ipsum dolor sit amet.</p>
+											<!-- <h5>Item name</h5>
+										<p>Lorem ipsum dolor sit amet.</p> -->
 									</div>
 								</div>
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg">
+								<div class="carousel-item slider_done">
+									<img class="d-block w-100" src="https://cdn.varstreet.com/uploads/VS_UH55F-E.jpg">
 								</div>
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="Third slide">
+								<div class="carousel-item slider_done">
+									<img class="d-block w-100" src="https://www.digitalcinema.com.au/media/catalog/product/cache/1/image/2535x1694/9df78eab33525d08d6e5fb8d27136e95/y/h/yht-8930ax.jpg" alt="Third slide">
 								</div>
 					</div>
 						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -115,7 +117,7 @@
 				<a href="video-wall.php">
 					<div class="product-box">
 					<div class="img">
-					<img src="http://www.rawstockmedia.com/photos/high-tech-laptops-for-passionate-gamers-pictures/High-Tech-Laptops-for-Passionate-Gamers2.jpg" alt="" >
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK85B5tfGr-hYm21W-YA_AtlLYdYG6zV_mKv63ZSJddCyq1km-" alt="" >
 					</div>
 				<h2 class="text-center">Video Walls</h2>
 				</div>
@@ -124,10 +126,10 @@
 
 
 			<div class="col-sm-4">
-			<a href="it-networking.php">
+			<a href="itnetworking.php">
 				<div class="product-box">
 					<div class="img">
-					<img src="http://www.rawstockmedia.com/photos/high-tech-laptops-for-passionate-gamers-pictures/High-Tech-Laptops-for-Passionate-Gamers2.jpg" alt="" >
+					<img src="https://5.imimg.com/data5/IM/EY/MY-10708136/laptop-500x500.png" alt="" >
 					</div>
 				<h2 class="text-center">IT networking</h2>
 				</div>
@@ -136,10 +138,10 @@
 
 				
 				<div class="col-sm-4">
-			<a href="security-servilance.php">
+			<a href="security.php">
 				<div class="product-box">
 					<div class="img">
-					<img src="http://www.rawstockmedia.com/photos/high-tech-laptops-for-passionate-gamers-pictures/High-Tech-Laptops-for-Passionate-Gamers2.jpg" alt="" >
+					<img src="http://www.cynics.com.my/wp-content/uploads/2017/05/1000-systems.png" alt="" >
 					</div>
 				<h2 class="text-center">Security Servilance</h2>
 				</div>
@@ -172,9 +174,17 @@
 					 We're on social media
 				</h4>
 				<p class="pt-5 pb-5 lg text-center">
-					<i class="fab fa-facebook-f ml-5 mr-2"></i>  <i class="fab fa-twitter ml-2 mr-2"></i>
-					<i class="fab fa-google-plus-g ml-2 mr-2"></i> <i class="fab fa-instagram ml-2 mr-2"></i>
-					<i class="fab fa-linkedin-in ml-2 mr-2"></i>
+					
+					<a href="https://www.facebook.com/imperialtechsolindia/"><i class="fab fa-facebook-f ml-5 mr-2"></i></a>
+
+					<a href="https://twitter.com/imperialtechsol"><i class="fab fa-twitter ml-2 mr-2"></i></a>
+
+					<a href="https://www.instagram.com/imperialtechsol/"> <i class="fab fa-instagram ml-2 mr-2"></i></a>
+
+					 <!-- <a href=""><i class="fab fa-google-plus-g ml-2 mr-2"></i></a> -->
+					<a href="https://www.pinterest.com/imperialtechsol/"><i class="fab fa-pinterest-p"></i></a>
+					<a href="https://au.linkedin.com/company/imperial-techsol-pvt-ltd"><i class="fab fa-linkedin-in ml-2 mr-2"></i></a>
+
 				</p>
 				
 			</div>

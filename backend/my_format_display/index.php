@@ -31,6 +31,7 @@
                         <th><i class="fas fa-key fa-lg"></i></th>
                         <th>Display Name</th>
                         <th>Size</th>
+                        <th>Model No.</th>
                         <th>Brand</th>                      
                         <th>Specification</th>
                         <th>Broucher</th>
@@ -53,6 +54,7 @@
                           </td>
                           <td><?php echo $row["my_display_name"];?></td>
                           <td><?php echo $row["my_display_size"];?></td>
+                          <td><?php echo $row["my_model_number"];?></td>
                           <td><?php echo $row["my_display_brand"];?></td>
                           <td><?php echo $row["my_display_specification"];?></td>
                           <td><?php echo $row["my_display_broucher"];?></td>
@@ -111,6 +113,7 @@
       <div class="modal-body p-5">
 
       <form action="" method="POST">
+          <input type="text" name="sub_id" class="form-control input_bar" placeholder="subcatagoryid">
           <input type="text" name="name" class="form-control input_bar" placeholder="Display name">
           <input type="text" name="size" class="form-control input_bar" placeholder="Display size">         
           <input type="text" name="brand" class="form-control input_bar" placeholder="Display brand">    
