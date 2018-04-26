@@ -56,26 +56,26 @@
       <div class="modal-body p-5">
       <form action="store/mail.php" method="POST" id="form_data_nav">
 					<div class="form-group pt-4">
-						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^a-z]/, '')">
+						<input type="text" class="form-control input_bar" id="name" name="name" placeholder="Name : John Doe" onkeyup="this.value = this.value.replace(/[^a-z]/, '')" required>
 					</div>
 
 					<div class="form-group pt-4">
-						<input type="text" class="form-control input_bar" id="email" name="email" placeholder="Email : Johndoe@gmail.com">
+						<input type="text" class="form-control input_bar" id="email" name="email" placeholder="Email : Johndoe@gmail.com" required>
 
 						
 					</div>
 
 					<div class="form-group pt-4">
-						<input type="text" class="form-control input_bar" id="phone" maxlength="10" name="phone" placeholder="Phone no : 9706300000" onkeyup="this.value = this.value.replace(/[^0-9]/, '')">
+						<input type="text" class="form-control input_bar" id="phone" maxlength="10" name="phone" placeholder="Phone no : 9706300000" onkeyup="this.value = this.value.replace(/[^0-9]/, '')" required>
 						
 					</div>
 
 					<div class="form-group pt-4">
-					<textarea class="form-control input_bar" id="message_text" name="message" placeholder="message : Ask me anything"></textarea>
+					<textarea class="form-control input_bar" id="message_text" name="message" placeholder="message : Ask me anything" required></textarea>
 
 					
 					</div>
-						<button type="submit" class="btn mt-3 custom_btn">Send message</button>
+						<button type="submit" id="applybutton" class="btn mt-3 custom_btn">Send message</button>
 						
 					</form>
 

@@ -4,7 +4,7 @@
     // include("config/config.inc.php");
     require('config/dbconnect.php');
 
-    $id = $_GET['id'];
+    // $id = $_GET['id'];
    
     // print_r($array['my_video_name']);
 
