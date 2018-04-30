@@ -1,7 +1,7 @@
 <?php 
 // include("config/config.inc.php");
     require('config/dbconnect.php');
-    $id = $_GET['id'];
+    // $id = $_GET['id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -102,9 +102,9 @@
         </div>
 
         <div class="col-md-8">
-            <h3 class="mt-3">Product Name</h3>
+            <h3 class="mt-3">Smart Classroom</h3>
 
-                <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque fugit distinctio quaerat harum vitae ducimus eos exercitationem autem sapiente molestiae ullam repudiandae corrupti laborum pariatur id maxime labore? Consequatur? <?php echo $array['my_video_description']; ?></p>
+                <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, doloremque fugit distinctio quaerat harum vitae ducimus eos exercitationem autem sapiente molestiae ullam repudiandae corrupti laborum pariatur id maxime labore? Consequatur? <?php// echo $array['my_video_description']; ?></p>
     
                 <h5 class="mt-5 mb-5">Product Description</h5>
                 
