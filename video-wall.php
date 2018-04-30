@@ -71,7 +71,7 @@
         
              
             <div class="col-md-6">
-                <a href="video-wall-product.php?id=1">
+                <a href="video-wall-lcd.php">
                 <div class="box lcd">
      
                 </div>
@@ -80,7 +80,7 @@
             </div>
 
             <div class="col-md-6">
-             <a href="video-wall-product.php?id=2">             
+             <a href="video-wall-led.php">             
                 <div class="box led">
      
                 </div>

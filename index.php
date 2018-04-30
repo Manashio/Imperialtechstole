@@ -11,7 +11,7 @@
 		.mystyle{
 			width:100%;
 			height:100vh;
-			background:#eee;
+			background: rgba(0,0,0,.7);
 			position:fixed;
 			z-index:3;
 			-webkit-animation: mymove 0.9s ease-out; /* Safari 4.0 - 8.0 */
@@ -23,12 +23,28 @@
 			background:#eee;
 		}
 		@-webkit-keyframes mymove {
-			from {bottom: 1000px;}
-			to {bottom: 0px;}
+			from {
+				opacity:0;
+			}
+			to {
+				opacity:0.9;
+			}
 		}
 		@keyframes mymove {
-			from {bottom: 1000px;}
-			to {bottom: 0px;}
+			from {
+				opacity:0;
+			}
+			to {
+				opacity:0.9;
+			}
+		}
+		.bg-white{
+			background:#fff;
+		}
+		.align{
+			position:relative;
+			bottom:48px;
+			right:-49px;
 		}
 	</style>
 </head>
@@ -38,9 +54,9 @@
 <?php require('header/catagory.php'); ?>
 
 <div id="div_target" class="" style="display:none;">
-	<div class="container pt-5 pb-5">
+	<div class="container bg-white p-5 mt-3">
 		<div class="text-right">
-			<button class="btn btn-danger" id="close"><i class="fas fa-times"></i> Close</button>
+			<button class="btn btn-link align" id="close"><i class="fas fa-times-circle"></i> Close</button>
 		</div>
 		<h1>OUR PRODUCTS</h1>
 		<br><br>

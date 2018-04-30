@@ -33,9 +33,9 @@ if(empty($_POST)===false){
                       $mail->SMTPSecure = 'tls';                          
                       $mail->Port = 587;                              
                       $mail->setFrom($email, $email);
-                      $mail->addAddress('manashbharali79@gmail.com', 'Admin');
                     //   $mail->addAddress('manashbharali79@gmail.com', 'Admin');
-                    $mail->addCC('nubulmachary@gmail.com', 'Admin');
+                      $mail->addAddress('nubulmachary@gmail.com', 'Admin');
+                    // $mail->addCC('nubulmachary@gmail.com', 'Admin');
                       
                       $mail->isHTML(true);                                
                       $mail->Subject = 'Mail from '.$name;

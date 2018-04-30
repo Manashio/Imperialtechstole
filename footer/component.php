@@ -20,12 +20,20 @@
 
 		});
 
-     </script>
+	 </script>
+	 
+	 <!-- <script type="text/javascript">
+			$( "#form_data_nav" ).submit(function( event ) {
+				$('#applybutton').attr('disabled',true);
+				$("#applybutton").html('Processing');
+			});
+	</script> -->
+
 
 	<script>
 		$("#form_data_nav").validate({
 			rules: {
-					name: "required",
+						name: "required",
 						email: {
 							required: true,
 							email: true
