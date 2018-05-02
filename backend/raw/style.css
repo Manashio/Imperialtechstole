@@ -209,7 +209,7 @@ label{
     text-align: left;
     color: #999;
 }
-label input,label select{
+input[type=text]{
     width: 100%;
     margin-top: 20px;
     display: block;
@@ -225,15 +225,6 @@ label input,label select{
 }
 :-moz-placeholder,:-webkit-placeholder{
     color: #444444;
-}
-label select{
-    cursor: pointer;
-    background: url('../img/down.png') 98% / 19% no-repeat ;
-    background-size: 2%;
-    color: #222;
-}
-label select:focus{
-    outline: 0;
 }
 label.small{
   width: 100px!important;
@@ -363,8 +354,9 @@ label{
     padding: 0px!important;
     margin-top: 30px;
     margin-bottom: 0px;
-    font-size: 18px;
+    font-size: 15px;
     color: #000;
+    font-weight: 500;
 }
 
 
@@ -389,5 +381,16 @@ label{
     background: #fff;
     color: #02ccba;
     border: 2px solid #02ccba;
-    
+}
+.file{
+    border: 1px solid #ccc;
+    border-style: dashed;
+    padding: 20px 10px !important;
+    border-radius: 3px;
+}
+.file:hover{
+    background: #eee;
+}
+input[type=file]{
+    border: 0px !important;
 }

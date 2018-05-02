@@ -11,6 +11,8 @@
      include_once('controller/my_projector.php');
      include_once('controller/my_format_display.php');
      include_once('controller/my_videoconferencing.php');
+
+
      
      
      
@@ -35,9 +37,15 @@
                 //         echo $value;
                 //     }
                 // }
-          ?>
 
-          <div class="row mt-5 text-center">     
+                $getRows = $db->getRows("SELECT * FROM tbl_main");
+                print_r($getRows);
+                
+          ?>
+            <br><br><br>    
+          <a href="#" class="btn btn-primary"> Add data in main table</a>
+
+          <!-- <div class="row mt-5 text-center">     
               <div class="col-md-4">
                    <a href="my_catagory/index.php">
                    <div class="page_card">
@@ -73,7 +81,7 @@
                         <div class="page_card">
                             <big><i class="fas fa-video"></i></big>
                              <br><br>  Video conferencing &dash; <big><?php echo $row_count_video;?></big></div></a> 
-                </div>
+                </div> -->
 
        </div>
 </div>
