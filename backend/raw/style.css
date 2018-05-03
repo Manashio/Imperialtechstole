@@ -394,3 +394,6 @@ label{
 input[type=file]{
     border: 0px !important;
 }
+.fr-box{
+    z-index: 0!important;
+}

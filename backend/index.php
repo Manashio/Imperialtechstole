@@ -5,12 +5,13 @@
      include_once('functions/function.inc.php');
      include_once('views/head.php');
      include_once('views/sidenav.php');
+     include_once('controller/add_controller.php');
 
-     include_once('controller/my_catagory.php');
-     include_once('controller/my_subcatagory.php');
-     include_once('controller/my_projector.php');
-     include_once('controller/my_format_display.php');
-     include_once('controller/my_videoconferencing.php');
+    //  include_once('controller/my_catagory.php');
+    //  include_once('controller/my_subcatagory.php');
+    //  include_once('controller/my_projector.php');
+    //  include_once('controller/my_format_display.php');
+    //  include_once('controller/my_videoconferencing.php');
 
 
      
@@ -30,59 +31,44 @@
                   <h1 class="text-center cards_p">Admin</h1>
                   
           </div>
-          <?php
-                // $result = $conn->query("show tables");
-                // while ($row = $result->fetch(PDO::FETCH_NUM)) {
-                //     foreach ($row as $key => $value) {
-                //         echo $value;
-                //     }
-                // }
 
-                $getRows = $db->getRows("SELECT * FROM tbl_main");
-                print_r($getRows);
-                
-          ?>
-            <br><br><br>    
-          <a href="#" class="btn btn-primary"> Add data in main table</a>
+          <br><br><br>    
+          <a href="add.php" class="btn btn-primary"> Add data in main table</a>
 
-          <!-- <div class="row mt-5 text-center">     
-              <div class="col-md-4">
-                   <a href="my_catagory/index.php">
-                   <div class="page_card">
-                        <big><i class="fas fa-list-ul"></i> </big>
-                         <br><br> Catagory &dash; <big><?php echo $row_count_cata;?></big></div></a>  
-              </div>
+          <table class="main" >
+                    <tr>
+                        <th><i class="fas fa-key fa-lg"></i></th>
+                        <th>Page name</th>
+                        <th>Name</th>
+                        <th>Brand</th>
+                        <th>Status</th>
+                        <th>Updated at</th>
+                        <th><i class="fas fa-pencil-alt fa-lg"></i></th>
+                        <th><i class="far fa-trash-alt fa-lg"></i></th>
+                    </tr>
+                    <script>let x = 1; </script>
+                    <?php   
+                    foreach ($getRows as $row) {
+                      $id = $row['id'];
+                    ?>
+                    <tr class="first">
+                        <td><script>document.write(x++);</script></td>
+                          <td><?php echo $row["page_name"];?></td>
+                          <td><?php echo $row["name"];?></td>
+                          <td><?php echo $row["brand"];?></td>
+                          <td><?php echo $row["status"];?></td>
+                          <td><?php echo $row["updated_at"];?></td>
+                          <td>
+                              <b><?php echo "<a href='edit.php?id=$id'> Edit </a>"?></b>
+                              </td><td>
+                              <b><a href="delete.php?id=<?php echo $id; ?>" onClick="return confirm('Are you sure you want to delete?');"> Delete </a></b>
+                          </td>
+                      </tr>
+                <?php
+                    }?>
+                </table>
 
-              <div class="col-md-4">
-                    <a href="my_format_display/index.php">
-                        <div class="page_card">
-                            <big><i class="fas fa-tv"></i></big>
-                             <br><br> Display &dash; <big><?php echo $row_count_dis;?></big>
-                        </div>
-                    </a> 
-              </div>
-
-               <div class="col-md-4">
-                    <a href="my_projector/index.php">
-                        <div class="page_card">
-                            <big><i class="fas fa-video"></i></big>
-                             <br><br> Projector &dash; <big><?php echo $row_count_proj;?></big></div></a> 
-                </div>
-
-              <div class="col-md-4">
-                    <a href="my_subcatagory/index.php">
-                        <div class="page_card">
-                            <big><i class="fas fa-ellipsis-v"></i></big>
-                             <br><br> Sub catagory &dash; <big><?php echo $row_count_scat;?></big></div></a> 
-                </div>
-
-               <div class="col-md-4">
-                    <a href="my_videoconferencing/index.php">
-                        <div class="page_card">
-                            <big><i class="fas fa-video"></i></big>
-                             <br><br>  Video conferencing &dash; <big><?php echo $row_count_video;?></big></div></a> 
-                </div> -->
-
+       
        </div>
 </div>
 

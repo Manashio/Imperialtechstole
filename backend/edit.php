@@ -2,7 +2,33 @@
      require_once('core/session.php');
      require_once('core/db_conn.php');
      include_once('functions/function.inc.php');
-     include_once('controller/add_controller.php');
+     $id = $_GET['id'];
+     $getRow = $db->getRow("SELECT * FROM tbl_main WHERE id =? ", [$id]);
+     if(empty($_POST)===false){
+      $page_name = $_POST['page_name'];
+      $title_name = $_POST['title_name'];
+      $brand = $_POST['brand'];
+      $seo = $_POST['seo'];
+      $img = "imp.png";//$_POST['img'];
+      $description = $_POST['description'];
+      $broucher = "file.pdf";//$_POST['broucher'];
+      $status = "active";
+      
+       if (empty($page_name) || empty($title_name) || empty($brand) || empty($seo) || empty($img) || empty($description) || empty($broucher) || empty($status) ) {
+         $data =  "<div class='error_box' id='box_e'>
+                                You might have left some empty fields!
+                       </div>";
+      }else{
+        $db->updateData("UPDATE tbl_main SET `page_name` = ? , `name` = ?, `brand` = ? ,`seo` = ? , `img` = ? , `description` = ? ,`broucher` = ? ,`status` = ? ,`updated_at` = ? WHERE id = ? ", [$page_name,$title_name,$brand,$seo,$img,$description,$broucher,$status,TIME(),$id]);
+        $data = "<div id='box_e'>
+                        <div class='error_box green'>
+                           Your data has been saved successfully!
+                        </div>
+                      </div>";
+      }
+  }
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,26 +58,26 @@
                 <span class="span">
                   <?php echo $message;?>
                 </span>
-                <input type="text" name="page_name" placeholder="About us " />
+                <input type="text" name="page_name" value ="<?php echo $getRow['page_name']; ?>" />
               </label>
 
               <label>Title name of the page
               <span class="span">
                   <?php echo $message;?>
                 </span>
-                <input type="text" placeholder="About us" name="title_name"/>
+                <input type="text" value ="<?php echo $getRow['name'];?>"  name="title_name"/>
               </label>
 
 
               <label>Brand of the product
-                <input type="text" placeholder="Dell, HP, ASUS" name="brand"/>
+                <input type="text" value ="<?php echo $getRow['brand'];?>" name="brand"/>
               </label>
 
               
               <label>SEO Description
                 <br><br>
                 <textarea class="form-control" rows="3" name="seo">
-                    Rich content
+                <?php echo $getRow['seo'];?>
                 </textarea>
                
               </label>
@@ -73,9 +99,7 @@
                 </span>
                 
                 <textarea name="description" id="myEditor">
-                    <h1>This is some sample content.</h1>
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum hic vero officiis error ab accusamus quas atque maxime laborum fuga aspernatur, nam tenetur cum explicabo architecto non ratione esse dolore.</p>
+                <?php echo $getRow['description']; ?>
                 </textarea>
               </label>
 
@@ -94,7 +118,7 @@
                 </span>
 
                 <Select name="status" class="form-control">
-                  <option> SELECT</option>
+                  <option> <?php echo $getRow['status'];?></option>
                   <option value="active">Publish the page</option>
                   <option value="inactive">Save in draft</option>
                 </Select>
